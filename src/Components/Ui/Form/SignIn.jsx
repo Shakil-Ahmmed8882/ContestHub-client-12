@@ -7,18 +7,20 @@ import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { ToasMessage } from "../../../Utils/ToastMessage";
 import { ToastError } from "../../../Utils/ToastError";
 import useGetOpenData from "../../../Hooks/useGetOpenData";
+import usePublicApi from "../../../Hooks/usePublicApi";
 
 const SignIn = () => {
   const { signIn,googleSignIn,user} = useAuth();
 
   const goTo = useNavigate();
   const [data] = useGetOpenData('/contests','contests')
-  console.log(data)
+  const xiosPublic = usePublicApi()
 
   // Handle sign up
   const handleSignIn = (event) => {
     event.preventDefault();
 
+    
     const formData = Object.fromEntries(new FormData(event.target).entries());
     const email = formData.email;
     const password = formData.password;
@@ -37,13 +39,21 @@ const SignIn = () => {
         name:user?.displayName,
         email:user?.email,
         password:'',
-        photoURL:user?.photoURL,
+        photoURL:user?.photoURL        ,
         role:'user',
         participationDetails:{
           attemptedContests:[],
           wonContests:[]
         }
       }
+        
+      xiosPublic.post('createUser',userInfo)
+      .then(res => {
+       if(res.data.insertId){
+        console.log({success:true})
+       }
+      })
+     
       
     });
   };

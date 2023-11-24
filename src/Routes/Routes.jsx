@@ -6,6 +6,7 @@ import MainLaout from "../Layout/MainLaout";
 import Home from "../Pages/Home";
 import SignUp from "../Components/Ui/Form/SignUp";
 import SignIn from "../Components/Ui/Form/SignIn";
+import AllContents from "../Pages/AllContents";
     
 export const router = createBrowserRouter([
       {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
             {
                   index:true,
                   element:<Home></Home>
+            },
+            {
+                  path:'/allContests',
+                  element:<AllContents></AllContents>
             }
         ]
       },
