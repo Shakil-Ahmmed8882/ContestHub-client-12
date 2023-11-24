@@ -2,9 +2,21 @@ import { NavLink } from "react-router-dom";
 import { LinksGenerator } from "./LinksGenerator";
 import { linksData } from "./LinkData";
 import Avater from "./Avater";
+import useAuth from "../../Hooks/useAuth";
 const Navbar = () => {
+  const { user, logOut } = useAuth();
 
-  
+  // login and logout link
+  const signInLink = (
+    <li>
+      <NavLink to="/signIn">Sign in</NavLink>
+    </li>
+  );
+
+
+  // Setting user profile image dynamically
+  const profileImg = user?.photoURL?user?.photoURL:'https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+
   return (
     <div className="navbar bg-base-100 items-center">
       <div className="navbar-start">
@@ -37,13 +49,16 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {LinksGenerator(linksData)}
+          {!user && signInLink}
         </ul>
       </div>
 
       {/* Profile  */}
-      <div className="navbar-end">
-        <Avater img="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></Avater>
-      </div>
+      {user && (
+        <div className="navbar-end">
+          <Avater img={profileImg}></Avater>
+        </div>
+      )}
     </div>
   );
 };

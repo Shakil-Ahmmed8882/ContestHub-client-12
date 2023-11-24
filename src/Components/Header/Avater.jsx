@@ -1,7 +1,25 @@
+import { NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
+const Avater = ({ img }) => {
+  const { user, logOut } = useAuth();
 
-const Avater = ({img}) => {
-      return ( <div className="dropdown cursor-pointer dropdown-end">
+  const signInLink = (
+    <li>
+      <NavLink to="/signIn">Sign in</NavLink>
+    </li>
+  );
+
+  const logOutLink = (
+    <li>
+      <button className="w-32" onClick={() => logOut()}>
+        Sign out
+      </button>
+    </li>
+  );
+
+  return (
+    <div className="dropdown cursor-pointer dropdown-end">
       <label tabIndex={0} className="m-1">
         <div className="avatar w-[50px] online cursor-pointer">
           <div className="w-full rounded-full">
@@ -12,14 +30,14 @@ const Avater = ({img}) => {
       <ul
         tabIndex={0}
         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-        <li>
-          <a>Item 1</a>
-        </li>
+
         <li>
           <a>Item 2</a>
         </li>
+        {user ? logOutLink : signInLink}
       </ul>
-    </div>);
+    </div>
+  );
 };
 
 export default Avater;

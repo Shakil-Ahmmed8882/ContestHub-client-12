@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import useAuth from "../../../Hooks/useAuth";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsArrowDownLeftSquareFill } from "react-icons/bs";
 import { ToasMessage } from "../../../Utils/ToastMessage";
 import { ToastError } from "../../../Utils/ToastError";
+import usePublicApi from "../../../Hooks/usePublicApi";
 
 const SignUp = () => {
   const {
@@ -17,6 +18,8 @@ const SignUp = () => {
     user,
     updateUserProfile,
   } = useContext(AuthContext);
+  const xiosPublic = usePublicApi()
+  const goTo = useNavigate()
 
   // Handle sign up
   const handleSignUp = (event) => {
@@ -33,7 +36,8 @@ const SignUp = () => {
       updateUserProfile(name,photoURL)
       // Letting the user know success response
       ToasMessage('You have successfully signed up')
-      
+      goTo('/')
+      // user information object
       const userInfo = {
         name,
         email,
@@ -45,6 +49,15 @@ const SignUp = () => {
           wonContests:[]
         }
       }
+
+      // store user in database 
+      xiosPublic.post(`createUser?email=${user?.email}`,userInfo)
+      .then(res => {
+       if(res.data.insertId){
+        console.log({success:true})
+       }
+      })
+     
     })
     .catch(err => ToastError(err.message.toString()))
   };

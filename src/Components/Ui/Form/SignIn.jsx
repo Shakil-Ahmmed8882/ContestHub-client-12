@@ -6,14 +6,12 @@ import { BsGoogle } from "react-icons/bs";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { ToasMessage } from "../../../Utils/ToastMessage";
 import { ToastError } from "../../../Utils/ToastError";
-import useGetOpenData from "../../../Hooks/useGetOpenData";
 import usePublicApi from "../../../Hooks/usePublicApi";
 
 const SignIn = () => {
   const { signIn,googleSignIn,user} = useAuth();
 
   const goTo = useNavigate();
-  const [data] = useGetOpenData('/contests','contests')
   const xiosPublic = usePublicApi()
 
   // Handle sign up
@@ -46,8 +44,9 @@ const SignIn = () => {
           wonContests:[]
         }
       }
-        
-      xiosPublic.post('createUser',userInfo)
+       
+      
+      xiosPublic.post(`createUser?email=${user?.email}`,userInfo)
       .then(res => {
        if(res.data.insertId){
         console.log({success:true})
