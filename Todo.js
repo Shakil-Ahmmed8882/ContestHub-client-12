@@ -5,6 +5,15 @@
  *TODO: vlaidate the form
   -create the all contests route
 
-   -Make the login and user-profile conditional 
-    -Replace user profile image dynamically     
+ -Make the login and user-profile conditional 
+ -Replace user profile image dynamically     
+
+ -----------------------------
+ * user dashboard access  
+ ----------------------------
+ * create dashboard route for 3 roles user, admin, contest_creator
+ * Make the route secure and make sure user get the route they supposed ot get
+ * 
+ *
+    
  */

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LinksGenerator } from "./LinksGenerator";
 import { linksData } from "./LinkData";
 import Avater from "./Avater";
@@ -50,9 +50,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           {LinksGenerator(linksData)}
           {!user && signInLink}
+          {user && <li><Link to='/dashboard'> Dashboard</Link> </li>}
         </ul>
       </div>
-
       {/* Profile  */}
       {user && (
         <div className="navbar-end">

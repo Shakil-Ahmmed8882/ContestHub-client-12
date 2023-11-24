@@ -28,11 +28,14 @@ const SignIn = () => {
       goTo("/");
     })
     .catch(err => ToastError(err.message.toString()))
-  };
+};
 
   const handleMedia = (media) => {
     media().then(() => {
-      // Letting the user know success response
+      // Letting the user know success 
+      ToasMessage("You have successfully signed in with google");
+      goTo('/')
+        
       const userInfo = {
         name:user?.displayName,
         email:user?.email,
