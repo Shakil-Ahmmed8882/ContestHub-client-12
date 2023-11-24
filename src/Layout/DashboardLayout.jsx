@@ -5,10 +5,10 @@ import Navbar from "../Pages/Dashboard/Navbar/Navbar";
 const DashboardLayout = () => {
   return (
       <div className="grid grid-cols-10 w-[100%]">
-            <div className="w-72 bg-wite col-span-2 h-screen">
+            <div className="w-72 bg-[#1E293B] col-span-2 h-screen">
                   <UserRoutes></UserRoutes>
             </div>
-            <div className="bg-blue-100 col-span-8">
+            <div className="col-span-8 bg-[#F1F5F9]">
                   <Navbar></Navbar>
                   <Outlet></Outlet>
             </div>

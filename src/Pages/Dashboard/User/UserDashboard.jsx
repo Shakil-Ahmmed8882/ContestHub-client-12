@@ -1,4 +1,7 @@
+import Welcome from "./Welcome";
+
 const UserDashboard = () => {
+
   return (
     <div>
       <div>
@@ -11,6 +14,7 @@ const UserDashboard = () => {
             <div className="flex flex-row pt-24 px-10 pb-4">
          
               <div className="w-10/12">
+            <Welcome></Welcome>
                 <div className="flex flex-row">
                   <div
                     className="bg-no-repeat bg-red-200 border border-red-300 rounded-xl w-7/12 mr-2 p-6"

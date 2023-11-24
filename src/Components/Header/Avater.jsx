@@ -21,7 +21,7 @@ const Avater = ({ img }) => {
   return (
     <div className="dropdown cursor-pointer dropdown-end">
       <label tabIndex={0} className="m-1">
-        <div className="avatar w-[50px] online cursor-pointer">
+        <div className="avatar w-[44px] online cursor-pointer">
           <div className="w-full rounded-full">
             <img src={img} />
           </div>

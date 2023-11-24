@@ -18,8 +18,10 @@ const Navbar = () => {
   const profileImg = user?.photoURL?user?.photoURL:'https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
   return (
-    <div className="navbar bg-base-100 items-center">
-      <div className="navbar-start">
+    <div className="">
+
+    <div className="navbar bg-white px-40">
+      <div className="navbar-start ">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -59,6 +61,8 @@ const Navbar = () => {
           <Avater img={profileImg}></Avater>
         </div>
       )}
+    </div>
+
     </div>
   );
 };

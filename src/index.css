@@ -4,11 +4,17 @@
 
 
 body{
-      background-color: rgba(214, 211, 254, 0.1);
+      background-color:#F1F5F9;
+      height: 100vh;
 }
 
 a.active{
       background: #615BF1!important;
+}
+
+.black-bg{
+      background-color: black !important;
+      color: white ;
 }
 
 
