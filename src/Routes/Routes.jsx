@@ -5,6 +5,11 @@ import SignUp from "../Components/Ui/Form/SignUp";
 import SignIn from "../Components/Ui/Form/SignIn";
 import AllContents from "../Pages/AllContents";
 import DashboardLayout from "../Layout/DashboardLayout";
+import SubmissionDetails from "../Pages/Dashboard/User/SubmissionDetails";
+import WininingContests from "../Pages/Dashboard/User/WininingContests";
+import UpcomingContests from "../Pages/Dashboard/User/UpcomingContests";
+import Profile from "../Pages/Dashboard/User/Profile";
+import ParticipatedContests from "../Pages/Dashboard/User/ParticipatedContests";
 
 export const router = createBrowserRouter([
   {
@@ -29,8 +34,24 @@ export const router = createBrowserRouter([
     children:[
       {
         index:true,
-        element:<div className="text-9xl">profile</div>
-      }
+        element:<Profile>;</Profile>
+      },
+      {
+        path:'submissionDetails',
+        element:<SubmissionDetails></SubmissionDetails>
+      },
+      {
+        path:'participatedContest',
+        element:<ParticipatedContests></ParticipatedContests>
+      },
+      {
+        path:'winningContests',
+        element:<WininingContests></WininingContests>
+      },
+      {
+        path:'UpcomingContests',
+        element:<UpcomingContests></UpcomingContests>
+      },
     ]
   },
 
