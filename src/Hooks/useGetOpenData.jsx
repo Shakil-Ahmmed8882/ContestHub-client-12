@@ -7,7 +7,7 @@ const useGetOpenData = (endpoint,key) => {
       const {data} = useQuery({
             queryKey:[key],
             queryFn:async () => {
-                  const res = await xios.get('users')
+                  const res = await xios.get(endpoint)
                   return res.data
             }
       })

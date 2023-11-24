@@ -1,0 +1,37 @@
+[
+      {
+        "_id": "SubmissionID1",
+        "participantID": "ParticipantID1",
+        "contestID": "ContestID1",
+        "submittedTask": "url_to_submitted_task_1",
+        "evaluationStatus": "pending"
+      },
+      {
+        "_id": "SubmissionID2",
+        "participantID": "ParticipantID2",
+        "contestID": "ContestID2",
+        "submittedTask": "url_to_submitted_task_2",
+        "evaluationStatus": "accepted"
+      },
+      {
+        "_id": "SubmissionID3",
+        "participantID": "ParticipantID3",
+        "contestID": "ContestID3",
+        "submittedTask": "url_to_submitted_task_3",
+        "evaluationStatus": "rejected"
+      },
+      {
+        "_id": "SubmissionID4",
+        "participantID": "ParticipantID4",
+        "contestID": "ContestID4",
+        "submittedTask": "url_to_submitted_task_4",
+        "evaluationStatus": "accepted"
+      },
+      {
+        "_id": "SubmissionID5",
+        "participantID": "ParticipantID5",
+        "contestID": "ContestID5",
+        "submittedTask": "url_to_submitted_task_5",
+        "evaluationStatus": "pending"
+      }
+    ]

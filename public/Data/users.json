@@ -1,0 +1,58 @@
+[
+      {
+        "name": "Alice",
+        "email": "alice@example.com",
+        "password": "hashed_password",
+        "photoURL": "url_to_profile_picture",
+        "role": "user",
+        "participationDetails": {
+          "attemptedContests": ["ContestID1", "ContestID2"],
+          "wonContests": ["ContestID1"]
+        }
+      },
+      {
+        "name": "Bob",
+        "email": "bob@example.com",
+        "password": "hashed_password",
+        "photoURL": "url_to_profile_picture",
+        "role": "user",
+        "participationDetails": {
+          "attemptedContests": ["ContestID2", "ContestID3"],
+          "wonContests": ["ContestID3"]
+        }
+      },
+      {
+        "name": "Eva",
+        "email": "eva@example.com",
+        "password": "hashed_password",
+        "photoURL": "url_to_profile_picture",
+        "role": "user",
+        "participationDetails": {
+          "attemptedContests": ["ContestID1", "ContestID4"],
+          "wonContests": ["ContestID4"]
+        }
+      },
+      {
+        "name": "Daniel",
+        "email": "daniel@example.com",
+        "password": "hashed_password",
+        "photoURL": "url_to_profile_picture",
+        "role": "admin",
+        "participationDetails": {
+          "attemptedContests": ["ContestID3", "ContestID5"],
+          "wonContests": ["ContestID5"]
+        }
+      },
+      {
+        "name": "Grace",
+        "email": "grace@example.com",
+        "password": "hashed_password",
+        "photoURL": "url_to_profile_picture",
+        "role": "user",
+        "participationDetails": {
+          "attemptedContests": ["ContestID2", "ContestID5"],
+          "wonContests": []
+        }
+      }
+    ]
+    
