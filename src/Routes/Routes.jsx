@@ -13,6 +13,8 @@ import ParticipatedContests from "../Pages/Dashboard/User/ParticipatedContests";
 import ContestDetails from "../Pages/Contests/contestDetails";
 import Payment from "../Pages/Payment/Payment";
 import PrivateRoute from "../Components/Ui/Private/PrivateRoute";
+import ManageUser from "../Components/Ui/Private/ManageUser";
+import ManageContest from "../Components/Ui/Private/ManageContest";
 
 export const router = createBrowserRouter([
   {
@@ -63,6 +65,16 @@ export const router = createBrowserRouter([
         path: "UpcomingContests",
         element: <UpcomingContests></UpcomingContests>,
       },
+
+      // Admin
+      {
+        path:'manageUser',
+        element:<ManageUser></ManageUser>
+      },
+      {
+        path:'manageContest',
+        element:<ManageContest></ManageContest>
+      }
     ],
   },
 

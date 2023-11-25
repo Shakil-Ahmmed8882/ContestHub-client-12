@@ -4,7 +4,7 @@ const AdminRoutes = () => {
   return (
     <div className="flex flex-col justify-center">
       <NavLink className="p-2 hover:bg-[#333A48 m-3" to="/">
-        Admin
+        Home
       </NavLink>
       <NavLink
         className="p-2 flex items-center gap-2 black-bg hover:bg-[#333A48] text-white m-3"
@@ -20,31 +20,19 @@ const AdminRoutes = () => {
             className="fill-current text-indigo-200"
             d="M12 15c-1.654 0-3-1.346-3-3 0-.462.113-.894.3-1.285L6 6l4.714 3.301A2.973 2.973 0 0112 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"></path>
         </svg>
-        <span>
-        Dashobard{" "}
-
-        </span>
+        <span>Dashobard </span>
       </NavLink>
       <NavLink
         className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/participatedContest">
-        participated contests
+        to="/dashboard/manageContest">
+        Manage contest
       </NavLink>
       <NavLink
         className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/submissionDetails">
-        submission details
+        to="/dashboard/manageUser">
+        Manage user
       </NavLink>
-      <NavLink
-        className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/winningContests">
-        My wining contests
-      </NavLink>
-      <NavLink
-        className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/UpcomingContests">
-        Upcoming contests
-      </NavLink>
+    
     </div>
   );
 };

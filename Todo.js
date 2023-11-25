@@ -29,8 +29,9 @@
  *  create private route & redirect them to their distination  
  *  store contest in data base
  * TODO: Payment functionality
- * Make admin route secure
- * 
+ * TODO:Make admin route secure
+ * Add manage user and contest page
+ * TODO install chart to show data
  * 
     
  */
