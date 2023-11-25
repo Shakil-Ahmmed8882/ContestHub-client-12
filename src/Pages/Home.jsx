@@ -1,8 +1,13 @@
 import Navbar from "../Components/Header/Navbar";
+import FAQ from "./Demo/FAQ";
+import Footer from "./Demo/Footer";
+import Payment from "./Payment/Payment";
 
 const Home = () => {
   return (
-    'home'
+    <div>
+    <Footer></Footer>
+    </div>
   );
 };
 

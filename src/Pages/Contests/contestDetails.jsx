@@ -63,7 +63,7 @@ const ContestDetails = () => {
             ""
           )}
         </p>
-        <Link className="btn bg-green-500 text-white">Contest Registration -&ls; payment</Link>
+        <Link className="btn bg-green-500 text-white" to='/payment'>Contest Registration -&ls; payment</Link>
       </div>
       <div className="bg-primary flex-1"></div>
     </div>

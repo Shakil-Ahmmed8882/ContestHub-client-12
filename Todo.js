@@ -16,8 +16,8 @@
   Show single contest redirecting by detail button 
 
   make the dynamic timer to calculate contest deadline
+  Create payment page 
  * TODO: Make the route secure and make sure user get the route they supposed ot get
- * TODO: Create payment page 
  *  
  *
     
