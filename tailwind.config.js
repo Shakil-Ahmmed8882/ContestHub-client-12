@@ -9,7 +9,8 @@ export default {
       colors: {
         primary: "#615BF1",
         secondary: '#yourSecondaryColorValue',
-        accent: '#yourAccentColorValue',
+        accentBg: '#D1FAB3',
+        accentText: '#CEF1BA',
         // Add more custom colors if needed
       },
     },

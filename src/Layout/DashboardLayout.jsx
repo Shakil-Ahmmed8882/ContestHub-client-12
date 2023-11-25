@@ -4,13 +4,16 @@ import Navbar from "../Pages/Dashboard/Navbar/Navbar";
 
 const DashboardLayout = () => {
   return (
-      <div className="grid grid-cols-10 w-[100%]">
-            <div className="w-72 bg-[#1E293B] col-span-2 h-screen">
+      <div className="grid grid-cols-5 w-[100%]">
+            <div className="w-72 bg-[#FAFBFC] col-span-1 h-screen">
                   <UserRoutes></UserRoutes>
             </div>
-            <div className="col-span-8 bg-[#F1F5F9]">
+            <div className="col-span-4 bg-[#FFFFFF]">
                   <Navbar></Navbar>
+                  <div className="pl-2">
                   <Outlet></Outlet>
+
+                  </div>
             </div>
       </div>
   );

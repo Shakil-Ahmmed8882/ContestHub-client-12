@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const UserRoutes = () => {
   return (
     <div className="flex flex-col justify-center">
-      <NavLink className="p-2 hover:bg-[#333A48] text-white m-3" to="/">
+      <NavLink className="p-2 hover:bg-[#333A48 m-3" to="/">
         Home
       </NavLink>
       <NavLink
@@ -26,22 +26,22 @@ const UserRoutes = () => {
         </span>
       </NavLink>
       <NavLink
-        className="p-2 hover:bg-[#333A48] text-white m-3"
+        className="p-2 hover:bg-[#333A48]  mx-1 text-[13px]"
         to="/dashboard/participatedContest">
         participated contests
       </NavLink>
       <NavLink
-        className="p-2 hover:bg-[#333A48] text-white m-3"
+        className="p-2 hover:bg-[#333A48]  mx-1 text-[13px]"
         to="/dashboard/submissionDetails">
         submission details
       </NavLink>
       <NavLink
-        className="p-2 hover:bg-[#333A48] text-white m-3"
+        className="p-2 hover:bg-[#333A48]  mx-1 text-[13px]"
         to="/dashboard/winningContests">
         My wining contests
       </NavLink>
       <NavLink
-        className="p-2 hover:bg-[#333A48] text-white m-3"
+        className="p-2 hover:bg-[#333A48]  mx-1 text-[13px]"
         to="/dashboard/UpcomingContests">
         Upcoming contests
       </NavLink>

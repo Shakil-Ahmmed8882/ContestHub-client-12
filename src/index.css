@@ -9,7 +9,9 @@ body{
 }
 
 a.active{
-      background: #615BF1!important;
+      color: #615BF1!important;
+      background-color: transparent !important;
+      font-weight: bold;
 }
 
 .black-bg{
