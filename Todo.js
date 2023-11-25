@@ -11,7 +11,8 @@
  -----------------------------
  * user dashboard access  
  ----------------------------
-   create dashboard route for 3 roles user, admin, contest_creator
+  create dashboard route for 3 roles user, admin, contest_creator
+  Show contest in tav view 
  * TODO:Make the route secure and make sure user get the route they supposed ot get
  * 
  *

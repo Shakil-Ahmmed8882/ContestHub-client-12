@@ -1,7 +1,9 @@
 import Navbar from "../Components/Header/Navbar";
 
 const Home = () => {
-  return ('home');
+  return (
+    'home'
+  );
 };
 
 export default Home;
