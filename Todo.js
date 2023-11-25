@@ -14,8 +14,11 @@
   create dashboard route for 3 roles user, admin, contest_creator
   Show contest in tav view 
   Show single contest redirecting by detail button 
- * TODO:Make the route secure and make sure user get the route they supposed ot get
- * 
+
+  make the dynamic timer to calculate contest deadline
+ * TODO: Make the route secure and make sure user get the route they supposed ot get
+ * TODO: Create payment page 
+ *  
  *
     
  */
