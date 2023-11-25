@@ -44,14 +44,14 @@
         }
       },
       {
-        "name": "Grace",
-        "email": "grace@example.com",
-        "password": "hashed_password",
+        "name": "Water pani",
+        "email": "waterPani@gmail.com",
+        "password": "waterPani",
         "photoURL": "url_to_profile_picture",
         "role": "user",
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
-          "wonContests": []
+          "wonContests": ["6561ee5a1e674fe582bbbc2a","6561ee5a1e674fe582bbbc29","6561ee5a1e674fe582bbbc28"]
         }
       }
     ]

@@ -19,12 +19,15 @@
 
   
   -------------------------------
-  Payment
+            Payment
   -------------------------------
   Create payment page 
   Add and set up the stripe with api key
  * set up payment and tested in the console 
- *  
- *
+ * TODO: backend stripe payment
+ * TODO: Client side response handling
+ *  create private route & redirect them to their distination  
+ *  store contest in data base
+ * TODO: Payment functionality
     
  */

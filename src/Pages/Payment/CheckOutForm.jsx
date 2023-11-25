@@ -1,13 +1,34 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
+import useSecureApi from '../../Hooks/useSecureApi';
 
 
 const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
   const [error,setError] = useState('')
+  const xios = useSecureApi()
+  const [clientSecret,setClientSecre] = useState('')
+
+  const contestPrice = 300
+    useEffect(() => {
+      if (contestPrice > 0) {
+          xios.post('/create-payment-intent', { prizeMoney: contestPrice })
+              .then(res => {
+                  console.log(res.data.clientSecret);
+                  setClientSecre(res.data.clientSecret);
+              })
+      }
+
+  }, [contestPrice,xios])
+
+
+  console.log('client secret',clientSecret)
+
+
+
 
   const handleSubmit = async (event) => {
     // Block native form submission.
@@ -67,7 +88,7 @@ const CheckoutForm = () => {
       {
             error && <p className='text-red-700'>{error}</p>
       }
-      <button type="submit" className='btn bg-primary text-white' disabled={!stripe}>
+      <button type="submit" className='btn bg-primary text-white' disabled={!stripe || !clientSecret}>
         Pay
       </button>
 

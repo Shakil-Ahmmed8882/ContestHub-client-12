@@ -8,10 +8,10 @@
     "tags": ["Business Contest"],
     "deadline": "2023-12-15",
     "status": "pending",
-    "creatorID": "ObjectId1",
-    "winnerID": null,
+    "creatorID":null,
+    "winnerID":["6562373f1e674fe582bbbc4b","6562373f1e674fe582bbbc49","6562373f1e674fe582bbbc4a"],
     "type": "Business",
-    "participants": [1, 2, 3]
+    "participants":0
   },
   {
     "contestName": "Medical Research Symposium",
@@ -25,7 +25,7 @@
     "creatorID": "ObjectId2",
     "winnerID": "ObjectId5",
     "type": "Medical",
-    "participants": [1, 4, 5]
+    "participants":0
   },
   {
     "contestName": "Article Writing Challenge",
@@ -37,9 +37,9 @@
     "deadline": "2023-11-30",
     "status": "approved",
     "creatorID": "ObjectId3",
-    "winnerID": "ObjectId3",
+    "winnerID": ["6561ee5a1e674fe582bbbc2a","6561ee5a1e674fe582bbbc29","656233251e674fe582bbbc44"],
     "type": "Writing",
-    "participants": [2, 4, 6]
+    "participants":0
   },
   {
     "contestName": "Gaming Tournament",
@@ -53,7 +53,7 @@
     "creatorID": "ObjectId4",
     "winnerID": null,
     "type": "Gaming",
-    "participants": [3, 5, 7]
+    "participants":0
   },
   {
     "contestName": "Tech Hackathon",
@@ -67,7 +67,7 @@
     "creatorID": "ObjectId1",
     "winnerID": null,
     "type": "Tech",
-    "participants": [2, 6, 8]
+    "participants":0
   },
   {
     "contestName": "Design Challenge",
@@ -81,7 +81,7 @@
     "creatorID": "ObjectId5",
     "winnerID": "ObjectId1",
     "type": "Design",
-    "participants": [1, 2, 4]
+    "participants":0
   },
   {
     "contestName": "Coding Competition",
@@ -95,7 +95,7 @@
     "creatorID": "ObjectId2",
     "winnerID": null,
     "type": "Coding",
-    "participants": [3, 5, 7]
+    "participants":0
   },
   {
     "contestName": "Photography Contest",
@@ -109,7 +109,7 @@
     "creatorID": "ObjectId3",
     "winnerID": null,
     "type": "Photography",
-    "participants": [4, 6, 8]
+    "participants":0
   },
   {
     "contestName": "Music Composition Challenge",
@@ -123,7 +123,7 @@
     "creatorID": "ObjectId4",
     "winnerID": null,
     "type": "Music",
-    "participants": [1, 3, 5]
+    "participants":0
   },
   {
     "contestName": "Data Science Olympiad",
@@ -137,6 +137,6 @@
     "creatorID": "ObjectId5",
     "winnerID": null,
     "type": "Data Science",
-    "participants": [2, 4, 6]
+    "participants":0
   }
 ]

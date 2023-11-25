@@ -1,7 +1,6 @@
-
-
 const ParticipationCount = () => {
-      return ( <div className="w-fit rounded-[25px] bg-white p-8 aspect">
+  return (
+    <div className="w-fit rounded-[25px] bg-white p-8 aspect">
       <div className="h-12">
         <svg
           className="h-full fill-white stroke-blue-500"
@@ -9,8 +8,7 @@ const ParticipationCount = () => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
-          stroke="currentColor"
-        >
+          stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -28,7 +26,8 @@ const ParticipationCount = () => {
           Put The Client First
         </p>
       </div>
-    </div>);
+    </div>
+  );
 };
 
 export default ParticipationCount;

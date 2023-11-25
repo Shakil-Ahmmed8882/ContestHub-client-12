@@ -26,7 +26,7 @@ const SignUp = () => {
     event.preventDefault();
     
     const formData = Object.fromEntries(new FormData(event.target).entries());
-    const name = formData.name
+    const name = formData.name 
     const email = formData.email
     const password = formData.password
     const photoURL = formData.photoURL

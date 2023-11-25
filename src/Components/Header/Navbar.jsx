@@ -1,17 +1,19 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { LinksGenerator } from "./LinksGenerator";
 import { linksData } from "./LinkData";
 import Avater from "./Avater";
 import useAuth from "../../Hooks/useAuth";
 const Navbar = () => {
-  const { user, logOut } = useAuth();
-
+  const { user,loading, logOut } = useAuth();
+  const location = useLocation()
+  const isDashboard = location.pathname.includes('dashboard')
   // login and logout link
   const signInLink = (
     <li>
       <NavLink to="/signIn">Sign in</NavLink>
     </li>
   );
+
 
 
   // Setting user profile image dynamically
@@ -51,8 +53,9 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {LinksGenerator(linksData)}
-          {!user && signInLink}
-          {user && <li><Link to='/dashboard'> Dashboard</Link> </li>}
+          {!user ? signInLink:
+          <li><Link to='/dashboard'> Dashboard</Link> </li>
+          }
         </ul>
       </div>
       {/* Profile  */}

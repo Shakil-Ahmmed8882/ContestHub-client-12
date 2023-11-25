@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import useAuth from "../../../Hooks/useAuth";
 import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BsGoogle } from "react-icons/bs";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { ToasMessage } from "../../../Utils/ToastMessage";
@@ -10,8 +10,10 @@ import usePublicApi from "../../../Hooks/usePublicApi";
 
 const SignIn = () => {
   const { signIn,googleSignIn,user} = useAuth();
-
+  const location = useLocation()
   const goTo = useNavigate();
+  const from = location.state?.from?.pathname || "/";
+
   const xiosPublic = usePublicApi()
 
   // Handle sign up
@@ -25,16 +27,18 @@ const SignIn = () => {
 
     signIn(email, password).then((response) => {
       ToasMessage("You have successfully signed In");
-      goTo("/");
+      goTo(from, { replace: true });
     })
     .catch(err => ToastError(err.message.toString()))
 };
+
+console.log(user?.displayName)
 
   const handleMedia = (media) => {
     media().then(() => {
       // Letting the user know success 
       ToasMessage("You have successfully signed in with google");
-      goTo('/')
+      goTo(from, { replace: true });
         
       const userInfo = {
         name:user?.displayName,
@@ -48,10 +52,9 @@ const SignIn = () => {
         }
       }
        
-      
       xiosPublic.post(`createUser?email=${user?.email}`,userInfo)
       .then(res => {
-       if(res.data.insertId){
+        if(res.data.insertId){
         console.log({success:true})
        }
       })

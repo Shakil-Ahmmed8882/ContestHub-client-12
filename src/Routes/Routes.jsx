@@ -12,6 +12,7 @@ import Profile from "../Pages/Dashboard/User/Profile";
 import ParticipatedContests from "../Pages/Dashboard/User/ParticipatedContests";
 import ContestDetails from "../Pages/Contests/contestDetails";
 import Payment from "../Pages/Payment/Payment";
+import PrivateRoute from "../Components/Ui/Private/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -28,10 +29,10 @@ export const router = createBrowserRouter([
       },
       {
         path: "/contest/:id",
-        element: <ContestDetails></ContestDetails>,
+        element:<PrivateRoute><ContestDetails></ContestDetails></PrivateRoute>,
       },
       {
-        path: "/payment",
+        path: "/payment/:id",
         element: <Payment></Payment>,
       },
     ],
