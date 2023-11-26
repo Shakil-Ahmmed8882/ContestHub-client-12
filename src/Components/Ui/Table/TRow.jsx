@@ -47,7 +47,7 @@ const TRow = ({setRefetch, tItem, Refetch }) => {
         <div className="flex-shrink-0 h-10 w-10">
           <img
             className="h-10 w-10 rounded-full"
-            src={!photoURL.slice(0,3) == 'url'?photoURL:'https://i.pravatar.cc/150?img=1'}
+            src={photoURL?photoURL:'https://i.pravatar.cc/150?img=1'}
             alt=""
           />
         </div>

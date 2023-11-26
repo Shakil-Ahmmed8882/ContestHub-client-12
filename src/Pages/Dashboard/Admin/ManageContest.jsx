@@ -2,21 +2,32 @@ import useGetOpenData from "../../../Hooks/useGetOpenData";
 import Spinner from "../../../Shared/Spinner";
 import DataTable from "../../../Components/Ui/Table/DataTable";
 import { useState } from "react";
+import Thead from "./Thead";
+import TRow from "./Trow";
 
 const ManageContest = () => {
-  const [Reftech,setRefetch] =  useState(false)
-  const { data, isLoading,refetch } = useGetOpenData(`contests`, Reftech);
+  const [Reftech, setRefetch] = useState(false);
+  const { data, isLoading, refetch } = useGetOpenData(`contests`, Reftech);
 
- refetch()
+  refetch();
 
-  
   if (isLoading) return <Spinner></Spinner>;
-  console.log(data)
 
   return (
-    <div className="">
-      
-    </div>
+    <table className=" min-w-full mx-auto divide-y divide-gray-200 overflow-x-auto">
+      <Thead></Thead>
+      <tbody className="bg-white divide-y divide-gray-200">
+        {data?.map((item) => (
+          <TRow
+            key={item._id}
+            Refetch={Reftech}
+            setRefetch={setRefetch}
+            tItem={item}></TRow>
+        ))}
+
+        {/* More rows... */}
+      </tbody>
+    </table>
   );
 };
 
