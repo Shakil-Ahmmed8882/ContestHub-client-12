@@ -12,6 +12,7 @@ import useAuth from "../../../Hooks/useAuth";
 import Spinner from "../../../Shared/Spinner";
 import { ToasMessage } from "../../../Utils/ToastMessage";
 import { useNavigate } from "react-router-dom";
+import usePublicApi from "../../../Hooks/usePublicApi";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -31,12 +32,15 @@ const tags = [
   "Gaming",
 ];
 
-const AddContest = () => {
+// imgbb credentials
+const IMAGE_HOSTING_KEY = import.meta.env.VITE_IMAGE_HOSTING_KEY;
+const IMAGE_HOSTING_API = `https://api.imgbb.com/1/upload?key=${IMAGE_HOSTING_KEY}`;
 
-//  state management
-      const [contestData, setContestData] = useState({
+const AddContest = () => {
+  //  state management
+  const [contestData, setContestData] = useState({
     contestName: "",
-    image: "",
+    image: null,
     description: "",
     prizeMoney: "",
     taskSubmissionInstructions: "",
@@ -45,16 +49,15 @@ const AddContest = () => {
     status: "pending",
     winnerID: [],
     type: "Medical",
-    participants: []
+    participants: [],
   });
-  const {user,loading} = useAuth()    
-  const goTo = useNavigate()
+  const { user, loading } = useAuth();
+  const goTo = useNavigate();
+  const xiosPublic = usePublicApi();
   //Secure api instance
   const xiosSecure = useSecureApi();
-  
-  if(loading) return <Spinner></Spinner>
 
-
+  if (loading) return <Spinner></Spinner>;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -64,12 +67,50 @@ const AddContest = () => {
     });
   };
 
+
+// Handling event to upload image in imagebb
+  const handleChooseImage = async (event) => {
+
+   // Getting the selected file
+    const file = event.target.files[0]; 
+    if (file) {
+      try {
+        const formData = new FormData();
+        formData.append("image", file);
+
+        const res = await fetch(IMAGE_HOSTING_API, {
+          method: "POST",
+          body: formData,
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          console.log("Image uploaded:", data);
+
+          // Update the state with the URL or any other returned data as needed
+          setContestData({
+            ...contestData,
+            image: data.data.url,
+          });
+        } else {
+          console.error("Failed to upload image");
+        }
+      } catch (error) {
+        console.error("Error uploading image:", error);
+      }
+    }
+  };
+
+
+// tags value setting
   const handleTagsChange = (event) => {
     setContestData({
       ...contestData,
       tags: event.target.value,
     });
   };
+
+//retriving deadline from.
   const handleDeadlineChange = (event) => {
     setContestData({
       ...contestData,
@@ -77,15 +118,20 @@ const AddContest = () => {
     });
   };
 
-  const handleSubmit = async(event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
     // sending the contest data to the database
-    const res = await xiosSecure.post(`creatContest?email=${user?.email}`,contestData)
-    if(res.data.insertedId){
-      ToasMessage('Added')
-      goTo('/dashboard/createContest')
+    const res = await xiosSecure.post(
+      `creatContest?email=${user?.email}`,
+      contestData
+    );
+    if (res.data.insertedId) {
+      ToasMessage("Added");
+      goTo("/dashboard/createContest");
     }
 
+//     console.log(contestData)
   };
 
   return (
@@ -103,13 +149,13 @@ const AddContest = () => {
                 value={contestData.contestName}
                 onChange={handleChange}
               />
+
               <input
-                type="text"
-                name="image"
-                className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                 placeholder="Image *"
-                value={contestData.image}
-                onChange={handleChange}
+                name="image"
+                onChange={handleChooseImage}
+                type="file"
+                className="file-input mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm file-input-bordered file-input-primary  max-w-xs"
               />
             </div>
             <input

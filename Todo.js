@@ -96,11 +96,22 @@
  * install jwt
  *  create secret key
  *  send it to the client
- * TODO: recieve from the client and set to the local storage
- * TODO: set up axios header to send in every secure api request
- * TODO: recieve from the reqest and split 
- * TODO: get the token and verify
+ *  recieve from the client and set to the local storage
+ *  set up axios header to send in every secure api request
+ *  recieve from the reqest and split from the backend
+ *  get the token and verify
  * TODO: 
+ * TODO: 
+ * TODO: 
+ * ----------------------------
+       upload image 
+ ----------------------------
+ * TODO: get image hosting key 
+ * TODO: merge it with image hosting api
+ * TODO: 
+ * TODO: 
+ * 
+ * 
  * 
  * 
  * 
