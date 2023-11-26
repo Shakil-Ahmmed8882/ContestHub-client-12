@@ -10,7 +10,8 @@
     "status": "pending",
     "winnerID":["6562373f1e674fe582bbbc4b","6562373f1e674fe582bbbc49","6562373f1e674fe582bbbc4a"],
     "type": "Business",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   },
   {
     "contestName": "Medical Research Symposium",
@@ -23,7 +24,14 @@
     "status": "approved",
     "winnerID": "ObjectId5",
     "type": "Medical",
-    "participants":0
+    "creatorID":"6563571e5031084f2d4ae05b",
+    "participants":[
+      "user1@example.com",
+      "test.user2@testdomain.com",
+      "another.email@gmail.com",
+      "example.email@emailprovider.com",
+      "my.email@customdomain.net"
+    ]
   },
   {
     "contestName": "Article Writing Challenge",
@@ -36,7 +44,14 @@
     "status": "approved",
     "winnerID": ["6561ee5a1e674fe582bbbc2a","6561ee5a1e674fe582bbbc29","656233251e674fe582bbbc44"],
     "type": "Writing",
-    "participants":0
+    "creatorID":"6563571e5031084f2d4ae05b",
+    "participants": [
+      "john.doe@example.com",
+      "jane_smith@testdomain.com",
+      "emailtest123@gmail.com",
+      "user@emailprovider.com",
+      "custom.email@customdomain.net"
+    ]
   },
   {
     "contestName": "Gaming Tournament",
@@ -49,7 +64,8 @@
     "status": "rejected",
     "winnerID": null,
     "type": "Gaming",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   },
   {
     "contestName": "Tech Hackathon",
@@ -62,7 +78,15 @@
     "status": "pending",
     "winnerID": null,
     "type": "Tech",
-    "participants":0
+    "creatorID":"6563571e5031084f2d4ae05b",
+    
+    "participants": [
+      "testuser@example.com",
+      "user123@testdomain.com",
+      "email.testing@gmail.com",
+      "sample.email@emailprovider.com",
+      "mail@customdomain.net"
+    ]
   },
   {
     "contestName": "Design Challenge",
@@ -75,7 +99,8 @@
     "status": "approved",
     "winnerID": "ObjectId1",
     "type": "Design",
-    "participants":0
+    "creatorID":"6563571e5031084f2d4ae05b",
+    "participants":[]
   },
   {
     "contestName": "Coding Competition",
@@ -88,7 +113,8 @@
     "status": "pending",
     "winnerID": null,
     "type": "Coding",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   },
   {
     "contestName": "Photography Contest",
@@ -101,7 +127,8 @@
     "status": "approved",
     "winnerID": null,
     "type": "Photography",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   },
   {
     "contestName": "Music Composition Challenge",
@@ -114,7 +141,8 @@
     "status": "pending",
     "winnerID": null,
     "type": "Music",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   },
   {
     "contestName": "Data Science Olympiad",
@@ -127,6 +155,7 @@
     "status": "pending",
     "winnerID": null,
     "type": "Data Science",
-    "participants":0
+    "creatorID":"",
+    "participants":[]
   }
 ]

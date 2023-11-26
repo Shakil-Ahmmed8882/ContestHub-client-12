@@ -8,6 +8,12 @@
  -Make the login and user-profile conditional 
  -Replace user profile image dynamically     
 
+ ----------------------------
+   Register or google signin
+ ----------------------------
+ TODO: compile object with user info
+ TODO: store it to the database (userCollecition)
+
  -----------------------------
  * user dashboard access  
  ----------------------------
@@ -34,6 +40,11 @@
  *  install chart to show data
  *  store the contest id in user attemptedContest:[contestId,contestId]
  * 
+ * --------------------
+ *     user D
+ * --------------------
+ *  TODO: Implement a sorting feature to show My upcoming Contests to the use
+ *  TODO: My profile > chart > winning page > 
  * --------------------
  *     Admin panel
  * --------------------
@@ -73,7 +84,10 @@
  * ---------------------------
  * Contest submitted page
  * --------------------------
- * TODO: load the data were submitted
+ * : send the email of participants to find
+ * : push them in db array of participants
+ * : load those participants clicking each contest 
+ * : show those paritipants info in table format
  * TODO:
  * TODO:
  * TODO:

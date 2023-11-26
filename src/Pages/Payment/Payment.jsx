@@ -39,7 +39,7 @@ const Payment = () => {
   const {user} = useAuth()
 
   const handlePayment = async() => {
-    const res = await xios.patch('participateContest',{id:id,userEmail:user?.email})
+    const res = await xios.post('participateContest',{id:id,userEmail:user?.email})
     if(res.data.modifiedCount > 0){
       ToasMessage("Registered")
     } else{
@@ -114,7 +114,7 @@ const Payment = () => {
                         <a
                           href="#"
                           className="bg-white text-indigo-600 hover:bg-indigo-50 mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full">
-                          Buy Starter
+                          fy Starter
                         </a>
                       </div>
                     </div>
@@ -198,7 +198,7 @@ const Payment = () => {
                         <button onClick={()=> handlePayment()}
                           href="#"
                           className="bg-indigo-600 text-white hover:bg-indigo-700 mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full">
-                          Buy Scale
+                          Participate
                         </button>
                       </div>
                     </div>

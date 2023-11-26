@@ -17,8 +17,8 @@ import ManageUser from "../Pages/Dashboard/Admin/ManageUser";
 import ManageContest from "../Pages/Dashboard/Admin/ManageContest";
 import AddContest from "../Pages/Dashboard/Contest_Creator/AddContest";
 import MyCreatedContests from "../Components/Ui/Form/MyCreatedContests";
-import MySubmittedPage from "../Components/Ui/Form/MySubmittedPage";
 import EditContest from "../Pages/Dashboard/Contest_Creator/EditContest";
+import MySubmittedPaage from "../Pages/Dashboard/Contest_Creator/MySubmittedPaage";
 
 export const router = createBrowserRouter([
   {
@@ -98,7 +98,7 @@ export const router = createBrowserRouter([
       },
       {
         path:"MySubmittedPage/:id",
-        element:<MySubmittedPage></MySubmittedPage>
+        element:<MySubmittedPaage></MySubmittedPaage>
       },
     ],
   },

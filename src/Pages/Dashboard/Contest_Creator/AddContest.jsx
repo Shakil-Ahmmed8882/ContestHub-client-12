@@ -11,6 +11,7 @@ import useSecureApi from "../../../Hooks/useSecureApi";
 import useAuth from "../../../Hooks/useAuth";
 import Spinner from "../../../Shared/Spinner";
 import { ToasMessage } from "../../../Utils/ToastMessage";
+import { useNavigate } from "react-router-dom";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -44,9 +45,10 @@ const AddContest = () => {
     status: "pending",
     winnerID: [],
     type: "Medical",
-    participants: 0,
+    participants: []
   });
   const {user,loading} = useAuth()    
+  const goTo = useNavigate()
   //Secure api instance
   const xiosSecure = useSecureApi();
   
@@ -82,6 +84,7 @@ const AddContest = () => {
     const res = await xiosSecure.post(`creatContest?email=${user?.email}`,contestData)
     if(res.data.insertedId){
       ToasMessage('Added')
+      goTo('/dashboard/createContest')
     }
 
   };
