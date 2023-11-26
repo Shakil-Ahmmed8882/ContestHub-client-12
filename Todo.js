@@ -56,7 +56,7 @@
  *  set up the routes
  *  add contest form and get the value 
  * TODO: apload image to the image bb and get ther url
- * TODO: send the data to the badkend & receive
- * TODO: store info to the database
+ *  send the data to the badkend & receive
+ *  store info to the database
     
  */

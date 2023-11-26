@@ -7,6 +7,9 @@ import FormControl from "@mui/material/FormControl";
 import ListItemText from "@mui/material/ListItemText";
 import Select from "@mui/material/Select";
 import Checkbox from "@mui/material/Checkbox";
+import useSecureApi from "../../../Hooks/useSecureApi";
+import useAuth from "../../../Hooks/useAuth";
+import Spinner from "../../../Shared/Spinner";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -27,7 +30,9 @@ const tags = [
 ];
 
 const AddContest = () => {
-  const [formData, setFormData] = useState({
+
+//  state management
+      const [contestData, setContestData] = useState({
     contestName: "",
     image: "",
     description: "",
@@ -36,39 +41,46 @@ const AddContest = () => {
     tags: [],
     deadline: "",
     status: "pending",
-    creatorID: "id",
     winnerID: [],
     type: "Medical",
     participants: 0,
   });
+  const {user,loading} = useAuth()    
+  //Secure api instance
+  const xiosSecure = useSecureApi();
+  
+  if(loading) return <Spinner></Spinner>
+
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormData({
-      ...formData,
+    setContestData({
+      ...contestData,
       [name]: value,
     });
   };
 
   const handleTagsChange = (event) => {
-    setFormData({
-      ...formData,
+    setContestData({
+      ...contestData,
       tags: event.target.value,
     });
   };
-
   const handleDeadlineChange = (event) => {
-    setFormData({
-      ...formData,
+    setContestData({
+      ...contestData,
       deadline: event.target.value,
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
-    // Handle form submission with formData object
-    console.log("Form Data:", formData);
-    // Add logic for submitting the form data to the backend
+      console.log(contestData)
+    // sending the contest data to the database
+    const res = await xiosSecure.post(`creatContest?email=${user?.email}`,contestData)
+    console.log(res.data)
+
   };
 
   return (
@@ -83,7 +95,7 @@ const AddContest = () => {
                 name="contestName"
                 className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                 placeholder="Contest Name *"
-                value={formData.contestName}
+                value={contestData.contestName}
                 onChange={handleChange}
               />
               <input
@@ -91,7 +103,7 @@ const AddContest = () => {
                 name="image"
                 className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                 placeholder="Image *"
-                value={formData.image}
+                value={contestData.image}
                 onChange={handleChange}
               />
             </div>
@@ -100,7 +112,7 @@ const AddContest = () => {
               name="prizeMoney"
               className="mt-7 block w-full rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
               placeholder="prizeMoney *"
-              value={formData.prizeMoney}
+              value={contestData.prizeMoney}
               onChange={handleChange}
             />
             <div className="my-6 flex gap-4">
@@ -110,15 +122,14 @@ const AddContest = () => {
                   labelId="demo-multiple-checkbox-label"
                   id="demo-multiple-checkbox"
                   multiple
-                  value={formData.tags}
+                  value={contestData.tags}
                   onChange={handleTagsChange}
                   input={<OutlinedInput label="Tag" />}
                   renderValue={(selected) => selected.join(", ")}
-                  MenuProps={MenuProps}
-                >
+                  MenuProps={MenuProps}>
                   {tags.map((name) => (
                     <MenuItem key={name} value={name}>
-                      <Checkbox checked={formData.tags.indexOf(name) > -1} />
+                      <Checkbox checked={contestData.tags.indexOf(name) > -1} />
                       <ListItemText primary={name} />
                     </MenuItem>
                   ))}
@@ -130,11 +141,11 @@ const AddContest = () => {
                   type="date"
                   id="contestDeadline"
                   name="deadline"
-                  value={formData.deadline}
+                  value={contestData.deadline}
                   onChange={handleDeadlineChange}
                 />
-                {formData.deadline && (
-                  <p>Selected Deadline: {formData.deadline}</p>
+                {contestData.deadline && (
+                  <p>Selected Deadline: {contestData.deadline}</p>
                 )}
               </div>
             </div>
@@ -146,7 +157,7 @@ const AddContest = () => {
                 rows={10}
                 className="mb-10 h-28 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-black"
                 placeholder="Instructions"
-                value={formData.taskSubmissionInstructions}
+                value={contestData.taskSubmissionInstructions}
                 onChange={handleChange}
               />
             </div>
@@ -158,15 +169,14 @@ const AddContest = () => {
                 rows={10}
                 className="mb-10 h-28 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-black"
                 placeholder="Contest description"
-                value={formData.description}
+                value={contestData.description}
                 onChange={handleChange}
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="cursor-pointer rounded-lg bg-primary px-8 py-5 text-sm font-semibold text-white"
-              >
+                className="cursor-pointer rounded-lg bg-primary px-8 py-5 text-sm font-semibold text-white">
                 Book Appointment
               </button>
             </div>
@@ -177,4 +187,4 @@ const AddContest = () => {
   );
 };
 
-export default AddContest; 
+export default AddContest;
