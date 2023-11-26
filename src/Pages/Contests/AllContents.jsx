@@ -6,6 +6,7 @@ import useGetOpenData from "../../Hooks/useGetOpenData";
 import TabContents from "../TabContents";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import CardWithHoverEffect from "../Demo/CardWithHoverEffect";
 
 export default function AllContests() {
   const [value, setValue] = React.useState(0);
@@ -41,7 +42,6 @@ export default function AllContests() {
         maxWidth: { lg: 6000, sm: 480, p: 8 },
         bgcolor: "background.paper",
         paddingBottom: 4,
-        paddingLeft: 2,
       }}>
       <Tabs
         value={value}
@@ -61,7 +61,7 @@ export default function AllContests() {
         <Tab label="Music" />
         <Tab label="Data Science" />
       </Tabs>
-      <Grid
+      {/* <Grid
         container
         gridColumn={4}
         justifyContent="center"
@@ -79,7 +79,9 @@ export default function AllContests() {
             </Grid>
           );
         })}
-      </Grid>
+      </Grid> */}
+      
+        {data?.map(item => <CardWithHoverEffect key={item._id} contestItem={item}></CardWithHoverEffect> )}
       <div className="text-center">
       <Link className="btn bg-primary text-white mt-8">See add contests</Link>
       </div>

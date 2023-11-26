@@ -1,3 +1,5 @@
+import BarChat from "../../../Components/Ui/Chart/BarChat";
+import ChartComponent from "../../../Components/Ui/Chart/MixBarChart";
 import useAuth from "../../../Hooks/useAuth";
 import ParticipationCount from "../../../Layout/ParticipationCount";
 import AvaterGroup from "./AvaterGroup";
@@ -18,10 +20,8 @@ const Profile = () => {
         <p>Here is what’s happening with your projects today:</p>
       </div>
       <ParticipationCount></ParticipationCount>
-
-      
-      
-      
+      <BarChat></BarChat>
+      <ChartComponent></ChartComponent>
       
       <AvaterGroup img={img}></AvaterGroup>
       <h1 className="text-8xl font-bold">Profile</h1>

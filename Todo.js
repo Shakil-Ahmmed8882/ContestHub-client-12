@@ -31,7 +31,13 @@
  * TODO: Payment functionality
  * TODO:Make admin route secure
  * Add manage user and contest page
- * TODO install chart to show data
+ *  install chart to show data
+ *  store the contest id in user attemptedContest:[contestId,contestId]
  * 
+ * --------------------
+ *     Admin panel
+ * --------------------
+ * *Manage usser
+ * toggle role and path it in data base
     
  */

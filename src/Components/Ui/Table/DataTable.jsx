@@ -1,6 +1,8 @@
 import TRow from "./TRow";
 
 const DataTable = ({data}) => {
+  
+  
   return (
     <div>
       <table className="min-w-full divide-y divide-gray-200 overflow-x-auto">

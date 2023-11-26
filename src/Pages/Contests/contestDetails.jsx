@@ -6,6 +6,7 @@ import Spinner from "../../Shared/Spinner";
 
 const ContestDetails = () => {
   const { id } = useParams();
+
   const { data, isLoading } = useGetOpenData(`contest?id=${id}`);
   const [timeRemaining, setTimeRemaining] = useState('');
   const contest = data?.contest
@@ -29,11 +30,6 @@ const ContestDetails = () => {
   if (!contest) {
     return <div>Contest not found</div>;
   }
-
-  console.log(timeRemaining.expired)
-
-
-
 
   const {
     _id,
@@ -76,7 +72,7 @@ const ContestDetails = () => {
               </div>
               <div className="w-1/2 px-2">
                 <Link
-                  to={`/payment/${_id}`}
+                  to={`/payment/${id}`}
                   className="w-full btn bg-primary dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-[#5c47ff] dark:hover:bg-gray-700">
                   Register a contest
                 </Link>

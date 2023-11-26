@@ -13,8 +13,8 @@ import ParticipatedContests from "../Pages/Dashboard/User/ParticipatedContests";
 import ContestDetails from "../Pages/Contests/contestDetails";
 import Payment from "../Pages/Payment/Payment";
 import PrivateRoute from "../Components/Ui/Private/PrivateRoute";
-import ManageUser from "../Components/Ui/Private/ManageUser";
-import ManageContest from "../Components/Ui/Private/ManageContest";
+import ManageUser from "../Pages/Dashboard/Admin/ManageUser";
+import ManageContest from "../Pages/Dashboard/Admin/ManageContest";
 
 export const router = createBrowserRouter([
   {
@@ -31,7 +31,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/contest/:id",
-        element:<PrivateRoute><ContestDetails></ContestDetails></PrivateRoute>,
+        element: (
+          <PrivateRoute>
+            <ContestDetails></ContestDetails>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/payment/:id",
@@ -68,13 +72,13 @@ export const router = createBrowserRouter([
 
       // Admin
       {
-        path:'manageUser',
-        element:<ManageUser></ManageUser>
+        path: "manageUser",
+        element: <ManageUser></ManageUser>,
       },
       {
-        path:'manageContest',
-        element:<ManageContest></ManageContest>
-      }
+        path: "manageContest",
+        element: <ManageContest></ManageContest>,
+      },
     ],
   },
 

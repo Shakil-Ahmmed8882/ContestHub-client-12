@@ -30,15 +30,20 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import usePublicApi from "../../Hooks/usePublicApi";
 import { ToasMessage } from "../../Utils/ToastMessage";
+import useAuth from "../../Hooks/useAuth";
+import { ToastError } from "../../Utils/ToastError";
 
 const Payment = () => {
   const {id} = useParams()
   const xios = usePublicApi()
+  const {user} = useAuth()
 
   const handlePayment = async() => {
-    const res = await xios.patch('participateContest',{id:id})
+    const res = await xios.patch('participateContest',{id:id,userEmail:user?.email})
     if(res.data.modifiedCount > 0){
       ToasMessage("Registered")
+    } else{
+      ToastError(res.data.error)
     }
 
   }
