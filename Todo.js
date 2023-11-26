@@ -88,10 +88,19 @@
  * : push them in db array of participants
  * : load those participants clicking each contest 
  * : show those paritipants info in table format
- * TODO:
- * TODO:
- * TODO:
- * TODO:
+ * 
+ //  
+ * ---------------------------
+ *    JSON WEB TOKEN
+ * --------------------------
+ * install jwt
+ *  create secret key
+ *  send it to the client
+ * TODO: recieve from the client and set to the local storage
+ * TODO: set up axios header to send in every secure api request
+ * TODO: recieve from the reqest and split 
+ * TODO: get the token and verify
+ * TODO: 
  * 
  * 
  * 

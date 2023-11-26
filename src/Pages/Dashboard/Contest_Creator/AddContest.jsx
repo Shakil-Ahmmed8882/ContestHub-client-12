@@ -79,7 +79,6 @@ const AddContest = () => {
 
   const handleSubmit = async(event) => {
     event.preventDefault();
-      console.log(contestData)
     // sending the contest data to the database
     const res = await xiosSecure.post(`creatContest?email=${user?.email}`,contestData)
     if(res.data.insertedId){
