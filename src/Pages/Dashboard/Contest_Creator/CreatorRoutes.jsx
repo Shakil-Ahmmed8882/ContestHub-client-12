@@ -34,11 +34,7 @@ const CreatorRoutes = () => {
         to="/dashboard/createContest">
         Created contests
       </NavLink>
-      <NavLink
-        className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/submittedPage">
-        Contest submitted page
-      </NavLink>
+   
     
     </div>
   );

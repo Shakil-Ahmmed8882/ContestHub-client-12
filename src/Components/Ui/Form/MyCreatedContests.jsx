@@ -12,14 +12,12 @@ import ContestTable from "./Table";
 const MyCreatedContests = () => {
   const { user, loading } = useAuth();
 
-  const { data, isLoading } = useGetSecureData(
+  const { data, isLoading ,refetch} = useGetSecureData(
     `/contests/${user?.email}`,
     user?.email
   );
 
   if (isLoading) return <Spinner></Spinner>;
-
-  console.log(data)
 
   return (
     <div>
@@ -29,7 +27,7 @@ const MyCreatedContests = () => {
           <DeleteIcon />
         </IconButton>
       </Tooltip> */}
-      <ContestTable rows={data}></ContestTable>
+      <ContestTable rows={data} refetch={refetch}></ContestTable>
     </div>
   );
 };

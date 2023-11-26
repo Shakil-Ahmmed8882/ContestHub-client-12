@@ -65,15 +65,15 @@
  * My created contests
  * ----------------------
  *: Load all the contest filtering by creator id
- * TODO: Show in tabular form
- * TODO: update and delete button
- * TODO: write logic to remove update and edit option after admin approves (pending.. => ap)
- * TODO: crate see submission button for each contest 
+ * : Show in tabular form
+ * : update and delete button
+ *  write logic to remove update and edit option after admin approves (pending.. => ap)
+ * crate see submission button for each contest 
  * 
  * ---------------------------
  * Contest submitted page
  * --------------------------
- * TODO:
+ * TODO: load the data were submitted
  * TODO:
  * TODO:
  * TODO:

@@ -10,6 +10,7 @@ import Checkbox from "@mui/material/Checkbox";
 import useSecureApi from "../../../Hooks/useSecureApi";
 import useAuth from "../../../Hooks/useAuth";
 import Spinner from "../../../Shared/Spinner";
+import { ToasMessage } from "../../../Utils/ToastMessage";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -79,7 +80,9 @@ const AddContest = () => {
       console.log(contestData)
     // sending the contest data to the database
     const res = await xiosSecure.post(`creatContest?email=${user?.email}`,contestData)
-    console.log(res.data)
+    if(res.data.insertedId){
+      ToasMessage('Added')
+    }
 
   };
 

@@ -18,6 +18,7 @@ import ManageContest from "../Pages/Dashboard/Admin/ManageContest";
 import AddContest from "../Pages/Dashboard/Contest_Creator/AddContest";
 import MyCreatedContests from "../Components/Ui/Form/MyCreatedContests";
 import MySubmittedPage from "../Components/Ui/Form/MySubmittedPage";
+import EditContest from "../Pages/Dashboard/Contest_Creator/EditContest";
 
 export const router = createBrowserRouter([
   {
@@ -92,7 +93,11 @@ export const router = createBrowserRouter([
         element:<MyCreatedContests></MyCreatedContests>
       },
       {
-        path:"submittedPage",
+        path:"edit/:id",
+        element:<EditContest></EditContest>
+      },
+      {
+        path:"MySubmittedPage/:id",
         element:<MySubmittedPage></MySubmittedPage>
       },
     ],
