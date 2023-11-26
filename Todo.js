@@ -45,6 +45,8 @@
  *  Fetch all contest data
  *  Show all contest data in table format with 2 delete and update button
  *   delete contest
- *  TODO: confirm contest
+ *   recieve id from the backend to confirm a contest
+ *   confirm contest
+ * 
     
  */

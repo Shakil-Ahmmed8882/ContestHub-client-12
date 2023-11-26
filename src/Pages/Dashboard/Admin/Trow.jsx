@@ -23,6 +23,14 @@ const TRow = ({setRefetch, tItem, Refetch }) => {
       setRefetch(!Refetch)
     }
   };
+  
+  const handleAcceptContest = async () => {
+    const res = await xiosSecure.patch(`contest/?id=${_id}`)
+    if(res.data.modifiedCount > 0){
+      ToasMessage('Approved')
+      setRefetch(!Refetch)
+    }
+  };
 
 
   return (
@@ -53,20 +61,22 @@ const TRow = ({setRefetch, tItem, Refetch }) => {
       <div className="text-sm text-gray-500">Optimization</div>
     </td>
     <td className="px-6 py-4 whitespace-nowrap ">
-      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-        {status}
-      </span>
+    <span className={` flex items-center gap-2`}>
+  {status}
+  <div className={`badge badge-sm  ${status === 'approved' ? 'bg-green-300' : status === 'rejected' ? 'bg-red-500' : 'bg-[#e4b357]'} inline-flex text-xs leading-5 font-semibold rounded-full text-white`}></div>
+
+</span>
     </td>
   
     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
       {contestName}
     </td>
     <td className="px-6 py-4 whitespace-nowrap  text-sm font-medium">
+      <button onClick={()=>handleAcceptContest()} href="#" className={`ml-2 ${status == 'approved'?'text-[#605bf149]':'text-primary'} hover:text-red-900`}>
+        confirm
+      </button>
       <button onClick={()=>handleUserDelete()} href="#" className="ml-2 text-red-600 hover:text-red-900">
         Delete
-      </button>
-      <button onClick={()=>handleUserDelete()} href="#" className={`ml-2 ${status == 'approved'?'text-[#605bf149]':'text-primary'} hover:text-red-900`}>
-        confirm
       </button>
     </td>
   </tr>
