@@ -15,8 +15,9 @@ const TRow = ({setRefetch, tItem, Refetch }) => {
 
   
   const handleUserDelete = async () => {
+      
 
-    const res = await xiosSecure.delete(`/user?id=${_id}`)
+    const res = await xiosSecure.delete(`contest/?id=${_id}`)
     if(res.data.deletedCount > 0){
       ToasMessage('Deleted')
       setRefetch(!Refetch)
