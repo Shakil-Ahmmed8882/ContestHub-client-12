@@ -53,6 +53,10 @@
  *    Contest creator
  * -------------------------
  *  craft dashboard layout
- * TODO: set up the routes
+ *  set up the routes
+ *  add contest form and get the value 
+ * TODO: apload image to the image bb and get ther url
+ * TODO: send the data to the badkend & receive
+ * TODO: store info to the database
     
  */
