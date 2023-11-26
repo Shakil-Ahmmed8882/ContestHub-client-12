@@ -1,17 +1,20 @@
 import useGetOpenData from "../../../Hooks/useGetOpenData";
 import Spinner from "../../../Shared/Spinner";
 import DataTable from "../../../Components/Ui/Table/DataTable";
+import { useState } from "react";
 
 const ManageUser = () => {
-  const { data, isLoading } = useGetOpenData(`users`, "manageusers");
+  const [isDelete,setIsDelete] =  useState(false)
+  const { data, isLoading,refetch } = useGetOpenData(`users`, isDelete);
 
-  console.log(data)
+ refetch()
 
+  
   if (isLoading) return <Spinner></Spinner>;
 
   return (
-    <div>
-      <DataTable data={data}></DataTable>
+    <div className="">
+      <DataTable setIsDelete={setIsDelete} isDelete={isDelete} data={data}></DataTable>
     </div>
   );
 };

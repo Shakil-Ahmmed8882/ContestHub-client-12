@@ -39,5 +39,6 @@
  * --------------------
  * *Manage usser
  * toggle role and path it in data base
+ * delete the user
     
  */

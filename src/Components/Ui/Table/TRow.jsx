@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { getRole } from '../../../Utils/getRole';
 import useSecureApi from '../../../Hooks/useSecureApi';
+import { ToasMessage } from '../../../Utils/ToastMessage';
+import { ToastError } from '../../../Utils/ToastError';
 
-const TRow = ({ tItem }) => {
-  const {_id,password,role,participationDetails
+const TRow = ({setIsDelete, tItem,isDelete }) => {
+  const {_id,name,email,role,photoURL
   } = tItem || {};
 
 
-
-
+  
   
   const roles = ['user', 'contest_creator', 'admin'];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -20,24 +21,24 @@ const TRow = ({ tItem }) => {
     const nextIndex = (currentRoleIndex + 1) % roles.length;
     setCurrentRoleIndex(nextIndex);
 
+    // get the role to be applied
     const toggledRole = getRoleByIndex(nextIndex);
     const res = await xiosSecure.patch('role',{role:toggledRole,userId:_id})
-    if(res){
-      console.log('role changed')
+    if(res.data.modifiedCount > 0){
+      ToasMessage(`${name?name:'role'} is ${name?toggledRole:'changed'} now`)
+      setIsDelete(!isDelete)
     }
-
-    // Additional logic if needed based on the toggled role
-    // For example, you can perform actions based on the role here
-    // handleUserActions(toggledRole);
   };
 
-  const handleUserDelete = () => {
-    console.log(_id);
+  const handleUserDelete = async () => {
+
+    const res = await xiosSecure.delete(`/user?id=${_id}`)
+    if(res.data.deletedCount > 0){
+      ToasMessage('Deleted')
+      setIsDelete(!isDelete)
+    }
   };
 
-  const handleEditUser = () => {
-    console.log(_id);
-  };
 
   return (
     <tr>
@@ -46,16 +47,16 @@ const TRow = ({ tItem }) => {
         <div className="flex-shrink-0 h-10 w-10">
           <img
             className="h-10 w-10 rounded-full"
-            src="https://i.pravatar.cc/150?img=1"
+            src={!photoURL.slice(0,3) == 'url'?photoURL:'https://i.pravatar.cc/150?img=1'}
             alt=""
           />
         </div>
         <div className="ml-4">
           <div className="text-sm font-medium text-gray-900">
-            Jane Cooper
+            {name}
           </div>
           <div className="text-sm text-gray-500">
-            jane.cooper@example.com
+            {email}
           </div>
         </div>
       </div>
@@ -73,15 +74,15 @@ const TRow = ({ tItem }) => {
     </td>
     <td onClick={handleToggleRole} className="px-6 py-4 cursor-pointer text-accent whitespace-nowrap">
         {/* Display the current role based on the currentRoleIndex */}
+        <span className='opacity-0 fixed'>
         {getRoleByIndex(currentRoleIndex)}
+        </span>
+        <span>{role}</span>
       </td>
     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-      jane.cooper@example.com
+      {email}
     </td>
     <td className="px-6 py-4 whitespace-nowrap  text-sm font-medium">
-      <buttton onClick={()=>handleEditUser()} href="#" className="text-indigo-600 hover:text-indigo-900">
-        Edit
-      </buttton >
       <button onClick={()=>handleUserDelete()} href="#" className="ml-2 text-red-600 hover:text-red-900">
         Delete
       </button>
