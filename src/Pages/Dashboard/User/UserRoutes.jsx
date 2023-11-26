@@ -4,7 +4,7 @@ const UserRoutes = () => {
   return (
     <div className="flex flex-col justify-center">
       <NavLink className="p-2 hover:bg-[#333A48 m-3" to="/">
-        Home
+        User home
       </NavLink>
       <NavLink
         className="p-2 flex items-center gap-2 black-bg hover:bg-[#333A48] text-white m-3"

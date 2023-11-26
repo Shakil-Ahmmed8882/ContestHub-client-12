@@ -15,6 +15,9 @@ import Payment from "../Pages/Payment/Payment";
 import PrivateRoute from "../Components/Ui/Private/PrivateRoute";
 import ManageUser from "../Pages/Dashboard/Admin/ManageUser";
 import ManageContest from "../Pages/Dashboard/Admin/ManageContest";
+import AddContest from "../Pages/Dashboard/Contest_Creator/AddContest";
+import MyCreatedContests from "../Components/Ui/Form/MyCreatedContests";
+import MySubmittedPage from "../Components/Ui/Form/MySubmittedPage";
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +81,19 @@ export const router = createBrowserRouter([
       {
         path: "manageContest",
         element: <ManageContest></ManageContest>,
+      },
+      //Creator
+      {
+        path:"addContest",
+        element:<AddContest></AddContest>
+      },
+      {
+        path:"createContest",
+        element:<MyCreatedContests></MyCreatedContests>
+      },
+      {
+        path:"submittedPage",
+        element:<MySubmittedPage></MySubmittedPage>
       },
     ],
   },

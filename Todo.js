@@ -48,5 +48,11 @@
  *   recieve id from the backend to confirm a contest
  *   confirm contest
  * 
+ * 
+ * -------------------------
+ *    Contest creator
+ * -------------------------
+ *  craft dashboard layout
+ * TODO: set up the routes
     
  */

@@ -1,10 +1,12 @@
+
+
 import { NavLink } from "react-router-dom";
 
-const AdminRoutes = () => {
+const CreatorRoutes = () => {
   return (
     <div className="flex flex-col justify-center">
       <NavLink className="p-2 hover:bg-[#333A48 m-3" to="/">
-        Admin home
+      Creator Home
       </NavLink>
       <NavLink
         className="p-2 flex items-center gap-2 black-bg hover:bg-[#333A48] text-white m-3"
@@ -24,16 +26,22 @@ const AdminRoutes = () => {
       </NavLink>
       <NavLink
         className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/manageContest">
-        Manage contest
+        to="/dashboard/addContest">
+        Add contest
       </NavLink>
       <NavLink
         className="p-2 hover:text-primary   mx-1 text-[13px]"
-        to="/dashboard/manageUser">
-        Manage user
+        to="/dashboard/createContest">
+        Created contests
       </NavLink>
+      <NavLink
+        className="p-2 hover:text-primary   mx-1 text-[13px]"
+        to="/dashboard/submittedPage">
+        Contest submitted page
+      </NavLink>
+    
     </div>
   );
 };
 
-export default AdminRoutes;
+export default CreatorRoutes;
