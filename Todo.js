@@ -58,5 +58,30 @@
  * TODO: apload image to the image bb and get ther url
  *  send the data to the badkend & receive
  *  store info to the database
-    
+ * 
+ * 
+ * 
+ * ---------------------
+ * My created contests
+ * ----------------------
+ *: Load all the contest filtering by creator id
+ * TODO: Show in tabular form
+ * TODO: update and delete button
+ * TODO: write logic to remove update and edit option after admin approves (pending.. => ap)
+ * TODO: crate see submission button for each contest 
+ * 
+ * ---------------------------
+ * Contest submitted page
+ * --------------------------
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * 
+ * 
+ * 
+ * 
+   
+  
  */
