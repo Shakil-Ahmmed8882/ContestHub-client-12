@@ -4,8 +4,8 @@ import DataTable from "../../../Components/Ui/Table/DataTable";
 import { useState } from "react";
 
 const ManageUser = () => {
-  const [isDelete,setIsDelete] =  useState(false)
-  const { data, isLoading,refetch } = useGetOpenData(`users`, isDelete);
+  const [Reftech,setRefetch] =  useState(false)
+  const { data, isLoading,refetch } = useGetOpenData(`users`, Reftech);
 
  refetch()
 
@@ -14,7 +14,7 @@ const ManageUser = () => {
 
   return (
     <div className="">
-      <DataTable setIsDelete={setIsDelete} isDelete={isDelete} data={data}></DataTable>
+      <DataTable setRefetch={setRefetch} Refetch={Reftech} data={data}></DataTable>
     </div>
   );
 };

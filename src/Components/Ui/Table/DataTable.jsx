@@ -1,7 +1,7 @@
 import Thead from "./THead";
 import TRow from "./TRow";
 
-const DataTable = ({setIsDelete,data,isDelete}) => {
+const DataTable = ({setRefetch,data,Refetch}) => {
   
   
   return (
@@ -10,7 +10,7 @@ const DataTable = ({setIsDelete,data,isDelete}) => {
          <Thead></Thead>
         <tbody className="bg-white divide-y divide-gray-200">
             {
-                  data?.map(item => <TRow key={item._id} isDelete={isDelete} setIsDelete={setIsDelete} tItem={item}></TRow> )
+                  data?.map(item => <TRow key={item._id} Refetch={Refetch} setRefetch={setRefetch} tItem={item}></TRow> )
             }
       
           {/* More rows... */}

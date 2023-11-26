@@ -40,5 +40,10 @@
  * *Manage usser
  * toggle role and path it in data base
  * delete the user
+ * 
+ * *Manage contest
+ *  Fetch all contest data
+ * TODO: Show all contest data in table format with 2 delete and update button
+ * 
     
  */

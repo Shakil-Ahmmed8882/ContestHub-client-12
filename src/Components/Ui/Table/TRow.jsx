@@ -4,7 +4,7 @@ import useSecureApi from '../../../Hooks/useSecureApi';
 import { ToasMessage } from '../../../Utils/ToastMessage';
 import { ToastError } from '../../../Utils/ToastError';
 
-const TRow = ({setIsDelete, tItem,isDelete }) => {
+const TRow = ({setRefetch, tItem, Refetch }) => {
   const {_id,name,email,role,photoURL
   } = tItem || {};
 
@@ -26,7 +26,7 @@ const TRow = ({setIsDelete, tItem,isDelete }) => {
     const res = await xiosSecure.patch('role',{role:toggledRole,userId:_id})
     if(res.data.modifiedCount > 0){
       ToasMessage(`${name?name:'role'} is ${name?toggledRole:'changed'} now`)
-      setIsDelete(!isDelete)
+      setRefetch(!Refetch)
     }
   };
 
@@ -35,7 +35,7 @@ const TRow = ({setIsDelete, tItem,isDelete }) => {
     const res = await xiosSecure.delete(`/user?id=${_id}`)
     if(res.data.deletedCount > 0){
       ToasMessage('Deleted')
-      setIsDelete(!isDelete)
+      setRefetch(!Refetch)
     }
   };
 
