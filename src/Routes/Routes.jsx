@@ -9,7 +9,6 @@ import SubmissionDetails from "../Pages/Dashboard/User/SubmissionDetails";
 import WininingContests from "../Pages/Dashboard/User/WininingContests";
 import UpcomingContests from "../Pages/Dashboard/User/UpcomingContests";
 import Profile from "../Pages/Dashboard/User/Profile";
-import ParticipatedContests from "../Pages/Dashboard/User/ParticipatedContests";
 import ContestDetails from "../Pages/Contests/contestDetails";
 import Payment from "../Pages/Payment/Payment";
 import PrivateRoute from "../Components/Ui/Private/PrivateRoute";
@@ -19,6 +18,7 @@ import AddContest from "../Pages/Dashboard/Contest_Creator/AddContest";
 import MyCreatedContests from "../Components/Ui/Form/MyCreatedContests";
 import EditContest from "../Pages/Dashboard/Contest_Creator/EditContest";
 import MySubmittedPaage from "../Pages/Dashboard/Contest_Creator/MySubmittedPaage";
+import RegisteredContest from "../Pages/Dashboard/User/RegisteredContest";
 
 export const router = createBrowserRouter([
   {
@@ -62,8 +62,8 @@ export const router = createBrowserRouter([
         element: <SubmissionDetails></SubmissionDetails>,
       },
       {
-        path: "participatedContest",
-        element: <ParticipatedContests></ParticipatedContests>,
+        path: "registeredContests",
+        element: <RegisteredContest></RegisteredContest>,
       },
       {
         path: "winningContests",

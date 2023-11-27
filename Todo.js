@@ -215,10 +215,22 @@
       user participated contest
    --------------------------------
    create api route in backend will recive user email
-   *TODO:search the user in collecition with that email
-   *TODO: enter user.particpants 
-   *TODO: map and get all the ids
-   *TODO: now find() all by the ids found in particpand []
-   *TODO: send the found result to client
-   *TODO: recieve the data and show in ui
+   :search the user in collecition with that email
+   : enter user.particpants 
+   : map and get all the ids
+   : now find() all by the ids found in particpand []
+   : send the found result to client
+   : recieve the data and show in ui
+
+
+   ----------------------------
+   user wining contest
+   ---------------------------
+   : send type in the backend (/user/participatedContests/:email/:winning)
+   : recieve form the backend 
+   : reqest to the database and send the found data the client side
+   : recieve the data and display in the
+   *TODO: Design the page awasome way that attract the users 
+   *TODO:
+   *TODO:
  */
