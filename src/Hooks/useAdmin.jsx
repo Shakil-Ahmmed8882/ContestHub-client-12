@@ -6,11 +6,13 @@ const useAdmin = () => {
   const { user } = useAuth();
   const axiosSecure = useSecureApi();
   const { data: isAdmin, isPending: isAdminLoading } = useQuery({
-    queryKey: [user?.email, "isAdmin"],
+    // queryKey: [user?.email, "isAdmin"],
+    queryKey: ["isAdmin"],
     queryFn: async () => {
-      const res = await axiosSecure.get(`/users/admin/${user.email}`);
+      // const res = await axiosSecure.get(`/users/admin/${user.email}`);
+      const res = await axiosSecure.get(`/users/admin/shakilahmmed8882@gmail.com`);
       // console.log(res.data);
-      return res.data?.admin;
+      return res.data?.isAdmin;
     },
   });
   return [isAdmin, isAdminLoading];

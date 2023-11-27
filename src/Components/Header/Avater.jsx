@@ -1,8 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Avater = ({ img }) => {
   const { user, logOut } = useAuth();
+  const goTo = useNavigate()
+
+  const handleSignOut = () => {
+    logOut()
+    .then(()=> goTo('/'))
+  }
+
 
   const signInLink = (
     <li>
@@ -10,9 +17,12 @@ const Avater = ({ img }) => {
     </li>
   );
 
+
+
+
   const logOutLink = (
     <li>
-      <button className="w-32" onClick={() => logOut()}>
+      <button className="w-32" onClick={() => handleSignOut()}>
         Sign out
       </button>
     </li>
@@ -31,8 +41,10 @@ const Avater = ({ img }) => {
         tabIndex={0}
         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
 
-        <li>
-          <a>Item 2</a>
+        <li className="cursor-default">
+          {
+            user?.displayName
+          }
         </li>
         {user ? logOutLink : signInLink}
       </ul>

@@ -1,7 +1,9 @@
+import useAdmin from "../../../Hooks/useAdmin";
 import Welcome from "./Welcome";
 
 const AdminDashboard = () => {
-
+  const xx = useAdmin()
+  
   return (
     <div>
       <div>

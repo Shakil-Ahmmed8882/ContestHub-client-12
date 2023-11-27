@@ -11,6 +11,7 @@ export default {
         secondary: '#yourSecondaryColorValue',
         accentBg: '#D1FAB3',
         accentText: '#CEF1BA',
+        bgPrimary: '#b2b1e636',
         // Add more custom colors if needed
       },
     },

@@ -12,6 +12,7 @@ export default function AllContests() {
   const [value, setValue] = React.useState(0);
 
   const contestsType = [
+    "All",
     "Business",
     "Medical",
     "Writing",
@@ -50,6 +51,7 @@ export default function AllContests() {
         sx={{ mt: 2 }}
         scrollButtons="auto"
         aria-label="scrollable auto tabs example">
+        <Tab label="All" />
         <Tab label="Business" />
         <Tab label="Medical" />
         <Tab label="Writing" />
@@ -61,9 +63,9 @@ export default function AllContests() {
         <Tab label="Music" />
         <Tab label="Data Science" />
       </Tabs>
-      {/* <Grid
+      <Grid
         container
-        gridColumn={4}
+        gridColumn={1}
         justifyContent="center"
         gap={5}
         sx={{ mt: 3 }}>
@@ -79,12 +81,12 @@ export default function AllContests() {
             </Grid>
           );
         })}
-      </Grid> */}
-      
+      </Grid>
+{/*       
         {data?.map(item => <CardWithHoverEffect key={item._id} contestItem={item}></CardWithHoverEffect> )}
       <div className="text-center">
       <Link className="btn bg-primary text-white mt-8">See add contests</Link>
-      </div>
+      </div> */}
     </Box>
   );
 }

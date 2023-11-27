@@ -3,10 +3,15 @@ import Navbar from "../Components/Header/Navbar";
 import AdminRoutes from '../Pages/Dashboard/Admin/AdminRoutes'
 import CreatorRoutes from '../Pages/Dashboard/Contest_Creator/CreatorRoutes'
 import UserRoutes from '../Pages/Dashboard/User/UserRoutes'
+import useAdmin from "../Hooks/useAdmin";
+import Spinner from "../Shared/Spinner";
 const DashboardLayout = () => {
-  const isAdmin = false;
+  const [isAdmin, isAdminLoading] = useAdmin()
+
+  if(isAdminLoading) return <Spinner></Spinner>
+  
   const isUser = false;
-  const isCreator = true;
+  const isCreator = false;
 
   let routesComponent;
 

@@ -9,57 +9,54 @@ import { ToastError } from "../../../Utils/ToastError";
 import usePublicApi from "../../../Hooks/usePublicApi";
 
 const SignIn = () => {
-  const { signIn,googleSignIn,user} = useAuth();
-  const location = useLocation()
+  const { signIn, googleSignIn, user } = useAuth();
+  const location = useLocation();
   const goTo = useNavigate();
   const from = location.state?.from?.pathname || "/";
 
-  const xiosPublic = usePublicApi()
+  const xiosPublic = usePublicApi();
 
   // Handle sign up
   const handleSignIn = (event) => {
     event.preventDefault();
 
-    
     const formData = Object.fromEntries(new FormData(event.target).entries());
     const email = formData.email;
     const password = formData.password;
 
-    signIn(email, password).then((response) => {
-      ToasMessage("You have successfully signed In");
-      goTo(from, { replace: true });
-    })
-    .catch(err => ToastError(err.message.toString()))
-};
+    signIn(email, password)
+      .then((response) => {
+        ToasMessage("You have successfully signed In");
+        goTo(from, { replace: true });
+      })
+      .catch((err) => ToastError(err.message.toString()));
+  };
 
-console.log(user?.displayName)
+  console.log(user?.displayName);
 
   const handleMedia = (media) => {
-    media().then(() => {
-      // Letting the user know success 
-      ToasMessage("You have successfully signed in with google");
-      goTo(from, { replace: true });
-        
+    media().then((result) => {
       const userInfo = {
-        name:user?.displayName,
-        email:user?.email,
-        password:'',
-        photoURL:user?.photoURL        ,
-        role:'user',
-        participationDetails:{
-          attemptedContests:[],
-          wonContests:[]
-        }
-      }
-       
-      xiosPublic.post(`createUser?email=${user?.email}`,userInfo)
-      .then(res => {
-        if(res.data.insertId){
-        console.log({success:true})
-       }
-      })
-     
-      
+        name: result?.user?.displayName,
+        email: result?.user?.email,
+        password: "",
+        photoURL: result?.user?.photoURL,
+        role: "user",
+        participationDetails: {
+          attemptedContests: [],
+          wonContests: [],
+        },
+      };
+
+
+      xiosPublic.post(`createUser?email=${result?.email}`, userInfo)
+        .then((res) => {
+          if (res.data) {
+         
+            ToasMessage("You have successfully signed in with google");
+            goTo(from, { replace: true });
+          }
+        });
     });
   };
 

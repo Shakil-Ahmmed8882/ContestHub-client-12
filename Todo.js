@@ -9,10 +9,63 @@
  -Replace user profile image dynamically     
 
  ----------------------------
+      All contest 
+ ----------------------------
+ *: show contest based on category
+ *: keep one all button in tab to see all contests regardless of the type or tag
+ *TODO: Make the contest creator responsive
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ ----------------------------
+          Navbar
+ ----------------------------
+ : set user name (not clicble in dropdown)
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ ----------------------------
+      Home
+ ----------------------------
+ ----------------------------
+      Banner setion
+ ----------------------------
+ *TODO: fix the right side overlay issue
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+
+
+ ----------------------------
+          Form
+ ----------------------------
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+
+ -----------------------------
    Register or google signin
  ----------------------------
  TODO: compile object with user info
- TODO: store it to the database (userCollecition)
+ TODO: store user to the database (userCollecition) after signup or goggle sigin in
+ TODO: let the user select photo from their device and store them in database
+ TODO: navigate user to the home page when logout
+
 
  -----------------------------
  * user dashboard access  
@@ -106,13 +159,36 @@
  * ----------------------------
        upload image 
  ----------------------------
- * TODO: get image hosting key 
- * TODO: merge it with image hosting api
- * TODO: 
- * TODO: 
+ * : get image hosting key 
+ * : merge it with image hosting api
+ * : get the image file
+ * : post it to the server
+ * : res.ok? console log and get image link
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
+ * TODO:
  * 
+ * * -----------------------------
+      Secure api based on role
+ ---------------------------------
+ *  send the user email and recieve from the backend
+ * : find that user and check the role 
+ * : response true or false based on the role you're checking
+ * : recieve that response from the client side
  * 
- * 
+ * --------------------------------
+ *  Contest creator role checking
+ * --------------------------------
+ * Todo: send the user email and recieve from the backend
+ * Todo: find that user and check the role 
+ * Todo: response true or false based on the role you're checking
+ * Todo: recieve that response from the client side
+ * Todo:
  * 
  * 
  * 
