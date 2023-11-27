@@ -32,6 +32,11 @@ const AdminRoutes = () => {
         to="/dashboard/manageUser">
         Manage user
       </NavLink>
+      <NavLink
+        className="p-2 hover:text-primary   mx-1 text-[13px]"
+        to="/dashboard/contestCreators">
+        Contest Creators
+      </NavLink>
     </div>
   );
 };

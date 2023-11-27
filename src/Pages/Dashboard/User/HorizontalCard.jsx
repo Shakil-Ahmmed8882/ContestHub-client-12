@@ -13,6 +13,7 @@ import useSecureApi from '../../../Hooks/useSecureApi';
 import e from 'cors';
 import useAuth from '../../../Hooks/useAuth';
 import { ToasMessage } from '../../../Utils/ToastMessage';
+import { ToastError } from '../../../Utils/ToastError';
 
 export default function HorizontalCard({ contest }) {
   const theme = useTheme();
@@ -22,6 +23,8 @@ export default function HorizontalCard({ contest }) {
        const res = await xiosSecure.post('participateContest',{id:_id,userEmail:user?.email})
        if(res.data.modifiedCount > 0){
             ToasMessage(`Participated on ${contest.contestName}`)
+       } else{
+            ToastError('Already participated')
        }
   }
 

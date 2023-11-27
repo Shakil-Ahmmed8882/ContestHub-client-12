@@ -9,22 +9,25 @@ import wired from '../assets/img/wired.gif'
 import arrow from '../assets/img/arrow.gif'
 import arrowDrawLine from '../assets/img/wired-outline-1419-polyline.gif'
 import ReplaceThis from "./Demo/ReplaceThis";
+import Winners from "./Winners";
 const Home = () => {
  
 
   return (
     <div>
-      home <h1 className="text-5xl">Earch image</h1>
+      {/* home <h1 className="text-5xl">Earch image</h1>
       <div className="flex">
         <h1 className="flex-1">hello</h1>
         <div className="w-[300px] h-[300px]">
       <img  className="flex-1  object-cover" src={arrowDrawLine} alt="" />
         </div>
-      </div>
+      </div> */}
       <Banner></Banner>
-      <ReplaceThis></ReplaceThis>
+
+      {/* <ReplaceThis></ReplaceThis> */}
       <Popular></Popular>
-      <App></App>
+      <Winners></Winners>
+      {/* <App></App> */}
     </div>
   );
 };

@@ -200,12 +200,12 @@
    --------------------------------
           popular seciton
    --------------------------------
-   *TODO: create static look 5/6 card view
-   *TODO: load hit api
-   *TODO: recive reqest write logic for 6 pupular contest based on participation count
-   *TODO: recieve form client 
-   *TODO: repalce the static data with dynamic contents
-   *TODO:
+    create static look 5/6 card view
+    load hit api
+    recive reqest write logic for 6 pupular contest based on participation count
+    recieve form client 
+    repalce the static data with dynamic contents
+   *TODO: 
    *TODO:
    *TODO:
    *TODO:
@@ -247,6 +247,32 @@
    *TODO:
    *TODO:
 
+   
+
+   ----------------------------
+     Best contes creators
+   ---------------------------
+     make route for contest creator
+     TODO: request for all the contest creators
+     TODO: write logic in the backend to filter all user with role contest creator
+     TODO: send the data and recieve from the frontend
+     TODO: display in ui
+     
+     TODO: keep button in ui to select best 
+     TODO: send this creatorStatus to the badkend and recieve
+     TODO: now from the user collection find that creator and update the value
+     TODO: send the response to the client and show toast success or error
+     
+     TODO: create route in the backend for creators who have this 'best' status 
+     TODO: load the data and send it to the client 
+     TODO: recieve the best contest creators and show it uniquely
+     TODO:
+     TODO:
+     TODO:
+
+   
+
+   
 
 
  */
