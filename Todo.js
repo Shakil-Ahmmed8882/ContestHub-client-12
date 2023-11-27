@@ -197,6 +197,28 @@
  * 
  * 
  * 
-   
-  
+   --------------------------------
+          popular seciton
+   --------------------------------
+   *TODO: create static look 5/6 card view
+   *TODO: load hit api
+   *TODO: recive reqest write logic for 6 pupular contest based on participation count
+   *TODO: recieve form client 
+   *TODO: repalce the static data with dynamic contents
+   *TODO:
+   *TODO:
+   *TODO:
+   *TODO:
+
+
+    --------------------------------
+      user participated contest
+   --------------------------------
+   create api route in backend will recive user email
+   *TODO:search the user in collecition with that email
+   *TODO: enter user.particpants 
+   *TODO: map and get all the ids
+   *TODO: now find() all by the ids found in particpand []
+   *TODO: send the found result to client
+   *TODO: recieve the data and show in ui
  */

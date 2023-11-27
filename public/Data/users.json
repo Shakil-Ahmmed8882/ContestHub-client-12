@@ -5,6 +5,7 @@
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID1", "ContestID2"],
           "wonContests": ["ContestID1"]
@@ -16,6 +17,7 @@
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID3"],
           "wonContests": ["ContestID3"]
@@ -27,6 +29,7 @@
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID1", "ContestID4"],
           "wonContests": ["ContestID4"]
@@ -38,6 +41,7 @@
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
         "role": "admin",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID3", "ContestID5"],
           "wonContests": ["ContestID5"]
@@ -49,6 +53,7 @@
         "password": "password1",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -60,6 +65,7 @@
         "password": "password2",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -71,6 +77,7 @@
         "password": "password3",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -82,6 +89,7 @@
         "password": "password4",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -93,6 +101,7 @@
         "password": "password5",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -104,6 +113,7 @@
         "password": "password6",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -115,6 +125,7 @@
         "password": "password7",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -126,6 +137,7 @@
         "password": "password8",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
@@ -137,20 +149,23 @@
         "password": "password9",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
         }
       },
       {
-        "name": "Water pani",
-        "email": "custom.email@customdomain.net",
+        "name": "Shakil Ahmmed",
+        "email": "shakilahmmed8882@gmail.com",
         "password": "password10",
-        "photoURL": "url_to_profile_picture",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocL-Y0fOEuz5cMHTJVBVKnhI5rHsne2G0-5HB9K2o5kpCg=s96-c",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
-          "attemptedContests": ["ContestID2", "ContestID5"],
-          "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]
+          "attemptedContests": ["65639c425031084f2d4ae08c", "65639c425031084f2d4ae08f","65639c425031084f2d4ae093"],
+
+          "wonContests": ["65639c425031084f2d4ae093"]
         }
       },
       {
@@ -159,6 +174,7 @@
         "password": "password11",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
           "wonContests": ["6561ee5a1e674fe582bbbc2a", "6561ee5a1e674fe582bbbc29", "6561ee5a1e674fe582bbbc28"]

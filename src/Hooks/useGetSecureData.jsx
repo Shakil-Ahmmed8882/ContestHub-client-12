@@ -2,8 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import useSecureApi from "./useSecureApi";
 
 const useGetSecureData = (endpoint, key) => {
-      const xios = useSecureApi() ;
-// send the req and get data 
+  const xios = useSecureApi();
+  // send the req and get data
   return useQuery({
     queryKey: [key],
     queryFn: async () => {

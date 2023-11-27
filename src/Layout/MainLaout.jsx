@@ -6,10 +6,14 @@ import Footer from "../Pages/Demo/Footer";
 const MainLaout = () => {
       return (
             <div>
+                  
                   <Navbar></Navbar>  
-                  <div className="max-w-[1050px] mx-auto -z-10">
+                  <div >
                   <Outlet></Outlet>
+                  <div className="max-w-[1050px] mx-auto">
                   <Footer></Footer>
+                  </div>
+
                   </div>
             </div>
         
