@@ -4,7 +4,8 @@
         "email": "alice@example.com",
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID1", "ContestID2"],
@@ -17,6 +18,7 @@
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID3"],
@@ -28,7 +30,8 @@
         "email": "eva@example.com",
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID1", "ContestID4"],
@@ -40,7 +43,8 @@
         "email": "daniel@example.com",
         "password": "hashed_password",
         "photoURL": "url_to_profile_picture",
-        "role": "admin",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID3", "ContestID5"],
@@ -52,7 +56,8 @@
         "email": "user1@example.com",
         "password": "password1",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -64,7 +69,8 @@
         "email": "test.user2@testdomain.com",
         "password": "password2",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "admin",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -76,7 +82,8 @@
         "email": "another.email@gmail.com",
         "password": "password3",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -88,7 +95,8 @@
         "email": "example.email@emailprovider.com",
         "password": "password4",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "admin",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -100,7 +108,8 @@
         "email": "my.email@customdomain.net",
         "password": "password5",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -113,6 +122,7 @@
         "password": "password6",
         "photoURL": "url_to_profile_picture",
         "role": "user",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -124,7 +134,8 @@
         "email": "jane_smith@testdomain.com",
         "password": "password7",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "admin",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -136,7 +147,8 @@
         "email": "emailtest123@gmail.com",
         "password": "password8",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -148,7 +160,8 @@
         "email": "user@emailprovider.com",
         "password": "password9",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],
@@ -160,7 +173,8 @@
         "email": "shakilahmmed8882@gmail.com",
         "password": "password10",
         "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocL-Y0fOEuz5cMHTJVBVKnhI5rHsne2G0-5HB9K2o5kpCg=s96-c",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["65639c425031084f2d4ae08c", "65639c425031084f2d4ae08f","65639c425031084f2d4ae093"],
@@ -173,7 +187,8 @@
         "email": "testuser@example.com",
         "password": "password11",
         "photoURL": "url_to_profile_picture",
-        "role": "user",
+        "role": "contest_creator",
+        "bestCreatorRating":0,
         "registeredContests":[],
         "participationDetails": {
           "attemptedContests": ["ContestID2", "ContestID5"],

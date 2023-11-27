@@ -253,15 +253,15 @@
      Best contes creators
    ---------------------------
      make route for contest creator
-     TODO: request for all the contest creators
-     TODO: write logic in the backend to filter all user with role contest creator
-     TODO: send the data and recieve from the frontend
-     TODO: display in ui
+      request for all the contest creators
+      write logic in the backend to filter all user with role contest creator
+      send the data and recieve from the frontend
+      display in ui
      
-     TODO: keep button in ui to select best 
-     TODO: send this creatorStatus to the badkend and recieve
-     TODO: now from the user collection find that creator and update the value
-     TODO: send the response to the client and show toast success or error
+     : keep button in ui to select best 
+      send this creatorStatus to the badkend and recieve
+      now from the user collection find that creator and update the value
+      send the response to the client and show toast success or error
      
      TODO: create route in the backend for creators who have this 'best' status 
      TODO: load the data and send it to the client 
