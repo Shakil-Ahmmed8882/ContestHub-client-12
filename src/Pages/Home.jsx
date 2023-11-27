@@ -10,6 +10,7 @@ import arrow from '../assets/img/arrow.gif'
 import arrowDrawLine from '../assets/img/wired-outline-1419-polyline.gif'
 import ReplaceThis from "./Demo/ReplaceThis";
 import Winners from "./Winners";
+import BestCreators from "./BestCreators";
 const Home = () => {
  
 
@@ -27,6 +28,7 @@ const Home = () => {
       {/* <ReplaceThis></ReplaceThis> */}
       <Popular></Popular>
       <Winners></Winners>
+      <BestCreators></BestCreators>
       {/* <App></App> */}
     </div>
   );

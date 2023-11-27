@@ -263,8 +263,8 @@
       now from the user collection find that creator and update the value
       send the response to the client and show toast success or error
      
-     TODO: create route in the backend for creators who have this 'best' status 
-     TODO: load the data and send it to the client 
+       create route in the backend for creators who have this 'best' status 
+       load the data and send it to the client 
      TODO: recieve the best contest creators and show it uniquely
      TODO:
      TODO:
