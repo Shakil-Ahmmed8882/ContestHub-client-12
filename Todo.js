@@ -212,7 +212,7 @@
 
 
     --------------------------------
-      user participated contest
+       Registered contests
    --------------------------------
    create api route in backend will recive user email
    :search the user in collecition with that email
@@ -221,6 +221,19 @@
    : now find() all by the ids found in particpand []
    : send the found result to client
    : recieve the data and show in ui
+
+
+   --------------------------------
+      user participated contest
+   --------------------------------
+   TODO: write logic to swap (hide and show) participate button based on the contest deadline
+   TODO: 
+   TODO:
+   TODO:
+   TODO:
+   TODO:
+   TODO:
+ 
 
 
    ----------------------------
@@ -233,4 +246,7 @@
    *TODO: Design the page awasome way that attract the users 
    *TODO:
    *TODO:
+
+
+
  */

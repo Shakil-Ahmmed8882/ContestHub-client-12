@@ -8,12 +8,11 @@ const ContestDetails = () => {
   const { id } = useParams();
 
   const { data, isLoading } = useGetOpenData(`contest?id=${id}`);
-  const [timeRemaining, setTimeRemaining] = useState('');
-  const contest = data?.contest
-  const winners = data?.winners 
+  const [timeRemaining, setTimeRemaining] = useState("");
+  const contest = data?.contest;
+  const winners = data?.winners;
   useEffect(() => {
     if (contest && contest.deadline) {
-
       const timer = setInterval(() => {
         const remaining = calculateRemainingDeadline(contest.deadline);
         setTimeRemaining(remaining);
@@ -47,8 +46,8 @@ const ContestDetails = () => {
     participants,
   } = contest;
 
-  console.log(timeRemaining?.expired)
-  const a = true
+  console.log(timeRemaining?.expired);
+  const a = true;
 
   return (
     <div className="bg-gray-100 dark:bg-gray-800 py-8">
@@ -92,30 +91,30 @@ const ContestDetails = () => {
                 <span className="font-bold text-gray-700 dark:text-gray-300">
                   Contest winner
                 </span>
-                 {
-                 timeRemaining?.expired ?  <span className="text-[20px] dark:text-gray-300 ml-2 text-accent font-bold">{winners?.length }</span>
-                  :
+                {timeRemaining?.expired ? (
+                  <span className="text-[20px] dark:text-gray-300 ml-2 text-accent font-bold">
+                    {winners?.length}
+                  </span>
+                ) : (
                   <div className="w-6 ">
                     <Spinner></Spinner>
                   </div>
-                 }
+                )}
               </div>
               <div>
                 <div>
                   <div className="flex mr-2">
-                    { timeRemaining?.expired && 
-                    winners.map(winner => {
-                      return (<img key={winner._id}
-                          className="border-2 border-white rounded-full h-10 object-cover w-11 -mr-6"
-                          src={winner?.photoURL}
-                          alt={winner?.photoURL}
-                        />
-                      )
-                    })
-
-
-                    }
-                  
+                    {timeRemaining?.expired &&
+                      winners.map((winner) => {
+                        return (
+                          <img
+                            key={winner._id}
+                            className="border-2 border-white rounded-full h-10 object-cover w-11 -mr-6"
+                            src={winner?.photoURL}
+                            alt={winner?.photoURL}
+                          />
+                        );
+                      })}
                   </div>
                 </div>
               </div>
@@ -157,13 +156,16 @@ const ContestDetails = () => {
             <div>
               <p className="flex items-center gap-3">
                 <span>icon</span>Attempted: {participants?.length}
-                <p>
+                <p className="text-3xl">
                   {timeRemaining && !timeRemaining.expired ? (
                     <div>
-                      Days: {timeRemaining.days} Hours: {timeRemaining.hours}{" "}
-                      Minutes: {timeRemaining.minutes} Seconds:{" "}
-                      <span className="text-2xl font-bold text-red-400">
-                        {timeRemaining.seconds}
+                       {timeRemaining.days}{timeRemaining.hours}{" "}h {timeRemaining.minutes}m
+                      <span className="text-xl font-bold text-blue-500">
+                        <span className="countdown">
+                          <span style={{ "--value": timeRemaining.seconds}}></span>
+                        </span>
+                        <span className="text-gray-400">s</span>
+                          
                       </span>
                     </div>
                   ) : (

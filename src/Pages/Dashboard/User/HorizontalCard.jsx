@@ -9,9 +9,22 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
+import useSecureApi from '../../../Hooks/useSecureApi';
+import e from 'cors';
+import useAuth from '../../../Hooks/useAuth';
+import { ToasMessage } from '../../../Utils/ToastMessage';
 
 export default function HorizontalCard({ contest }) {
   const theme = useTheme();
+  const xiosSecure = useSecureApi()
+  const {user} = useAuth()
+  const handleParticipate = async(_id) => {
+       const res = await xiosSecure.post('participateContest',{id:_id,userEmail:user?.email})
+       if(res.data.modifiedCount > 0){
+            ToasMessage(`Participated on ${contest.contestName}`)
+       }
+  }
+
 
   return (
     <Card sx={{ display: 'flex' }}>
@@ -29,11 +42,12 @@ export default function HorizontalCard({ contest }) {
           {/* Add your IconButton components here */}
         </Box>
         <div className="w-1/3 sm:mt-0 sm:ml-3 mb-3">
-                <a
+                <button 
+                  onClick={()=> handleParticipate(contest._id)}
                   href=""
                   className="text-primary">
                   Participate
-                </a>
+                </button>
               </div>
       </Box>
       <CardMedia

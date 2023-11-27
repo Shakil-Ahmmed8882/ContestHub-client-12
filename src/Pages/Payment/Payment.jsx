@@ -27,7 +27,7 @@
 
 //=============================================
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import usePublicApi from "../../Hooks/usePublicApi";
 import { ToasMessage } from "../../Utils/ToastMessage";
 import useAuth from "../../Hooks/useAuth";
@@ -37,11 +37,12 @@ const Payment = () => {
   const {id} = useParams()
   const xios = usePublicApi()
   const {user} = useAuth()
-
+  const goTo = useNavigate()
   const handlePayment = async() => {
-    const res = await xios.post('participateContest',{id:id,userEmail:user?.email})
+    const res = await xios.post('registeredContest',{id:id,userEmail:user?.email})
     if(res.data.modifiedCount > 0){
       ToasMessage("Registered")
+      goTo('/allContests')
     } else{
       ToastError(res.data.error)
     }
@@ -198,7 +199,7 @@ const Payment = () => {
                         <button onClick={()=> handlePayment()}
                           href="#"
                           className="bg-indigo-600 text-white hover:bg-indigo-700 mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full">
-                          Participate
+                          Register
                         </button>
                       </div>
                     </div>
