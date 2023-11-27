@@ -5,13 +5,16 @@ import CreatorRoutes from '../Pages/Dashboard/Contest_Creator/CreatorRoutes'
 import UserRoutes from '../Pages/Dashboard/User/UserRoutes'
 import useAdmin from "../Hooks/useAdmin";
 import Spinner from "../Shared/Spinner";
+import useCreator from "../Hooks/useCreator";
 const DashboardLayout = () => {
   const [isAdmin, isAdminLoading] = useAdmin()
+  const [isCreator,isCreatorLoading] = useCreator()
 
   if(isAdminLoading) return <Spinner></Spinner>
+  // const isAdmin = true
   
   const isUser = false;
-  const isCreator = false;
+  // const isCreator = false;
 
   let routesComponent;
 

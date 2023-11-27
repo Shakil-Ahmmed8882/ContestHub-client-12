@@ -184,11 +184,16 @@
  * --------------------------------
  *  Contest creator role checking
  * --------------------------------
- * Todo: send the user email and recieve from the backend
- * Todo: find that user and check the role 
- * Todo: response true or false based on the role you're checking
- * Todo: recieve that response from the client side
- * Todo:
+ *  send the user email and recieve from the backend
+ *  find that user and check the role 
+ *  response true or false based on the role you're checking
+ *   recieve that response from the client side
+ * Todo: ( create edit page )
+ * Todo: fetched the data by id 
+ * Todo: show them in default 
+ * Todo: fetch with post method and send the updated value 
+ * Todo: recieve form the backend and make change to the database
+ * 
  * 
  * 
  * 
