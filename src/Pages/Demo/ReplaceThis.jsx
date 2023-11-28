@@ -72,9 +72,7 @@ const ReplaceThis = () => {
               />
             </svg>
             <div className="relative justify-end hidden w-full lg:flex">
-              <div className="flex justify-end inline-block p-8 pr-8 text-base leading-relaxed text-blue-400 bg-indigo-900 rounded-lg shadow-lg xl:text-lg xl:pr-16">
-              
-              </div>
+              <div className="flex justify-end inline-block p-8 pr-8 text-base leading-relaxed text-blue-400 bg-indigo-900 rounded-lg shadow-lg xl:text-lg xl:pr-16"></div>
             </div>
           </div>
         </div>

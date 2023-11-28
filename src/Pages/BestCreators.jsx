@@ -29,16 +29,17 @@ const BestCreators = () => {
   const bestThreeContestCreator = sortedRatedCreator?.slice(0, 3);
 
   return (
-    <div className="font-bold  text-5xl">
+    <div className="font-bold bg-white  text-5xl py-20">
+      <div className="max-w-5xl mx-auto">
       <TitleDescription
         top_SmallText={"Contest winners"}
         title="Champion Spotlight"
         description="Celebrating the Champion of Our Latest Contest! Hey you! lest's join us."></TitleDescription>
       <div className="flex gap-5"></div>
 
-      <div className=" flex flex-wrap justify-center gap-3  items-center">
+      <div className=" grid grid-cols-1 md:grid-cols-2 justify-center gap-5  items-center">
         {bestThreeContestCreator?.map((creator, idx) => (
-          <div key={creator._id} className={`relative ${idx == 0?'col-span-2':'col-span-1',idx == 2?"col-span-2":""}`}>
+          <div key={creator._id} className={`relative ${idx == 0?'col-span-2':'md:col-span-1',idx == 2?"col-span-2":""}`}>
 
             <div className="relative">
             <InfoCard
@@ -58,19 +59,9 @@ const BestCreators = () => {
         ))}
       </div>
 
-      <div
-        className="hero min-h-screen max-w-5xl mx-auto"
-        style={{
-          backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
-        }}>
-        <div className="hero-overlay bg-opacity-80 bg-[#e9e9ff]"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-        </div>
       </div>
+
+      
     </div>
   );
 };

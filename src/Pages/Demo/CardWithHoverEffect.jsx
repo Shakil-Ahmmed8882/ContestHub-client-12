@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CardWithHoverEffect = ({ contestItem }) => {
   const {
-    _id,
+    
     contestName,
     image,
     description,
@@ -15,7 +15,7 @@ const CardWithHoverEffect = ({ contestItem }) => {
     winnerID,
     type,
     participants,
-  } = contestItem;
+  } = contestItem || {};
   return (
     <div>
       <>
@@ -36,9 +36,8 @@ const CardWithHoverEffect = ({ contestItem }) => {
                       <a
                         href="#"
                         className="text-sky-500 transition-all duration-300">
-                        <Link className="btn" to={`/contest/${_id}`}>
-                          Details
-                        Read the docs →
+                        <Link className="btn" >
+                          Details Read the docs →
                         </Link>
                       </a>
                     </p>

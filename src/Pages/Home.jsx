@@ -12,9 +12,12 @@ import ReplaceThis from "./Demo/ReplaceThis";
 import Winners from "./Winners";
 import BestCreators from "./BestCreators";
 import BasicPagination from "../Components/Ui/Pagination/Pagination";
-import CustomizedSteppers from "../Components/Ui/Stepper/Stepper";
 import Avatars from "./Avater";
 import MyMarquee from "../Components/Ui/Marquee";
+import CardWithHoverEffect from "./Demo/CardWithHoverEffect";
+import FeatureComparision from "./Demo/FeatureComparision";
+import LogoCount from "./Demo/LogoCount";
+import NumberCounterInput from "./Demo/NumberCounterInput";
 const Home = () => {
  
 
@@ -34,10 +37,14 @@ const Home = () => {
       <Winners></Winners>
       <BestCreators></BestCreators>
       {/* <App></App> */}
-      <CustomizedSteppers></CustomizedSteppers>
       <BasicPagination></BasicPagination>
       <Avatars></Avatars>
       <MyMarquee></MyMarquee>
+      <CardWithHoverEffect></CardWithHoverEffect>
+      <FeatureComparision></FeatureComparision>
+      <LogoCount></LogoCount>
+      <NumberCounterInput></NumberCounterInput>
+      <ReplaceThis></ReplaceThis>
       
     </div>
   );

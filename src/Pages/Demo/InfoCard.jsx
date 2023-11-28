@@ -1,12 +1,19 @@
 import { Rating } from "@mui/material";
 
-const InfoCard = ({ crown,name, contesName, description, photoURL, rating }) => {
+const InfoCard = ({
+  crown,
+  name,
+  contesName,
+  description,
+  photoURL,
+  rating,
+}) => {
   return (
     <div>
-      <section className="flex flex-col justify-center antialiased bg-gray-50 text-gray-600  ">
-        <div className="h-full">
+      <section className="flex  flex-col justify-center  antialiased bg-gray-50 text-gray-600  ">
+        <div className="h-full mx-3 md:mx-0">
           {/* Card */}
-          <div className="max-w-2xl mx-auto bg-[#615BF1] shadow-lg rounded-lg">
+          <div className="w-full mx-auto bg-[#615BF1] shadow-lg rounded-lg">
             <div className="px-6 py-5">
               <div className="flex items-start">
                 <label tabIndex={0} className="m-1">
@@ -27,9 +34,7 @@ const InfoCard = ({ crown,name, contesName, description, photoURL, rating }) => 
                     {/* Like and comment buttons */}
                     <div className="flex-shrink-0 flex items-center space-x-3 sm:ml-2">
                       <button className="flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100">
-                        <Rating 
-                        color="white"
-                        value={rating}></Rating>
+                        <Rating color="white" value={rating}></Rating>
                       </button>
                       <button className="flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100">
                         <svg
@@ -41,10 +46,9 @@ const InfoCard = ({ crown,name, contesName, description, photoURL, rating }) => 
                           64 <span className="sr-only">comments</span>
                         </span>
                       </button>
-                        <div className=" flex items-center justify-center rounded-full  absolute -top-4 left-2 w-16 h-16 "> 
-            <img className="" src={crown} alt="crown" />
+                      <div className=" flex items-center justify-center rounded-full  absolute -top-4 left-2 w-16 h-16 ">
+                        {/* <img className="" src={crown} alt="crown" /> */}
                       </div>
-
                     </div>
                   </div>
                   {/* Card body */}

@@ -1,13 +1,10 @@
-
-
 const FeatureComparision = () => {
-      return (
-            <div>
-              {/* Feature comparison */}
+  return (
+    <div>
+      {/* Feature comparison */}
       <section
         aria-labelledby="mobile-comparison-heading"
-        className="lg:hidden"
-      >
+        className="lg:hidden">
         <h2 id="mobile-comparison-heading" className="sr-only">
           Feature comparison
         </h2>
@@ -26,8 +23,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-1 ring-black ring-opacity-5 shadow relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -43,8 +39,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -65,8 +60,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -107,8 +101,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -125,8 +118,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -143,8 +135,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -155,8 +146,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-1 ring-black ring-opacity-5 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -167,8 +157,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-1 ring-black ring-opacity-5 shadow relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -184,8 +173,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -206,8 +194,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -228,8 +215,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -250,8 +236,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -272,8 +257,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -290,8 +274,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -308,8 +291,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -320,8 +302,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-1 ring-black ring-opacity-5 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -340,8 +321,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow-md absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-2 ring-indigo-600 shadow-md relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -357,8 +337,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -379,8 +358,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -421,8 +399,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -443,8 +420,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -465,8 +441,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -481,8 +456,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-2 ring-indigo-600 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -493,8 +467,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow-md absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-2 ring-indigo-600 shadow-md relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -510,8 +483,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -532,8 +504,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -554,8 +525,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -576,8 +546,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -598,8 +567,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -620,8 +588,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -642,8 +609,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -658,8 +624,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-2 ring-indigo-600 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -678,8 +643,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-1 ring-black ring-opacity-5 shadow relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -695,8 +659,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -717,8 +680,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -759,8 +721,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -781,8 +742,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -803,8 +763,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -815,8 +774,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-1 ring-black ring-opacity-5 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -827,8 +785,7 @@ const FeatureComparision = () => {
               {/* Fake card background */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="shadow absolute right-0 w-1/2 h-full bg-white rounded-lg" />
               </div>
               <div className="ring-1 ring-black ring-opacity-5 shadow relative py-3 px-4 bg-white rounded-lg sm:p-0 sm:bg-transparent sm:rounded-none sm:ring-0 sm:shadow-none">
@@ -844,8 +801,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -866,8 +822,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -888,8 +843,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -910,8 +864,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -932,8 +885,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -954,8 +906,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -972,8 +923,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -984,8 +934,7 @@ const FeatureComparision = () => {
               {/* Fake card border */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 hidden sm:block"
-              >
+                className="pointer-events-none absolute inset-0 hidden sm:block">
                 <div className="ring-1 ring-black ring-opacity-5 absolute right-0 w-1/2 h-full rounded-lg" />
               </div>
             </div>
@@ -1032,8 +981,7 @@ const FeatureComparision = () => {
             {/* Fake card backgrounds */}
             <div
               className="pointer-events-none absolute inset-0 flex items-stretch"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <div className="w-1/4 pr-4" />
               <div className="w-1/4 px-4">
                 <div className="h-full w-full rounded-lg bg-white shadow" />
@@ -1067,8 +1015,7 @@ const FeatureComparision = () => {
                 <tr key="Tax Savings">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Tax Savings
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1079,8 +1026,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1098,8 +1044,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1117,8 +1062,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1132,8 +1076,7 @@ const FeatureComparision = () => {
                 <tr key="Easy to use accounting">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Easy to use accounting
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1144,8 +1087,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1163,8 +1105,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1182,8 +1123,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1197,8 +1137,7 @@ const FeatureComparision = () => {
                 <tr key="Multi-accounts">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Multi-accounts
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1226,8 +1165,7 @@ const FeatureComparision = () => {
                 <tr key="Invoicing">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Invoicing
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1255,8 +1193,7 @@ const FeatureComparision = () => {
                 <tr key="Exclusive offers">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Exclusive offers
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1267,8 +1204,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1282,8 +1218,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1301,8 +1236,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1316,8 +1250,7 @@ const FeatureComparision = () => {
                 <tr key="6 months free advisor">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     6 months free advisor
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1328,8 +1261,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1343,8 +1275,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1362,8 +1293,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1377,8 +1307,7 @@ const FeatureComparision = () => {
                 <tr key="Mobile and web access">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Mobile and web access
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1389,8 +1318,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1404,8 +1332,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1423,8 +1350,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1436,8 +1362,7 @@ const FeatureComparision = () => {
             {/* Fake card borders */}
             <div
               className="pointer-events-none absolute inset-0 flex items-stretch"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <div className="w-1/4 pr-4" />
               <div className="w-1/4 px-4">
                 <div className="h-full w-full rounded-lg ring-1 ring-black ring-opacity-5" />
@@ -1455,8 +1380,7 @@ const FeatureComparision = () => {
             {/* Fake card backgrounds */}
             <div
               className="pointer-events-none absolute inset-0 flex items-stretch"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <div className="w-1/4 pr-4" />
               <div className="w-1/4 px-4">
                 <div className="h-full w-full rounded-lg bg-white shadow" />
@@ -1490,8 +1414,7 @@ const FeatureComparision = () => {
                 <tr key="24/7 customer support">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     24/7 customer support
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1502,8 +1425,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1521,8 +1443,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1540,8 +1461,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1555,8 +1475,7 @@ const FeatureComparision = () => {
                 <tr key="Instant notifications">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Instant notifications
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1567,8 +1486,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1586,8 +1504,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1605,8 +1522,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1620,8 +1536,7 @@ const FeatureComparision = () => {
                 <tr key="Budgeting tools">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Budgeting tools
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1632,8 +1547,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1651,8 +1565,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1670,8 +1583,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1685,8 +1597,7 @@ const FeatureComparision = () => {
                 <tr key="Digital receipts">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Digital receipts
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1697,8 +1608,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1716,8 +1626,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1735,8 +1644,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1750,8 +1658,7 @@ const FeatureComparision = () => {
                 <tr key="Pots to separate money">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Pots to separate money
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1762,8 +1669,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1777,8 +1683,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1796,8 +1701,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1811,8 +1715,7 @@ const FeatureComparision = () => {
                 <tr key="Free bank transfers">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Free bank transfers
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1823,8 +1726,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1838,8 +1740,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1857,8 +1758,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1868,8 +1768,7 @@ const FeatureComparision = () => {
                 <tr key="Business debit card">
                   <th
                     scope="row"
-                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600"
-                  >
+                    className="w-1/4 py-3 pr-4 text-left text-sm font-medium text-gray-600">
                     Business debit card
                   </th>
                   <td className="px-4 relative w-1/4 py-0 text-center">
@@ -1880,8 +1779,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1895,8 +1793,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path
                           fillRule="evenodd"
                           d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
@@ -1914,8 +1811,7 @@ const FeatureComparision = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        aria-hidden="true"
-                      >
+                        aria-hidden="true">
                         <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
                       </svg>
                       <span className="sr-only">No</span>
@@ -1927,8 +1823,7 @@ const FeatureComparision = () => {
             {/* Fake card borders */}
             <div
               className="pointer-events-none absolute inset-0 flex items-stretch"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <div className="w-1/4 pr-4" />
               <div className="w-1/4 px-4">
                 <div className="h-full w-full rounded-lg ring-1 ring-black ring-opacity-5" />
@@ -1942,9 +1837,9 @@ const FeatureComparision = () => {
             </div>
           </div>
         </div>
-      </section>    
-            </div>
-      );
+      </section>
+    </div>
+  );
 };
 
 export default FeatureComparision;

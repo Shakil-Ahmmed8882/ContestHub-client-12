@@ -170,9 +170,9 @@ ColorlibStepIcon.propTypes = {
 };
 
 const steps = [
-  "Select campaign settings",
-  "Create an ad group",
-  "Create an ad",
+  "New",
+  "intermediate",
+  "Advance",
 ];
 
 export default function CustomizedSteppers() {
