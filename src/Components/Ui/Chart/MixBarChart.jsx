@@ -9,26 +9,38 @@ import {
   Legend,
   Scatter,
   ResponsiveContainer,
+  Label,
 } from 'recharts';
 
 const data = [
-  { index: 10000, red: 1643, blue: 790 },
-  { index: 1666, red: 182, blue: 42 },
-  { index: 625, red: 56, blue: 11 },
-  // Calculation of line of best fit is not included in this demo
-  { index: 300, redLine: 0 },
-  { index: 10000, redLine: 1522 },
-  { index: 600, blueLine: 0 },
-  { index: 10000, blueLine: 678 },
+  { index: 10000, attempted: 0, completed: 0 },
+  { index: 1666, attempted: 182, completed: 42 },
+  { index: 625, attempted: 56, completed: 11 },
+
 ];
+
+const calculateWinPercentage = (completed, attempted) => {
+  if (attempted === 0) {
+    return 0; // Avoid division by zero
+  }
+  return ((completed / attempted) * 100).toFixed(2); // Calculate win percentage
+};
 
 export default class ChartComponent extends PureComponent {
   render() {
+    // Calculate win percentages
+    data.forEach(entry => {
+      if (entry.completed && entry.attempted) {
+        entry.completedWinPercentage = calculateWinPercentage(entry.completed, entry.attempted);
+        entry.attemptedWinPercentage = calculateWinPercentage(entry.attempted, entry.completed);
+      }
+    });
+
     return (
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <ComposedChart
           width={500}
-          height={400}
+          height={300}
           data={data}
           margin={{
             top: 20,
@@ -47,10 +59,20 @@ export default class ChartComponent extends PureComponent {
             label={{ value: 'Index', position: 'insideBottomRight', offset: 0 }}
           />
           <YAxis unit="ms" type="number" label={{ value: 'Time', angle: -90, position: 'insideLeft' }} />
-          <Scatter name="red" dataKey="red" fill="red" />
-          <Scatter name="blue" dataKey="blue" fill="blue" />
-          <Line dataKey="blueLine" stroke="blue" dot={false} activeDot={false} legendType="none" />
-          <Line dataKey="redLine" stroke="red" dot={false} activeDot={false} legendType="none" />
+
+          <Scatter name="attempted" dataKey="attempted" fill="red" />
+          <Scatter name="completed" dataKey="completed" fill="blue" />
+
+          <Line dataKey="attemptedLine" stroke="red" dot={false} activeDot={false} legendType="none" />
+          <Line dataKey="completedLine" stroke="blue" dot={false} activeDot={false} legendType="none" />
+
+          {/* Adding new Lines for win percentages */}
+          <Line dataKey="completedWinPercentage" stroke="green" dot={false} legendType="none">
+            <Label content={({ value }) => `${value}%`} position="top" />
+          </Line>
+          <Line dataKey="attemptedWinPercentage" stroke="orange" dot={false} legendType="none">
+            <Label content={({ value }) => `${value}%`} position="top" />
+          </Line>
         </ComposedChart>
       </ResponsiveContainer>
     );

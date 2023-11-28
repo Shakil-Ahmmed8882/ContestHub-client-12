@@ -10,9 +10,11 @@ body{
 }
 
 a.active{
-      color: #615BF1!important;
-      background-color: transparent !important;
+      color: red!important;
+      background-color: transparent!important;
+      padding: 10px;
       font-weight: bold;
+      
 }
 
 .black-bg{

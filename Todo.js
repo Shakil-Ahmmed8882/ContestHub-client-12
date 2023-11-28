@@ -75,11 +75,11 @@
   Show single contest redirecting by detail button 
   make the dynamic timer to calculate contest deadline
   * TODO: Make the route secure and make sure user get the route they supposed ot get
-  
- *TODO:
- *TODO:
- *TODO:
- *TODO:
+
+ *TODO: load the user based on their email
+ *TODO: send data from the backend and reicieve form the client 
+ *TODO: now place it to the chart to show the parcentage ====> done
+ *TODO: add creativity, productivity, social net
  *TODO:
  *TODO:
  *TODO:

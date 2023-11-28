@@ -10,7 +10,6 @@ const RegisteredContest = () => {
   if(isLoading) return <Spinner/>
 
 
-  console.log(data)
   const {attemptedContests} = data || {}
 
   return (

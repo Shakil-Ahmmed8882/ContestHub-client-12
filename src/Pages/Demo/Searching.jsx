@@ -1,7 +1,7 @@
 import { AiOutlineSearch } from "react-icons/ai";
 
 
-const SubmissionDetails = () => {
+const Searching = () => {
       return (
             <div className="w-full h-screen items-center justify-center flex bg-indigo-50">
                   <AiOutlineSearch className="md:text-8xl text-indigo-500"></AiOutlineSearch>
@@ -9,4 +9,4 @@ const SubmissionDetails = () => {
       );
 };
 
-export default SubmissionDetails;
+export default Searching;

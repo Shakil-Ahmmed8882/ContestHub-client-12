@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const UserRoutes = () => {
   return (
     <div className="flex flex-col justify-center">
-      <NavLink className="p-2 hover:bg-[#333A48 m-3" to="/">
+      <NavLink className="p-2 hover:bg-[#333A48 mx-3" to="/">
         User home
       </NavLink>
       <NavLink
-        className="p-2 flex items-center gap-2 black-bg hover:bg-[#333A48] text-white m-3"
+        className="p-2 flex items-center gap-2 black-bg hover:bg-[#333A48] text-white "
         to="/dashboard">
         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
           <path

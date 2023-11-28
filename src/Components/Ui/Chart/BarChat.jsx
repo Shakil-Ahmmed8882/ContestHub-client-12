@@ -64,7 +64,7 @@ const TriangleBar = (props) => {
 
 const BarChat = () => {
       return (
-            <div>
+            <div className='shadow-lg'>
                       <BarChart
       width={500}
       height={300}

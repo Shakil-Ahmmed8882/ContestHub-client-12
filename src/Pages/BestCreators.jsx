@@ -25,7 +25,7 @@ const BestCreators = () => {
   // Assuming data is an array of objects with a 'rate' property
 
   let sortedRatedCreator = []
-  if(data){
+  if(data.length > 0){
      const foundContest = data?.slice().sort((a, b) => {
       // Assuming 'rate' is a numerical property
       return b.bestCreatorRating - a.bestCreatorRating; // Ascending order, use b.rate - a.rate for descending order

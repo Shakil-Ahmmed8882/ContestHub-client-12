@@ -1,3 +1,4 @@
+import { BiChart } from "react-icons/bi";
 import Welcome from "./Welcome";
 
 const UserDashboard = () => {

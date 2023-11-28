@@ -67,7 +67,7 @@ const Banner = () => {
               </button>
             </div>
           </form>
-          <p className="mt-2 text-center text-gray-500 text-xs">We&apos;ll notify you when data is found.</p>
+          <p className="mt-2 text-center text-gray-500 text-xs mb-6">We&apos;ll notify you when data is found.</p>
         </div>
         <div>
         {searchResults && <div>

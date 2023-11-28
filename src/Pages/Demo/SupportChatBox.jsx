@@ -1,6 +1,6 @@
 
 
-const SupportChatBox = () => {
+const SupportChatBox = ({handleClose}) => {
       return (
             <div>
                <>
@@ -135,6 +135,7 @@ const SupportChatBox = () => {
     </div>
     <div className="bg-blue-600 rounded-full w-16 h-16 m-4 flex items-center justify-center cursor-pointer shadow-xl">
       <svg
+        onClick={handleClose}
         className="w-6 h-6 text-white"
         fill="none"
         stroke="currentColor"

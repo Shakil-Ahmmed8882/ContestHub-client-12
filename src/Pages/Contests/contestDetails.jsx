@@ -105,7 +105,7 @@ const ContestDetails = () => {
                 <div>
                   <div className="flex mr-2">
                     {timeRemaining?.expired &&
-                      winners.map((winner) => {
+                      winners?.map((winner) => {
                         return (
                           <img
                             key={winner._id}

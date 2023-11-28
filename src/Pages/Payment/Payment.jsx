@@ -32,6 +32,23 @@ import usePublicApi from "../../Hooks/usePublicApi";
 import { ToasMessage } from "../../Utils/ToastMessage";
 import useAuth from "../../Hooks/useAuth";
 import { ToastError } from "../../Utils/ToastError";
+import TitleDescription from "../../Components/Ui/TitleDescription ";
+
+
+const contestRegistrationData = {
+  planName: 'Scale',
+  pricePerMonth: '$19',
+  billingFrequency: 'USD / mo',
+  billedYearly: 'Billed yearly ($220)',
+  features: [
+    'Advanced invoicing',
+    'Easy to use accounting',
+    'Mutli-accounts',
+    'Tax planning toolkit',
+    'VAT & VATMOSS filing',
+    'Free bank transfers'
+  ]
+};
 
 const Payment = () => {
   const {id} = useParams()
@@ -55,7 +72,7 @@ const Payment = () => {
         <main>
           {/* Pricing section */}
           <div>
-            <div className="relative bg-indigo-600">
+            <div className="relative bg-indigo-50">
               {/* Overlapping background */}
               <div
                 aria-hidden="true"
@@ -63,8 +80,12 @@ const Payment = () => {
               />
               <div className="relative mx-auto max-w-2xl px-6 pt-16 text-center sm:pt-32 lg:max-w-7xl lg:px-8">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  <span className="block lg:inline">Simple pricing,</span>
-                  <span className="block lg:inline">no commitment.</span>
+                  <TitleDescription
+                  top_SmallText={'Enter the contestHub'}
+                  title={'Register and get the scope to participate'}
+                  description={'Register and get the scope to participate'}
+                  ></TitleDescription>
+                
                 </h1>
                 <p className="mt-4 text-xl text-indigo-100">
                   Everything you need, nothing you don't. Pick a plan that best
@@ -112,11 +133,7 @@ const Payment = () => {
                             </p>
                           </div>
                         </div>
-                        <a
-                          href="#"
-                          className="bg-white text-indigo-600 hover:bg-indigo-50 mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full">
-                          fy Starter
-                        </a>
+                    
                       </div>
                     </div>
                     <h4 className="sr-only">Features</h4>
@@ -334,11 +351,7 @@ const Payment = () => {
                             </p>
                           </div>
                         </div>
-                        <a
-                          href="#"
-                          className="bg-white text-indigo-600 hover:bg-indigo-50 mt-6 w-full inline-block py-2 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full">
-                          Buy Growth
-                        </a>
+                  
                       </div>
                     </div>
                     <h4 className="sr-only">Features</h4>
