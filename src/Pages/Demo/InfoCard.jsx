@@ -1,5 +1,5 @@
 import { Rating } from "@mui/material";
-
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 const InfoCard = ({
   crown,
   name,
@@ -34,14 +34,10 @@ const InfoCard = ({
                     {/* Like and comment buttons */}
                     <div className="flex-shrink-0 flex items-center space-x-3 sm:ml-2">
                       <button className="flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100">
-                        <Rating color="white" value={rating}></Rating>
+                        <Rating sx={{color:'gold'}} color="white" value={rating}></Rating>
                       </button>
                       <button className="flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100">
-                        <svg
-                          className="w-4 h-4 flex-shrink-0 mr-2 fill-current text-gray-300 group-hover:text-gray-200"
-                          viewBox="0 0 16 16">
-                          <path d="M8 0C3.6 0 0 3.1 0 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7Zm4 10.8v2.3L8.9 12H8c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8Z" />
-                        </svg>
+                       <MilitaryTechIcon></MilitaryTechIcon>
                         <span>
                           64 <span className="sr-only">comments</span>
                         </span>

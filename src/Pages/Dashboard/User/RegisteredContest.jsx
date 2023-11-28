@@ -7,7 +7,8 @@ const RegisteredContest = () => {
   const {user} = useAuth()
   const {data,isLoading} = useGetSecureData(`/user/participatedContests/${user?.email}/''`)
 
-  if(isLoading) return <Spinner/>
+  if(isLoading || !data) return <Spinner/>
+
   const {attemptedContests} = data
 
   return (

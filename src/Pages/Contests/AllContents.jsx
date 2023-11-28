@@ -5,8 +5,8 @@ import Box from "@mui/material/Box";
 import useGetOpenData from "../../Hooks/useGetOpenData";
 import TabContents from "../TabContents";
 import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import CardWithHoverEffect from "../Demo/CardWithHoverEffect";
+import Spinner from "../Demo/Spinner";
+
 
 export default function AllContests() {
   const [value, setValue] = React.useState(0);
@@ -31,7 +31,8 @@ export default function AllContests() {
     contestType
   );
 
-  if (isLoading) return "loading..";
+  if (isLoading) return <Spinner></Spinner>
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -40,53 +41,43 @@ export default function AllContests() {
     <Box
       sx={{
         minHeight: 100,
-        maxWidth: { lg: 6000, sm: 480, p: 8 },
+        maxWidth: { lg: 1100, sm: 480, p: 8 },
+        marginInline:'auto',
         bgcolor: "background.paper",
         paddingBottom: 4,
-      }}>
+      }}
+    >
       <Tabs
         value={value}
         onChange={handleChange}
         variant="scrollable"
         sx={{ mt: 2 }}
         scrollButtons="auto"
-        aria-label="scrollable auto tabs example">
-        <Tab label="All" />
-        <Tab label="Business" />
-        <Tab label="Medical" />
-        <Tab label="Writing" />
-        <Tab label="Gaming" />
-        <Tab label="Tech" />
-        <Tab label="Design" />
-        <Tab label="Coding" />
-        <Tab label="Photography" />
-        <Tab label="Music" />
-        <Tab label="Data Science" />
+        aria-label="scrollable auto tabs example"
+      >
+        {contestsType.map((label) => (
+          <Tab key={label} label={label} />
+        ))}
       </Tabs>
       <Grid
         container
-        gridColumn={1}
         justifyContent="center"
-        gap={5}
-        sx={{ mt: 3 }}>
-        {data?.map((item) => {
-          return (
-            <Grid key={item._id} item xs={5}>
-              <p>
-                <TabContents
-                  item
-                  key={item._id}
-                  contestItem={item}></TabContents>
-              </p>
-            </Grid>
-          );
-        })}
+        spacing={3}
+        sx={{
+          mt: 3,
+          '& > .MuiGrid-item': {
+            xs: 12, 
+            sm: 6,  
+            lg: 4,  
+          },
+        }}
+      >
+        {data?.map((item) => (
+          <Grid key={item._id} item>
+            <TabContents contestItem={item} />
+          </Grid>
+        ))}
       </Grid>
-{/*       
-        {data?.map(item => <CardWithHoverEffect key={item._id} contestItem={item}></CardWithHoverEffect> )}
-      <div className="text-center">
-      <Link className="btn bg-primary text-white mt-8">See add contests</Link>
-      </div> */}
     </Box>
   );
 }

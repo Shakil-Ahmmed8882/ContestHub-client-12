@@ -12,6 +12,7 @@ import VideoLabelIcon from "@mui/icons-material/VideoLabel";
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
+import { BiCrown } from "react-icons/bi";
 
 const QontoConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -137,15 +138,30 @@ function ColorlibStepIcon(props) {
   const { active, completed, className } = props;
 
   const icons = {
-    1: <SettingsIcon />,
-    2: <GroupAddIcon />,
-    3: <VideoLabelIcon />,
+    1: (
+      <img
+        className=" rounded-full h-full w-full object-cover"
+        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    ),
+    2: (
+      <img
+        className=" rounded-full h-full w-full object-cover"
+        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    ),
+    3: (
+      <img
+        className=" rounded-full h-full w-full object-cover"
+        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    ),
   };
 
   return (
     <ColorlibStepIconRoot
       ownerState={{ completed, active }}
-      className={className}>
+      className={`${className} overflow-hidden`}>
       {icons[String(props.icon)]}
     </ColorlibStepIconRoot>
   );
@@ -169,32 +185,38 @@ ColorlibStepIcon.propTypes = {
   icon: PropTypes.node,
 };
 
-const steps = [
-  "New",
-  "intermediate",
-  "Advance",
-];
+const steps = ["Alice", "Bob", "Vorolina"];
 
 export default function CustomizedSteppers() {
+  const states = [12, 33, 18];
   return (
-    <Stack sx={{ width: "100%" }} spacing={4}>
-      <Stepper alternativeLabel activeStep={1} connector={<QontoConnector />}>
-        {steps.map((label) => (
-          <Step key={label}>
-            <StepLabel StepIconComponent={QontoStepIcon}>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+    <Stack sx={{ width: "1200px" }} spacing={4}>
       <Stepper
+        sx={{ fontWeight: "bold" }}
         alternativeLabel
         activeStep={1}
         connector={<ColorlibConnector />}>
-        {steps.map((label) => (
+        {steps.map((label, idx) => (
           <Step key={label}>
             <StepLabel StepIconComponent={ColorlibStepIcon}>{label}</StepLabel>
           </Step>
         ))}
       </Stepper>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl justify-center items-center md:pl-16">
+        {
+         states?.map(state => 
+          <div key={state} className="stat  bg-[#ffffffcf] z-20">
+                        <div className="stat-figure  text-gold mb-auto">
+                          <BiCrown className="text-3xl  "></BiCrown>
+                        </div>
+                        <div className="stat-title">Total participations</div>
+                        <div className="stat-value text-green-400">.6K</div>
+                        <div className="stat-desc">
+                          Supar dedication brought them here
+                        </div>
+                      </div>) 
+        }
+          </div>
     </Stack>
   );
 }

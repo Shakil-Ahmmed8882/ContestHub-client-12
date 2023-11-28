@@ -5,6 +5,8 @@ import crown from "../assets/img/crown.png";
 import crown1 from "../assets/img/crown1.png";
 import crown2 from "../assets/img/crown2.png";
 import InfoCard from "./Demo/InfoCard";
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+
 
 const BestCreators = () => {
   const crowns = [crown, crown1, crown2];
@@ -18,13 +20,20 @@ const BestCreators = () => {
     isLoading,
     refetch,
   } = useGetOpenData("/allContestCreators");
-  if (isLoading) return <Spinner />;
 
+  if(isLoading) return <Spinner></Spinner>
   // Assuming data is an array of objects with a 'rate' property
-  const sortedRatedCreator = data?.slice().sort((a, b) => {
-    // Assuming 'rate' is a numerical property
-    return b.bestCreatorRating - a.bestCreatorRating; // Ascending order, use b.rate - a.rate for descending order
-  });
+
+  let sortedRatedCreator = []
+  if(data){
+     const foundContest = data?.slice().sort((a, b) => {
+      // Assuming 'rate' is a numerical property
+      return b.bestCreatorRating - a.bestCreatorRating; // Ascending order, use b.rate - a.rate for descending order
+    });
+
+    sortedRatedCreator.push(foundContest)
+
+  }
 
   const bestThreeContestCreator = sortedRatedCreator?.slice(0, 3);
 

@@ -34,9 +34,9 @@ const Banner = () => {
   };
 
   return (
-    <div className="bg-gray-100 relative min-h-screen pt-20">
-      <div className="bg-[#605bf109] h-[400px] w-[1000px] rotate-45 rounded-r-full  overflow-x-hidden -right-[100px] -top-[500px] absolute"></div>
-      <div className="bg-[#605bf109] h-[400px] w-[1000px] rotate-45 rounded-r-full  overflow-x-hidden -left-[450px] top-16 absolute "></div>
+    <div className="bg-gray-100 relative min-h-[40vh] pt-20 ">
+        <div className="bg-[#605bf117] h-[400px] w-[1000px] rotate-45 rounded-r-full  overflow-x-hidden -right-[100px] -top-[500px] absolute"></div>
+      <div className="bg-[#605bf117] h-[400px] w-[1000px] rotate-45 rounded-r-full  overflow-x-hidden -left-[450px] top-16 absolute "></div>
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold text-gray-900">Discover Creativity on ContestHub</h1>

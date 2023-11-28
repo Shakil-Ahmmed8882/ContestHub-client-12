@@ -271,8 +271,12 @@
      TODO:
 
    
-
-   
+ ---------------------------
+ *   Winner section
+ * --------------------------
+   TODO: show image of the winner
+   TODO: use relevate text that syncs to the winning page
+   TODO: make the ui appealing
 
 
  */

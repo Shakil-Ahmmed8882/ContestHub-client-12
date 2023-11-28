@@ -1,77 +1,59 @@
-// import * as React from 'react';
-// import Stack from '@mui/material/Stack';
-// import Paper from '@mui/material/Paper';
-// import { styled } from '@mui/material/styles';
-// import { Link } from 'react-router-dom';
-
-// const DemoPaper = styled(Paper)(({ theme }) => ({
-
-//   padding: theme.spacing(2),
-//   ...theme.typography.body2,
-//   textAlign: 'center',
-// }));
-
-// export default function TabContents({contestItem}) {
-// //  console.log(Object.keys(item).join(','))
-// const {_id,contestName,image,description,prizeMoney,taskSubmissionInstructions,tags,deadline,status,creatorID,winnerID,type,participants} = contestItem 
-//   return (
-//     <Stack direction="row" spacing={2} >
-//       <DemoPaper square={false} >
-//             <img className='w-full h-40 object-cover' src={image}/>
-//             <h2>{contestName}</h2>
-//             <p><span>icon</span>Attempted:{participants?.length}</p>
-//             <p>{description}</p>
-//             <Link className='btn' to={`/contest/${_id}`} >Details</Link>
-//             </DemoPaper>
-
-//     </Stack>
-//   );
-// }
-
-
-
-
-import React, { useState } from 'react';
-import Stack from '@mui/material/Stack';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-import Pagination from '@mui/material/Pagination';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const DemoPaper = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(2),
-  ...theme.typography.body2,
-  textAlign: 'center',
-}));
-
-export default function TabContents({ contestItem, pageSize }) {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const handlePageChange = (event, page) => {
-    setCurrentPage(page);
-  };
-
-  const indexOfLastCard = currentPage * pageSize;
-  const indexOfFirstCard = indexOfLastCard - pageSize;
-  const currentCards = contestItem.slice(indexOfFirstCard, indexOfLastCard);
+const TabContents = ({ contestItem }) => {
+  const {
+    _id,
+    contestName,
+    image,
+    description,
+    prizeMoney,
+    taskSubmissionInstructions,
+    tags,
+    deadline,
+    status,
+    winnerID,
+    type,
+    creatorID,
+    participants,
+  } = contestItem;
 
   return (
     <>
-      <Stack direction="row" spacing={2}>
-        {currentCards.map((item) => (
-          <DemoPaper square={false} key={item._id}>
-            {/* Display card content here */}
-            <h2>{item.contestName}</h2>
-            {/* Other card content */}
-            <Link to={`/contest/${item._id}`}>Details</Link>
-          </DemoPaper>
-        ))}
-      </Stack>
-      <Pagination
-        count={Math.ceil(contestItem.length / pageSize)}
-        color="primary"
-        onChange={handlePageChange}
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        rel="stylesheet"
       />
+      <div className="antialiased min-w-[300px] text-gray-900 relative">
+        <div className="shadow-lg rounded-lg">
+          <div className="relative">
+            <img
+              className="h-48 w-full object-cover rounded-t-lg"
+              src={image || 'https://via.placeholder.com/600x400'}
+              alt={contestName || 'Contest Image'}
+            />
+            <div className="absolute inset-0 bg-black opacity-20 mix-blend-multiply rounded-t-lg" />
+            <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold rounded-t-lg">
+              <p className="text-center bg-white text-black p-3">{contestName || 'All'}</p>
+            </div>
+          </div>
+          <div className="p-6">
+            {/* Rest of the content */}
+            <div className="flex items-baseline">
+              {/* ... */}
+            </div>
+            <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
+              {contestName || 'Beautiful Home in the countryside'}
+            </h4>
+            {/* ... */}
+              {participants.length || 'Beautiful Home in the countryside'}
+            
+            <Link to={`/contest/${_id}`}>view</Link>
+          </div>
+        </div>
+      </div>
     </>
   );
-}
+};
+
+export default TabContents;
