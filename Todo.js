@@ -75,7 +75,17 @@
   Show single contest redirecting by detail button 
   make the dynamic timer to calculate contest deadline
   * TODO: Make the route secure and make sure user get the route they supposed ot get
-
+  
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
+ *TODO:
   
   -------------------------------
             Payment
@@ -274,9 +284,12 @@
  ---------------------------
  *   Winner section
  * --------------------------
-   TODO: show image of the winner
-   TODO: use relevate text that syncs to the winning page
-   TODO: make the ui appealing
+    show image of the winner
+    use relevate text that syncs to the winning page
+    make the ui appealing
+
+
+
 
 
  */

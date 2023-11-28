@@ -27,6 +27,11 @@ const UserRoutes = () => {
       </NavLink>
       <NavLink
         className="p-2 hover:text-primary   mx-1 text-[13px]"
+        to="/dashboard/profile">
+        Profile
+      </NavLink>
+      <NavLink
+        className="p-2 hover:text-primary   mx-1 text-[13px]"
         to="/dashboard/registeredContests">
         Registered contests
       </NavLink>

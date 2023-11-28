@@ -20,6 +20,8 @@ import EditContest from "../Pages/Dashboard/Contest_Creator/EditContest";
 import MySubmittedPaage from "../Pages/Dashboard/Contest_Creator/MySubmittedPaage";
 import RegisteredContest from "../Pages/Dashboard/User/RegisteredContest";
 import AllContestCreators from "../Pages/Dashboard/Admin/AllContestCreators";
+import MyProfile from "../Pages/Dashboard/Profle/MyProfile";
+import EditProfile from "../Pages/Demo/EditProfile";
 
 export const router = createBrowserRouter([
   {
@@ -73,6 +75,14 @@ export const router = createBrowserRouter([
       {
         path: "UpcomingContests",
         element: <UpcomingContests></UpcomingContests>,
+      },
+      {
+        path: "profile",
+        element: <MyProfile></MyProfile>,
+      },
+      {
+        path: "editProfile",
+        element: <EditProfile></EditProfile>,
       },
 
       // Admin

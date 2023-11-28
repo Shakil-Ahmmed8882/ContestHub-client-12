@@ -2,8 +2,6 @@ import BarChat from "../../../Components/Ui/Chart/BarChat";
 import ChartComponent from "../../../Components/Ui/Chart/MixBarChart";
 import useAuth from "../../../Hooks/useAuth";
 import AvaterGroup from "./AvaterGroup";
-import RegisteredContest from "./RegisteredContest";
-import Welcome from "./Welcome";
 
 const Profile = () => {
   const { user, loading } = useAuth() || {};
@@ -19,7 +17,6 @@ const Profile = () => {
         </h1>
         <p>Here is what’s happening with your projects today:</p>
       </div>
-      <RegisteredContest></RegisteredContest>
       <BarChat></BarChat>
       <ChartComponent></ChartComponent>
       

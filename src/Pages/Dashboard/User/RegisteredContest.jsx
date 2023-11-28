@@ -5,11 +5,13 @@ import HorizontalCard from "./HorizontalCard";
 
 const RegisteredContest = () => {
   const {user} = useAuth()
-  const {data,isLoading} = useGetSecureData(`/user/participatedContests/${user?.email}/''`)
+  const {data,isLoading} = useGetSecureData(`/user/participatedContests/${user?.email || 'shakilahmmed8882@gmail.com'}/''`)
 
-  if(isLoading || !data) return <Spinner/>
+  if(isLoading) return <Spinner/>
 
-  const {attemptedContests} = data
+
+  console.log(data)
+  const {attemptedContests} = data || {}
 
   return (
     <div className="grid gap-8 md:grid-cols-2 mx-8">

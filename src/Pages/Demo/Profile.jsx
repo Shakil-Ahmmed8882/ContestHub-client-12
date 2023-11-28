@@ -1,23 +1,74 @@
+import { Link } from "react-router-dom";
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import useAuth from "../../Hooks/useAuth";
+
+
 const Profile = () => {
+  const {user} = useAuth()
+  console.log(user)
   return (
     <div>
-      <header className="px-2 py-4 mt-16 flex flex-col justify-center items-center text-center">
-        <img
-          className="inline-flex object-cover border-4 border-indigo-600 dark:border-indigo-400 rounded-full shadow-[5px_5px_0_0_rgba(0,0,0,1)] shadow-indigo-600/100 dark:shadow-indigo-700/100 bg-indigo-50 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400 h-24 w-24 !h-48 !w-48"
-          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxoZWFkc2hvdHxlbnwwfDB8fHwxNjk1ODE3MjEzfDA&ixlib=rb-4.0.3&q=80&w=1080"
-          alt="Wendell Adriel"
-        />
-        <h1 className="text-2xl text-gray-500 font-bold mt-2">Johh Doe</h1>
-        <h2 className="text-base md:text-xl text-gray-500 font-bold">
-          Lead Software Engineer @
-          <a
-            href=""
-            target="_blank"
-            className="text-indigo-900 hover:text-indigo-600 font-bold border-b-0 hover:border-b-4 hover:border-b-indigo-300 transition-all mb-2">
-            XYZ
-          </a>
-        </h2>
-        <ul className="flex flex-row mt-2">
+<>
+  {/* https://gist.github.com/goodreds/5b8a4a2bf11ff67557d38c5e727ea86c */}
+  <div className="  max-w-5xl mx-auto mt-11 bg-white shadow-xl rounded-lg text-gray-900">
+    <div className="rounded-t-lg h-32 overflow-hidden">
+      <img
+        className="object-cover object-top w-full"
+        src="https://images.unsplash.com/photo-1558470598-a5dda9640f68?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29sb3J8ZW58MHx8MHx8fDA%3D"
+        alt="Mountain"
+      />
+    </div>
+    <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+      <img
+        className="object-cover object-center h-32"
+        src={user?.photoURL || "https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"}
+        alt="Woman looking front"
+      />
+      <div className="absolute bottom-2 right-2">
+    <Link to="/dashboard/editProfile">
+    <EditNoteIcon 
+    sx={{width:'40px',height:'40px',backgroundColor:'#fff',padding:'3px', borderRadius:'50%'}}
+    ></EditNoteIcon>
+    </Link>
+    </div>
+    </div>
+    <div className="text-center mt-2">
+      <h2 className="font-semibold">{user?.displayName || "Anonymous"}</h2>
+      <p className="text-gray-500">Freelance Web Designer</p>
+    </div>
+    <ul className="py-4 mt-2 text-gray-700 flex items-center justify-center gap-8">
+      <li className="flex flex-col items-center justify-around">
+        <svg
+          className="w-4 fill-current text-blue-900"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+        </svg>
+        <div>2k</div>
+      </li>
+      <li className="flex flex-col items-center justify-between">
+        <svg
+          className="w-4 fill-current text-blue-900"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9 10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16 20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z" />
+        </svg>
+        <div>10k</div>
+      </li>
+      <li className="flex flex-col items-center justify-around">
+        <svg
+          className="w-4 fill-current text-blue-900"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+        </svg>
+        <div>15</div>
+      </li>
+    </ul>
+    <ul className="flex flex-row mt-2 justify-center relative">
           <li className="mx-2">
             <a href="" target="_blank" aria-label="GitHub">
               <svg
@@ -84,9 +135,19 @@ const Profile = () => {
             </a>
           </li>
         </ul>
-      </header>
+
+    <div className="p-4 border-t mx-8 mt-2">
+      <Link to='/' className="w-1/2 text-center py-3 block mx-auto rounded-full bg-primary  border-none outline-none hover:shadow-lg font-semibold text-white ">
+        Go home
+      </Link>
+    
+    </div>
+  </div>
+</>
+      
     </div>
   );
 };
 
 export default Profile;
+      
