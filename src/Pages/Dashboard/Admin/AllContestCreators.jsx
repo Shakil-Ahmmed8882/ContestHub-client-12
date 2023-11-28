@@ -4,11 +4,11 @@ import UserTable from "./CreatorTable";
 
 
 const AllContestCreators = () => {
-      const {data,isLoading,refetch} =useGetSecureData('/allContestCreators')
+      const {data,isLoading,refetch} =useGetSecureData('/allContestCreators','all-creators')
 
       if(isLoading) return <Spinner></Spinner>
 
-      console.log(data)
+  
 
 
       return (

@@ -11,6 +11,10 @@ import arrowDrawLine from '../assets/img/wired-outline-1419-polyline.gif'
 import ReplaceThis from "./Demo/ReplaceThis";
 import Winners from "./Winners";
 import BestCreators from "./BestCreators";
+import BasicPagination from "../Components/Ui/Pagination/Pagination";
+import CustomizedSteppers from "../Components/Ui/Stepper/Stepper";
+import Avatars from "./Avater";
+import MyMarquee from "../Components/Ui/Marquee";
 const Home = () => {
  
 
@@ -30,6 +34,11 @@ const Home = () => {
       <Winners></Winners>
       <BestCreators></BestCreators>
       {/* <App></App> */}
+      <CustomizedSteppers></CustomizedSteppers>
+      <BasicPagination></BasicPagination>
+      <Avatars></Avatars>
+      <MyMarquee></MyMarquee>
+      
     </div>
   );
 };

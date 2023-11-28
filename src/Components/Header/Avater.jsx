@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Avater = ({ img }) => {
@@ -46,6 +46,7 @@ const Avater = ({ img }) => {
             user?.displayName
           }
         </li>
+        <li><Link to='/dashboard'> Dashboard</Link> </li>
         {user ? logOutLink : signInLink}
       </ul>
     </div>

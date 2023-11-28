@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import usePublicApi from "../Hooks/usePublicApi";
 import { Link } from "react-router-dom";
+import TitleDescription from "../Components/Ui/TitleDescription ";
 
 const Popular = () => {
   const xiosPublic = usePublicApi()
@@ -19,16 +20,14 @@ const Popular = () => {
       <div className="py-12  bg-white">
         <div className="max-w-[1050px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-              ContestHub
-            </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Top 4 popular contests
-            </p>
-            <p className="mt-4 mb-11 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
+            <TitleDescription
+            top_SmallText={'ContestHub'}
+            title={'Top 4 popular contests'}
+            description={            "Explore the most contests that captivated numerous participants! Delve into a world of creativity and competition."
+          }
+            ></TitleDescription>
+
+           
           </div>
           <div className="grid md:grid-cols-2 gap-11">
 

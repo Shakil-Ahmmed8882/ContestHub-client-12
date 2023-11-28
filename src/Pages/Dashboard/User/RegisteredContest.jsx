@@ -12,6 +12,7 @@ const RegisteredContest = () => {
 
   return (
     <div className="grid gap-8 md:grid-cols-2 mx-8">
+      <h1 className="text-[20px]">Implement sorting feature based on last upadte date</h1>
       {
         attemptedContests?.map(AtmContest => <HorizontalCard key={AtmContest._id} contest={AtmContest}> </HorizontalCard>)
       }
