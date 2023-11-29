@@ -8,6 +8,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import ContestTable from "./Table";
+import Searching from "../../../Pages/Demo/Searching";
 
 const MyCreatedContests = () => {
   const { user, loading } = useAuth();
@@ -21,14 +22,19 @@ const MyCreatedContests = () => {
 
   return (
     <div>
-      {data?.length}
-      {/* <Tooltip sx={{color:'red'}} title="Delete">
-        <IconButton>
-          <DeleteIcon />
-        </IconButton>
-      </Tooltip> */}
-      <ContestTable rows={data} refetch={refetch}></ContestTable>
-    </div>
+      {
+       data.length?
+       <div>
+        {/* <Tooltip sx={{color:'red'}} title="Delete">
+          <IconButton>
+            <DeleteIcon />
+          </IconButton>
+        </Tooltip> */}
+        <ContestTable rows={data} refetch={refetch}></ContestTable>
+      </div>: <Searching></Searching>
+
+      }
+      </div>
   );
 };
 

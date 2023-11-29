@@ -23,8 +23,6 @@ import Zoom from "@mui/material/Zoom";
 import { useNavigate } from "react-router-dom";
 
 const columns = [
-  //   { id: "_id", label: "", minWidth: 170
-
   { id: "contestName", label: "Contest Name", minWidth: 170 },
   { id: "image", label: "Image", minWidth: 170 },
   { id: "prizeMoney", label: "Prize Money", minWidth: 170 },
@@ -36,11 +34,12 @@ const columns = [
   { id: "Action", label: "Action", minWidth: 170 },
 ];
 
-const ContestTable = ({ rows,refetch }) => {
+
+const ContestTable = ({ rows, refetch }) => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const xiosSecure = useSecureApi();
-  const goTo = useNavigate()
+  const goTo = useNavigate();
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -51,29 +50,29 @@ const ContestTable = ({ rows,refetch }) => {
     setPage(0);
   };
 
-  const handleContestDelete = async(id, status) => {
+  const handleContestDelete = async (id, status) => {
     if (status !== "pending") {
-      return ToastError("Sorry! you cannot delete approved contest");
+      return ToastError("Sorry! You cannot delete an approved contest");
     }
-    const res = await xiosSecure.delete(`contest/?id=${id}`)
-    if(res.data.deletedCount > 0){
-      refetch()
-      ToasMessage('Deleted')
+    const res = await xiosSecure.delete(`contest/?id=${id}`);
+    if (res.data.deletedCount > 0) {
+      refetch();
+      ToasMessage('Deleted');
     }
   };
 
   const handleContestEdit = (id, status) => {
     if (status !== "pending") {
-      return ToastError("Sorry! you cannot edit approved contest");
+      return ToastError("Sorry! You cannot edit an approved contest");
     }
-      goTo(`/dashboard/edit/${id}`)
+    goTo(`/dashboard/edit/${id}`);
   };
 
   const handleSubmittedPage = (id, status) => {
     if (status !== "pending") {
-      return ToastError("Sorry! you cannot edit approved contest");
+      return ToastError("Sorry! You cannot edit an approved contest");
     }
-      goTo(`/dashboard/MySubmittedPage/${id}`)
+    goTo(`/dashboard/MySubmittedPage/${id}`);
   };
 
   return (
@@ -110,30 +109,19 @@ const ContestTable = ({ rows,refetch }) => {
                       )}
                     </TableCell>
                   ))}
-                  {/* update */}
+                  {/* Actions */}
                   <div className="flex gap-2">
-                    
-                  <Tooltip onClick={() => handleContestEdit(row?._id, row?.status)}  title="Edit">
-                    <Button>Edit</Button>
-                  </Tooltip>
-
-                  {/* delete */}
-                  <Tooltip
-                    onClick={() => handleContestDelete(row?._id, row?.status)}
-                    title="Delete"
-                    sx={{ paddingRight: "30px" }}>
-                    <IconButton>
-                      <DeleteIcon />
-                    </IconButton>
-                  </Tooltip>
-
-                  {/* Submitted  */}
-                  
-                  <Tooltip onClick={() => handleSubmittedPage(row?._id, row?.status)}  title="Submitted page">
-                    <Button>Eye</Button>
-                  </Tooltip>
-
-
+                    <Tooltip title="Edit">
+                      <Button onClick={() => handleContestEdit(row?._id, row?.status)}>Edit</Button>
+                    </Tooltip>
+                    <Tooltip title="Delete" sx={{ paddingRight: "30px" }}>
+                      <IconButton onClick={() => handleContestDelete(row?._id, row?.status)}>
+                        <DeleteIcon />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Submitted page">
+                      <Button onClick={() => handleSubmittedPage(row?._id, row?.status)}>Eye</Button>
+                    </Tooltip>
                   </div>
                 </TableRow>
               ))}
