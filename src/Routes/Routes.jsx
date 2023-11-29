@@ -22,6 +22,8 @@ import RegisteredContest from "../Pages/Dashboard/User/RegisteredContest";
 import AllContestCreators from "../Pages/Dashboard/Admin/AllContestCreators";
 import MyProfile from "../Pages/Dashboard/Profle/MyProfile";
 import EditProfile from "../Pages/Demo/EditProfile";
+import AdminGuard from "../Components/Ui/Private/AdminGuard";
+import CreatorGuard from "../Components/Ui/Private/CreatorGuard";
 
 export const router = createBrowserRouter([
   {
@@ -88,7 +90,7 @@ export const router = createBrowserRouter([
       // Admin
       {
         path: "manageUser",
-        element: <ManageUser></ManageUser>,
+        element: <AdminGuard><ManageUser></ManageUser></AdminGuard>,
       },
       {
         path: "contestCreators",
@@ -96,24 +98,24 @@ export const router = createBrowserRouter([
       },
       {
         path: "manageContest",
-        element: <ManageContest></ManageContest>,
+        element: <AdminGuard><ManageContest></ManageContest></AdminGuard>,
       },
       //Creator
       {
         path:"addContest",
-        element:<AddContest></AddContest>
+        element:<CreatorGuard><AddContest></AddContest></CreatorGuard>
       },
       {
         path:"createContest",
-        element:<MyCreatedContests></MyCreatedContests>
+        element:<CreatorGuard><MyCreatedContests></MyCreatedContests></CreatorGuard>
       },
       {
         path:"edit/:id",
-        element:<EditContest></EditContest>
+        element:<CreatorGuard><EditContest></EditContest></CreatorGuard>
       },
       {
         path:"MySubmittedPage/:id",
-        element:<MySubmittedPaage></MySubmittedPaage>
+        element:<CreatorGuard><MySubmittedPaage></MySubmittedPaage></CreatorGuard>
       },
     ],
   },

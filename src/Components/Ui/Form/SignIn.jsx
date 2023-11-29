@@ -27,12 +27,12 @@ const SignIn = () => {
     signIn(email, password)
       .then((response) => {
         ToasMessage("You have successfully signed In");
-        goTo(from, { replace: true });
+        goTo(from, { replace: true } || '/');
       })
       .catch((err) => ToastError(err.message.toString()));
   };
 
-  console.log(user?.displayName);
+
 
   const handleMedia = (media) => {
     media().then((result) => {
@@ -54,7 +54,7 @@ const SignIn = () => {
           if (res.data) {
          
             ToasMessage("You have successfully signed in with google");
-            goTo(from, { replace: true });
+            goTo(from, { replace: true }  || '/');
           }
         });
     });

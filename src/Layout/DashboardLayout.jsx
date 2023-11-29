@@ -11,7 +11,7 @@ const DashboardLayout = () => {
   const [isAdmin, isAdminLoading] = useAdmin();
   const [isCreator, isCreatorLoading] = useCreator();
   const {user} = useAuth()
-  if (isAdminLoading) return <Spinner></Spinner>;
+  if (isAdminLoading || isCreatorLoading) return <Spinner></Spinner>;
   // const isAdmin = true
 
   // const isCreator = false;

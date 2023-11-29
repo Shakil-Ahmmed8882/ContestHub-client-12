@@ -14,7 +14,8 @@ export default {
         accentText: '#CEF1BA',
         bgPrimary: '#b2b1e636',
         redAccent:"#FD274E",
-        blueAccent:"#00A7F5"
+        blueAccent:"#00A7F5",
+        bgGray:'#FFFFFF'
         // Add more custom colors if needed
       },
     },

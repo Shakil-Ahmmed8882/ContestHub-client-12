@@ -25,12 +25,7 @@ const MenuProps = {
   },
 };
 
-const tags = [
-  "Business Contest",
-  "Medical Contest",
-  "Article Writing",
-  "Gaming",
-];
+const tags =['Business', 'Medical','Writing','Gaming','Tech', 'Coding',"FPS", "Gaming", "Shootout", "Battle Royale", "Sniper"]
 
 // imgbb credentials
 const IMAGE_HOSTING_KEY = import.meta.env.VITE_IMAGE_HOSTING_KEY;
