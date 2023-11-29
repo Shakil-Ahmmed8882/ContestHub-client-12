@@ -141,13 +141,13 @@ function ColorlibStepIcon(props) {
     1: (
       <img
         className=" rounded-full h-full w-full object-cover"
-        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src="https://images.squarespace-cdn.com/content/v1/55b029d3e4b022c52efdde18/1588602879737-A7VL13WN4382U5Q8PBUQ/toledo%2Bprofessional%2Bheadshots-10.jpg?format=2500w"
       />
     ),
     2: (
       <img
         className=" rounded-full h-full w-full object-cover"
-        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src="https://stylecaster.com/wp-content/uploads/2015/04/477973067.jpg?w=3000&h=1687&crop=1&resize=1200%2C675"
       />
     ),
     3: (
@@ -205,15 +205,26 @@ export default function CustomizedSteppers() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl justify-center items-center md:pl-16">
         {
          states?.map(state => 
-          <div key={state} className="stat  bg-[#ffffffcf] z-20">
+          <div key={state} className="stat  bg-[white] shadow-lg z-20 relative">
                         <div className="stat-figure  text-gold mb-auto">
-                          <BiCrown className="text-3xl  "></BiCrown>
                         </div>
                         <div className="stat-title">Total participations</div>
-                        <div className="stat-value text-green-400">.6K</div>
+                        <div className="stat-value my-4">.6K</div>
                         <div className="stat-desc">
                           Supar dedication brought them here
                         </div>
+{/*              
+                          <p className="w-6 h-4 py-3 my-2 absolute top-0 right-5 bg-blend-multiply opacity-60 rounded-full bg-redAccent flex text-white  items-center justify-center">
+                    </p>
+                      <p className="w-6 h-4 py-3 my-2  right-7 absolute rounded-full bg-primary opacity-60 bg-blend-multiply flex text-white  items-center justify-center">
+                    </p> */}
+                    <div className="flex justify-end"></div>
+                    <div className="">
+                    <BiCrown className="text-1xl px-2 bg-blueAccent  text-white w-9 h-9 rounded-full ml-8"></BiCrown>
+
+                    </div>
+                    
+
                       </div>) 
         }
           </div>

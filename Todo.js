@@ -293,7 +293,11 @@
  -----------------------------
  * Payment section
  ----------------------------
- 
+ TODO: get the id when clien on the register
+ TODO: now hit the same bakend was hitted in contest details page
+ TODO: console the found data
+ TODO: now show it in the ui
+ TODO:
 
 
  */

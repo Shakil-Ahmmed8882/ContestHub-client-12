@@ -8,10 +8,38 @@
     "tags": ["Business Contest"],
     "deadline": "2023-12-15",
     "status": "pending",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Business",
-    "creatorID":"",
-    "participants":[]
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Tech Hackathon",
+    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "description": "Code, innovate, and build tech solutions. Work collaboratively in a hackathon environment.",
+    "prizeMoney": 6000,
+    "taskSubmissionInstructions": "Submit your project and code repository link.",
+    "tags": ["Tech Contest"],
+    "deadline": "2024-02-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Tech",
+    "creatorID": "6563571e5031084f2d4ae05b",
+    "participants": []
+  },
+  {
+    "contestName": "Data Science Olympiad",
+    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "description": "Solve complex data problems and showcase your data science skills.",
+    "prizeMoney": 8000,
+    "taskSubmissionInstructions": "Submit your data analysis report and findings.",
+    "tags": ["Data Science Contest"],
+    "deadline": "2024-03-01",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Data Science",
+    "creatorID": "",
+    "participants": []
   },
   {
     "contestName": "Medical Research Symposium",
@@ -22,10 +50,10 @@
     "tags": ["Medical Contest"],
     "deadline": "2024-01-10",
     "status": "approved",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Medical",
-    "creatorID":"6563571e5031084f2d4ae05b",
-    "participants":[
+    "creatorID": "6563571e5031084f2d4ae05b",
+    "participants": [
       "user1@example.com",
       "test.user2@testdomain.com",
       "another.email@gmail.com",
@@ -42,9 +70,9 @@
     "tags": ["Article Writing"],
     "deadline": "2023-11-30",
     "status": "approved",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Writing",
-    "creatorID":"6563571e5031084f2d4ae05b",
+    "creatorID": "6563571e5031084f2d4ae05b",
     "participants": [
       "john.doe@example.com",
       "jane_smith@testdomain.com",
@@ -62,31 +90,10 @@
     "tags": ["Gaming"],
     "deadline": "2023-12-05",
     "status": "rejected",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Gaming",
-    "creatorID":"",
-    "participants":[]
-  },
-  {
-    "contestName": "Tech Hackathon",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
-    "description": "Code, innovate, and build tech solutions. Work collaboratively in a hackathon environment.",
-    "prizeMoney": 6000,
-    "taskSubmissionInstructions": "Submit your project and code repository link.",
-    "tags": ["Tech Contest"],
-    "deadline": "2024-02-20",
-    "status": "pending",
-    "winnerID":[],
-    "type": "Tech",
-    "creatorID":"6563571e5031084f2d4ae05b",
-    
-    "participants": [
-      "testuser@example.com",
-      "user123@testdomain.com",
-      "email.testing@gmail.com",
-      "sample.email@emailprovider.com",
-      "mail@customdomain.net"
-    ]
+    "creatorID": "",
+    "participants": []
   },
   {
     "contestName": "Design Challenge",
@@ -97,10 +104,10 @@
     "tags": ["Design Contest"],
     "deadline": "2024-03-10",
     "status": "approved",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Design",
-    "creatorID":"6563571e5031084f2d4ae05b",
-    "participants":[]
+    "creatorID": "6563571e5031084f2d4ae05b",
+    "participants": []
   },
   {
     "contestName": "Coding Competition",
@@ -111,10 +118,10 @@
     "tags": ["Coding Contest"],
     "deadline": "2023-12-20",
     "status": "pending",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Coding",
-    "creatorID":"",
-    "participants":[]
+    "creatorID": "",
+    "participants": []
   },
   {
     "contestName": "Photography Contest",
@@ -125,10 +132,10 @@
     "tags": ["Photography"],
     "deadline": "2024-01-05",
     "status": "approved",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Photography",
-    "creatorID":"",
-    "participants":[]
+    "creatorID": "",
+    "participants": []
   },
   {
     "contestName": "Music Composition Challenge",
@@ -139,23 +146,9 @@
     "tags": ["Music Contest"],
     "deadline": "2024-02-15",
     "status": "pending",
-    "winnerID":[],
+    "winnerID": [],
     "type": "Music",
-    "creatorID":"",
-    "participants":[]
-  },
-  {
-    "contestName": "Data Science Olympiad",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
-    "description": "Solve complex data problems and showcase your data science skills.",
-    "prizeMoney": 8000,
-    "taskSubmissionInstructions": "Submit your data analysis report and findings.",
-    "tags": ["Data Science Contest"],
-    "deadline": "2024-03-01",
-    "status": "pending",
-    "winnerID":[],
-    "type": "Data Science",
-    "creatorID":"",
-    "participants":[]
+    "creatorID": "",
+    "participants": []
   }
 ]

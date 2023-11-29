@@ -163,7 +163,7 @@ const ContestDetails = () => {
                   <div>
                     
                     <div className="px-2 flex md:justify-end">
-                      <Link to={`/payment/${id}`}>
+                      <Link to={`/payment/${_id}`}>
                         <button className="btn btn-outline flex-1 btn-primary">
                           Register a contest
                         </button>
