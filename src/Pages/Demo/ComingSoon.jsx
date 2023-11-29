@@ -3,6 +3,7 @@ import usePublicApi from '../../Hooks/usePublicApi';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { Link } from 'react-router-dom';
+import { BsCurrencyDollar, BsEyeFill, BsFillPeopleFill, BsToggleOn } from 'react-icons/bs';
 
 const Banner = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -32,6 +33,8 @@ const Banner = () => {
     setSelectedOption(value);
     setSearchQuery(value);
   };
+
+ 
 
   return (
     <div className="bg-gray-100 relative min-h-[40vh] pt-20 ">
@@ -73,54 +76,81 @@ const Banner = () => {
         {searchResults && <div>
           <div className="grid md:grid-cols-2 gap-11">
 
-            {
-              searchResults?.slice(0,4).map((contest,idx) => {
+          {/* ================ */}
 
-                return <div key={idx} className="min-h-[55vh] mb-8">
-                <dl className="hero " style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
-    
-                  <div className="relative -bottom-[100px] mx-2 bg-[#ededffe2] p-3 rounded-lg">
-                    <dt className="relative">
-                      <div className=" ml-1 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-500 text-white">
-                        {/* Heroicon name: outline/globe-alt */}
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                          />
-                        </svg>
-                      </div>
-                      <div className="ml-1 mt-3">
-                      <p className=" text-lg leading-6 font-medium text-gray-900">
-                      {contest?.contestName}
-                      </p>
-                      <p className="mt-1 mb-3">Attemptants: <span className="px-1  bg-green-400  text-white rounded-full font-bold">{contest.participantsCount}</span> </p>
-                      <p></p>
-                      <p></p>
-                      <p></p>
-    
-                      </div>
-                    </dt>
-                    <dd className="mt-2 ml-1 text-base text-gray-500 mb-8">
-                      {contest.description}
-                    </dd>
-                    <div className="text-right px-3 mt-3">
-                      <Link to={`/contest/${contest._id}`} className="bg-[#4f49ff] hover:bg-[#625df7] btn w-1/2 text-white ">Details</Link>
-                    </div>
+          {
+            searchResults && searchResults.length > 0 &&
+
+            searchResults?.map(item => {
+              const {
+                _id,
+                contestName,
+                image,
+                description,
+                prizeMoney,
+                taskSubmissionInstructions,
+                tags,
+                deadline,
+                status,
+                winnerID,
+                type,
+                creatorID,
+                participants,
+              } = item
+            
+
+              return (
+                <div key={item._id} className="antialiased    text-gray-900 min-h-[100px] relative">
+                <div className=" relative rounded-lg h-full w-full">
+                  <div className="relative ">
+                 
+                    <div className=" bg-white inset-0 opacity-20 mix-blend-multiply rounded-t-lg" />
                   </div>
-          
-                </dl>
+                  <div className="p-6 rounded-lg bg-white text-black pt-11">
+                  <img
+                      className="w-11 h-11 absolute -top-4 -left-4 border-2 border-[#8d8888]  rounded-full object-bottom "
+                      src={image || "https://via.placeholder.com/600x400"}
+                      alt={contestName || "Contest Image"}
+                    />
+                    {/* Rest of the content */}
+                    <div className="flex items-baseline">{/* ... */}</div>
+                    <h4 className="font-bold text-[19px] leading-tight truncate">
+                      {contestName || "Beautiful Home in the countryside"}
+                    </h4>
+                      <p className="text-[16px] text-gray-500 mt-2">
+                      {description.length > 50?description.slice(0,40):description + "we are happy to see you in contestHub"}
+                    </p>
+                    {/* ... */}
+                      <div className=" mt-2 flex rounded-lg  items-center gap-1">
+                      <BsFillPeopleFill className="text-[24px] text-gray-400"></BsFillPeopleFill>Participants
+                      <p className="w-11 h-4 py-3 my-2  rounded-full bg-[#00A7F5] flex text-white  items-center justify-center">
+                    {participants.length}
+                    </p>
+                    </div>
+                      <div className=" font-bold mt-2 flex w-[150px]  rounded-lg  items-center gap-1">
+                      <BsCurrencyDollar className="font-bold text-2xl text-gray-500"></BsCurrencyDollar>
+                      <p className="text-white flex bg-redAccent px-5 py-1 text-[13px] rounded-lg font-bold  items-center justify-center">
+                    {prizeMoney}
+                    </p>
+                    </div>
+                    <div className="flex gap-3 items-center ">
+                    
+                    </div>
+                      <Link className="flex gap-2 relative font-bold justify-end cursor-pointer  items-center text-[17px]" to={`/contest/${_id}`}>
+                        view
+                      <BsEyeFill className="text-gray-400 mt-2"></BsEyeFill>
+                      </Link>
+                <BsToggleOn className="absolute top-6 right-6 text-2xl text-gray-400 "></BsToggleOn>
+                  </div>
+                </div>
               </div>
-              })
-            }
+              )
+            })
+
+            
+
+          }
+          
          
         {/*  */}
        

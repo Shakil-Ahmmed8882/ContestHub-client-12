@@ -8,6 +8,9 @@ import { Grid } from "@mui/material";
 import Spinner from "../Demo/Spinner";
 
 
+
+
+
 export default function AllContests() {
   const [value, setValue] = React.useState(0);
 
@@ -39,31 +42,58 @@ export default function AllContests() {
 
   return (
     <Box
+    sx={{
+      position: "relative",
+      
+      minHeight: 100,
+      maxWidth: { lg: 1100, p: 8 },
+      marginInline: 'auto',
+      bgcolor: "background",
+      paddingBottom: 4,
+    }}
+  >
+  
+   <Tabs
+  value={value}
+  onChange={handleChange}
+  variant="scrollable"
+  sx={{
+    width:'98%',
+    mx:'auto',
+
+    mt: 2,
+    backgroundColor: '#fff',
+    borderRadius: '4px',
+    '& .Mui-selected': {
+      color: 'red !important', // No need for !important here
+      fontWeight: 'normal',
+    },
+    '& .MuiTab-root': {
+      fontWeight: 'bold', // Default style for all tabs
+    },
+    '& .Mui-selected .MuiTab-root': {
+      fontWeight: 'normal', // Active tab style
+    },
+  }}
+  scrollButtons="auto"
+  aria-label="scrollable auto tabs example"
+>
+  {contestsType.map((label, index) => (
+    <Tab
+      key={label}
       sx={{
-        minHeight: 100,
-        maxWidth: { lg: 1100, sm: 480, p: 8 },
-        marginInline:'auto',
-        bgcolor: "background.paper",
-        paddingBottom: 4,
+        color: index === value ? 'red' : 'black',
       }}
-    >
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        variant="scrollable"
-        sx={{ mt: 2 }}
-        scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
-      >
-        {contestsType.map((label) => (
-          <Tab key={label} label={label} />
-        ))}
-      </Tabs>
-      <Grid
+      label={label}
+    />
+  ))}
+</Tabs>
+      {/* <Grid
         container
         justifyContent="center"
         spacing={3}
         sx={{
+          gap:2,
           mt: 3,
           '& > .MuiGrid-item': {
             xs: 12, 
@@ -72,12 +102,19 @@ export default function AllContests() {
           },
         }}
       >
-        {data?.map((item) => (
+        {data?.map((item,idx) => (
           <Grid key={item._id} item>
-            <TabContents contestItem={item} />
+            <TabContents idx={idx} contestItem={item} />
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
+
+
+      <div className="responsive_grid grid px-7 lg:px-2  gap-11 mt-8">
+        {data?.map((item,idx) => <TabContents key={idx} idx={idx} contestItem={item} />)}
+
+
+      </div>
     </Box>
   );
 }

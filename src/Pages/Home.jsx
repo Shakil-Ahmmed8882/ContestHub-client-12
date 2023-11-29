@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       </div> */}
       <Banner></Banner>
-
+      
       {/* <ReplaceThis></ReplaceThis> */}
       <Popular></Popular>
       <Winners></Winners>

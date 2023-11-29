@@ -8,7 +8,7 @@
     "tags": ["Business Contest"],
     "deadline": "2023-12-15",
     "status": "pending",
-    "winnerID":["6562373f1e674fe582bbbc4b","6562373f1e674fe582bbbc49","6562373f1e674fe582bbbc4a"],
+    "winnerID":[],
     "type": "Business",
     "creatorID":"",
     "participants":[]
@@ -22,7 +22,7 @@
     "tags": ["Medical Contest"],
     "deadline": "2024-01-10",
     "status": "approved",
-    "winnerID": "ObjectId5",
+    "winnerID":[],
     "type": "Medical",
     "creatorID":"6563571e5031084f2d4ae05b",
     "participants":[
@@ -42,7 +42,7 @@
     "tags": ["Article Writing"],
     "deadline": "2023-11-30",
     "status": "approved",
-    "winnerID": ["6561ee5a1e674fe582bbbc2a","6561ee5a1e674fe582bbbc29","656233251e674fe582bbbc44"],
+    "winnerID":[],
     "type": "Writing",
     "creatorID":"6563571e5031084f2d4ae05b",
     "participants": [
@@ -62,7 +62,7 @@
     "tags": ["Gaming"],
     "deadline": "2023-12-05",
     "status": "rejected",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Gaming",
     "creatorID":"",
     "participants":[]
@@ -76,7 +76,7 @@
     "tags": ["Tech Contest"],
     "deadline": "2024-02-20",
     "status": "pending",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Tech",
     "creatorID":"6563571e5031084f2d4ae05b",
     
@@ -97,7 +97,7 @@
     "tags": ["Design Contest"],
     "deadline": "2024-03-10",
     "status": "approved",
-    "winnerID": "ObjectId1",
+    "winnerID":[],
     "type": "Design",
     "creatorID":"6563571e5031084f2d4ae05b",
     "participants":[]
@@ -111,7 +111,7 @@
     "tags": ["Coding Contest"],
     "deadline": "2023-12-20",
     "status": "pending",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Coding",
     "creatorID":"",
     "participants":[]
@@ -125,7 +125,7 @@
     "tags": ["Photography"],
     "deadline": "2024-01-05",
     "status": "approved",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Photography",
     "creatorID":"",
     "participants":[]
@@ -139,7 +139,7 @@
     "tags": ["Music Contest"],
     "deadline": "2024-02-15",
     "status": "pending",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Music",
     "creatorID":"",
     "participants":[]
@@ -153,7 +153,7 @@
     "tags": ["Data Science Contest"],
     "deadline": "2024-03-01",
     "status": "pending",
-    "winnerID": null,
+    "winnerID":[],
     "type": "Data Science",
     "creatorID":"",
     "participants":[]

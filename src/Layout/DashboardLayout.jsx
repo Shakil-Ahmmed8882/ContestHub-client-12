@@ -31,6 +31,7 @@ const DashboardLayout = () => {
   return (
     <div className="grid grid-cols-5 w-[100%]">
       <div className="w-72 text-3xl sticky top-0 bg-indigo-600 text-white col-span-1 h-screen">
+      {/* https://dribbble.com/shots/23095596-UI-Concept-of-Parcel-Delivery-Dashboard */}
         {routesComponent}
       </div>
       <div className="col-span-4 bg-[#FFFFFF]">

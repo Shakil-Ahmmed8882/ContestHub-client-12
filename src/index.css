@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&display=swap');
+
+
 body{
-      background-color:#F1F5F9;
+      background-color:#F4F4F6;
       min-height: 100vh;
       overflow-x: hidden;
+      font-family: 'Lato', sans-serif;
 }
 
 a.active{
@@ -22,5 +26,10 @@ a.active{
       color: white ;
 }
 
-
+.textWhite{
+      color: #000 !important;
+}
+.responsive_grid{
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
 

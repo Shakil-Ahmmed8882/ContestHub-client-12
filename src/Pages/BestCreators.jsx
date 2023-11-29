@@ -24,6 +24,7 @@ const BestCreators = () => {
   if(isLoading) return <Spinner></Spinner>
   // Assuming data is an array of objects with a 'rate' property
 
+
   let sortedRatedCreator = []
   if(data.length > 0){
      const foundContest = data?.slice().sort((a, b) => {
@@ -31,9 +32,17 @@ const BestCreators = () => {
       return b.bestCreatorRating - a.bestCreatorRating; // Ascending order, use b.rate - a.rate for descending order
     });
 
-    sortedRatedCreator.push(foundContest)
+
+    foundContest?.forEach(element => {
+      sortedRatedCreator.push(element)
+      
+    });
+
+
 
   }
+
+  console.log(sortedRatedCreator)
 
   const bestThreeContestCreator = sortedRatedCreator?.slice(0, 3);
 
