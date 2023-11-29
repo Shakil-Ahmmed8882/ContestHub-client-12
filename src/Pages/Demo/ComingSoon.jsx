@@ -54,7 +54,7 @@ const Banner = () => {
                 disablePortal
                 id="combo-box-dropdown"
                 className='w-full'
-                options={['Business Contest', 'Medical', 'Coding']}
+                options={['Business', 'Medical','Writing','Gaming','Tech', 'Coding',"FPS", "Gaming", "Shootout", "Battle Royale", "Sniper"]}
                 sx={{ width: 200 }}
                 renderInput={(params) => (
                   <TextField

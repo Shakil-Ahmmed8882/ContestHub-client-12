@@ -35,7 +35,7 @@ const Popular = () => {
                     className="hero "
                     style={{
                       backgroundImage:
-                        "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+                        `url(${contest?.image || "https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg"})`,
                     }}>
                     <div className="relative -bottom-[100px] mx-2 bg-[#ededffe2] p-3 rounded-lg">
                       <dt className="relative">

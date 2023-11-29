@@ -59,7 +59,7 @@ const ContestDetails = () => {
           <div className="md:grid grid-cols-6 gap-3 md:flex-1 px-4">
             <div className=" col-span-2 rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
               <img
-                className="w-full h-full object-cover "
+                className="w-full h-[65vh] object-cover object-top"
                 src={image}
                 alt="Product Image"
               />

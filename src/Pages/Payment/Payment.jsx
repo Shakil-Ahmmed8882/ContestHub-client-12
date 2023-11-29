@@ -125,7 +125,8 @@ const Payment = () => {
                 <div className="relative space-y-6 lg:grid lg:grid-cols-3 lg:space-y-0">
             
                   <div className="bg-white ring-2 ring-indigo-700 relative shadow-md pt-6 px-6 pb-3 rounded-lg lg:px-8 lg:pt-12">
-                      <BsFillPeopleFill className="text-6xl relative top-1 left-28   text-gray-400"></BsFillPeopleFill>
+                    <img className="rounded-lg h-72 w-full object-cover object-top" src={image || "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} alt="" />
+                      {/* <BsFillPeopleFill className="text-6xl relative top-1 left-28   text-gray-400"></BsFillPeopleFill> */}
                             <div className=" ml-8 mt-2 flex rounded-lg relative  items-center gap-1">
                       <div className="relative ml-24 mb-5">
 

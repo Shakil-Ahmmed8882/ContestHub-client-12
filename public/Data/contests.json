@@ -14,8 +14,237 @@
     "participants": []
   },
   {
+    "contestName": "Startup Pitch Challenge",
+    "image": "https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Present your startup's pitch to potential investors. Showcase your unique business model and growth strategies.",
+    "prizeMoney": 7500,
+    "taskSubmissionInstructions": "Submit a pitch deck and a brief video presentation.",
+    "tags": ["Startup", "Entrepreneurship", "Business"],
+    "deadline": "2024-02-28",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
+    "contestName": "E-commerce Innovation Awards",
+    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Recognizing innovative e-commerce business ideas. Highlight unique approaches and technological advancements.",
+    "prizeMoney": 10000,
+    "taskSubmissionInstructions": "Submit a detailed proposal outlining your e-commerce innovation.",
+    "tags": ["E-commerce", "Innovation", "Business"],
+    "deadline": "2024-03-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Digital Marketing Strategy Competition",
+    "image": "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg",
+    "description": "Showcase your innovative digital marketing strategies. Focus on effective business promotion techniques.",
+    "prizeMoney": 8500,
+    "taskSubmissionInstructions": "Submit a comprehensive digital marketing strategy plan.",
+    "tags": ["Digital Marketing", "Strategy", "Business"],
+    "deadline": "2024-04-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Tech Innovation",
+    "image": "https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Explore the latest technological innovations driving business growth. Connect with industry leaders.",
+    "prizeMoney": 12000,
+    "taskSubmissionInstructions": "Submit a presentation showcasing your innovative tech solutions for business.",
+    "tags": ["Technology", "Innovation", "Business"],
+    "deadline": "2024-05-30",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Finance & Investment Challenge",
+    "image": "https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Demonstrate your financial acumen and investment strategies. Analyze and present lucrative business opportunities.",
+    "prizeMoney": 9500,
+    "taskSubmissionInstructions": "Submit a detailed investment strategy report.",
+    "tags": ["Finance", "Investment", "Business"],
+    "deadline": "2024-06-25",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  
+  ,
+  {
+    "contestName": "Retail Innovation Showcase",
+    "image": "https://images.pexels.com/photos/6152383/pexels-photo-6152383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Present innovative retail business concepts. Highlight creative strategies driving retail industry evolution.",
+    "prizeMoney": 8800,
+    "taskSubmissionInstructions": "Submit a proposal showcasing your innovative retail business model.",
+    "tags": ["Retail", "Innovation", "Business"],
+    "deadline": "2024-07-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Business",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Epic Battles in History: Article Writing Challenge",
+    "image": "https://images.pexels.com/photos/6001378/pexels-photo-6001378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Compose an article exploring the impact of the 'big six' battles throughout history. Highlight the tight situations and the aftermath of death in these battles.",
+    "prizeMoney": 6000,
+    "taskSubmissionInstructions": "Submit a well-researched and detailed article focused on historical battles.",
+    "tags": ["History", "Warfare", "Article Writing"],
+    "deadline": "2024-03-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+
+  {
+    "contestName": "Thrilling Tales: Article Writing Contest",
+    "image": "https://images.pexels.com/photos/6187673/pexels-photo-6187673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Compose gripping articles detailing narratives 'following the battle' scenarios. Focus on describing the intense and 'tight' situations, bringing out the emotions of 'death'.",
+    "prizeMoney": 6500,
+    "taskSubmissionInstructions": "Submit engaging articles depicting thrilling stories of life 'following the battle'.",
+    "tags": ["Narrative", "Storytelling", "Article Writing"],
+    "deadline": "2024-04-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Sports Legends: Article Writing Challenge",
+    "image": "https://images.pexels.com/photos/17713791/pexels-photo-17713791/free-photo-of-person-drawing-user-generated-content-graphs-on-a-white-board.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Write articles spotlighting the 'big six' legendary athletes and their journeys following tight competitions, discussing moments akin to death and resurgence.",
+    "prizeMoney": 6200,
+    "taskSubmissionInstructions": "Submit articles chronicling the career paths of renowned sports personalities.",
+    "tags": ["Sports", "Athletes", "Article Writing"],
+    "deadline": "2024-05-30",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Art of Mystery: Article Writing Competition",
+    "image": "https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Craft articles revealing the mysteries 'following the battle' scenes. Create suspenseful narratives in tight settings leading to unexpected outcomes like death.",
+    "prizeMoney": 5800,
+    "taskSubmissionInstructions": "Submit mysterious and thrilling articles with unexpected twists.",
+    "tags": ["Mystery", "Suspense", "Article Writing"],
+    "deadline": "2024-06-25",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Fantasy Realms: Article Writing Challenge",
+    "image": "https://images.pexels.com/photos/1559259/pexels-photo-1559259.jpeg",
+    "description": "Craft imaginative articles based on 'big six' mythical lands following tight encounters that bring about death-defying moments.",
+    "prizeMoney": 6700,
+    "taskSubmissionInstructions": "Submit fantastical articles weaving unique tales set in mythical realms.",
+    "tags": ["Fantasy", "Mythical", "Article Writing"],
+    "deadline": "2024-07-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
+    "contestName": "Technology Chronicles: Article Writing Contest",
+    "image": "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "description": "Compose articles exploring the 'big six' technological advancements and their impacts, detailing tight situations and sometimes facing obsolescence or 'death'.",
+    "prizeMoney": 6900,
+    "taskSubmissionInstructions": "Submit insightful articles detailing significant technological revolutions.",
+    "tags": ["Technology", "Innovation", "Article Writing"],
+    "deadline": "2024-08-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Writing",
+    "creatorID": "",
+    "participants": []
+  },
+
+  {
+    "contestName": "FPS Gaming Tournament",
+    "image": "https://images.pexels.com/photos/4009626/pexels-photo-4009626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in an intense FPS gaming tournament. Showcase your skills in fast-paced shootouts and strategic gameplay.",
+    "prizeMoney": 5000,
+    "taskSubmissionInstructions": "Register and join the tournament for the ultimate FPS gaming experience.",
+    "tags": ["FPS", "Gaming", "Shootout"],
+    "deadline": "2024-03-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Gaming",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  
+  ,
+  {
+    "contestName": "Battle Royale Showdown",
+    "image": "https://images.pexels.com/photos/4145356/pexels-photo-4145356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Join the ultimate Battle Royale tournament. Survive in high-stakes shootouts and emerge as the last player standing.",
+    "prizeMoney": 7000,
+    "taskSubmissionInstructions": "Enlist for the Battle Royale event and compete for victory.",
+    "tags": ["Battle Royale", "Gaming", "Shootout"],
+    "deadline": "2024-04-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Gaming",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Sniper Championship",
+    "image": "https://images.pexels.com/photos/6370073/pexels-photo-6370073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Compete in a precision-based sniper tournament. Showcase your accuracy and tactical skills in long-range shootouts.",
+    "prizeMoney": 6000,
+    "taskSubmissionInstructions": "Join the sniper championship and demonstrate your expertise with long-range shots.",
+    "tags": ["Sniper", "Gaming", "Shootout"],
+    "deadline": "2024-05-30",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Gaming",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
     "contestName": "Tech Hackathon",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/13228960/pexels-photo-13228960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Code, innovate, and build tech solutions. Work collaboratively in a hackathon environment.",
     "prizeMoney": 6000,
     "taskSubmissionInstructions": "Submit your project and code repository link.",
@@ -28,8 +257,39 @@
     "participants": []
   },
   {
+    "contestName": "Tech Innovation Expo",
+    "image": "https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in showcasing groundbreaking tech innovations. Demonstrate the latest advancements and prototypes.",
+    "prizeMoney": 9000,
+    "taskSubmissionInstructions": "Present your tech innovation and its impact on the industry.",
+    "tags": ["Tech", "Innovation", "Prototypes"],
+    "deadline": "2024-11-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Tech",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "AI Development Challenge",
+    "image": "https://images.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Engage in an AI development challenge. Create innovative AI solutions for real-world problems.",
+    "prizeMoney": 8500,
+    "taskSubmissionInstructions": "Submit your AI solution and demonstrate its effectiveness in solving the problem.",
+    "tags": ["Tech", "AI", "Development"],
+    "deadline": "2024-12-10",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Tech",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
     "contestName": "Data Science Olympiad",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Solve complex data problems and showcase your data science skills.",
     "prizeMoney": 8000,
     "taskSubmissionInstructions": "Submit your data analysis report and findings.",
@@ -43,27 +303,205 @@
   },
   {
     "contestName": "Medical Research Symposium",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Present groundbreaking medical research findings. Share insights and discoveries.",
     "prizeMoney": 7000,
-    "taskSubmissionInstructions": "Submit an abstract and a presentation proposal.",
+    "taskSubmissionInstructions": "Submit an abstract and a presentation proposal.more 5 workds",
     "tags": ["Medical Contest"],
     "deadline": "2024-01-10",
     "status": "approved",
     "winnerID": [],
     "type": "Medical",
-    "creatorID": "6563571e5031084f2d4ae05b",
-    "participants": [
-      "user1@example.com",
-      "test.user2@testdomain.com",
-      "another.email@gmail.com",
-      "example.email@emailprovider.com",
-      "my.email@customdomain.net"
-    ]
+    "creatorID": "",
+    "participants": []
   },
   {
+    "contestName": "Biomedical Engineering Summit",
+    "image": "https://images.pexels.com/photos/3999655/pexels-photo-3999655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Explore the convergence of engineering principles and medical sciences. Discuss innovations in medical devices and technology.",
+    "prizeMoney": 8500,
+    "taskSubmissionInstructions": "Submit a detailed research abstract and a proposal for a hands-on workshop.",
+    "tags": ["Biomedical Engineering", "Engineering", "Medical"],
+    "deadline": "2024-06-25",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Medical",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Healthcare Technology Symposium",
+    "image": "https://images.pexels.com/photos/3683088/pexels-photo-3683088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Discuss the latest advancements in healthcare technology. Explore innovative devices and their impact on patient care.",
+    "prizeMoney": 7500,
+    "taskSubmissionInstructions": "Submit a detailed abstract on technology integration in healthcare and a proposed demo.",
+    "tags": ["Healthcare Technology", "Medical Devices", "Technology"],
+    "deadline": "2024-07-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Medical",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+
+
+  {
+    "contestName": "Clinical Research Innovation Forum",
+    "image": "https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Explore breakthroughs in clinical research and methodology. Showcase innovative devices transforming patient care.",
+    "prizeMoney": 9200,
+    "taskSubmissionInstructions": "Submit a comprehensive abstract and a proposal for a live demonstration.",
+    "tags": ["Clinical Research", "Medical Devices", "Innovation"],
+    "deadline": "2024-08-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Medical",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Biotech Innovation Summit",
+    "image": "https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "description": "Explore the latest innovations in biotechnology. Discuss cutting-edge devices revolutionizing healthcare.",
+    "prizeMoney": 8800,
+    "taskSubmissionInstructions": "Submit a detailed abstract and a proposed hands-on workshop using innovative biotech devices.",
+    "tags": ["Biotechnology", "Medical Devices", "Innovation"],
+    "deadline": "2024-09-10",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Medical",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
+    "contestName": "Immunology Research Forum",
+    "image": "https://images.pexels.com/photos/17485657/pexels-photo-17485657/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-could-adapt-to-an-infinite-amount-of-uses-it-was-created-by-nidia-dias-as-part-of-the-visualising-ai-pr.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Discuss breakthroughs in immunological research. Explore novel treatments and advancements in immune system studies.",
+    "prizeMoney": 9000,
+    "taskSubmissionInstructions": "Submit a comprehensive research paper and a proposed symposium session.",
+    "tags": ["Immunology", "Research"],
+    "deadline": "2024-05-30",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Medical",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  ,
+  {
+    "contestName": "Graphic Design Challenge",
+    "image": "https://images.pexels.com/photos/1145720/pexels-photo-1145720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in a gaming graphic design challenge. Showcase your creativity in designing game interfaces and assets.",
+    "prizeMoney": 5500,
+    "taskSubmissionInstructions": "Submit your original game design portfolio showcasing innovative graphic elements.",
+    "tags": ["Design", "Gaming", "Interface"],
+    "deadline": "2024-06-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Gaming",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Level Design Competition",
+    "image": "https://images.pexels.com/photos/820673/pexels-photo-820673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Compete in a level design competition for gaming. Create captivating and challenging game levels.",
+    "prizeMoney": 6200,
+    "taskSubmissionInstructions": "Submit your uniquely designed game level for evaluation.",
+    "tags": ["Design", "Gaming", "Level"],
+    "deadline": "2024-07-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Gaming",
+    "creatorID": "",
+    "participants": []
+  }
+  ,
+  {
+    "contestName": "Data Visualization Challenge",
+    "image": "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in a data visualization challenge. Create compelling and insightful visual representations of complex data.",
+    "prizeMoney": 7000,
+    "taskSubmissionInstructions": "Submit your innovative data visualization project showcasing impactful insights.",
+    "tags": ["Data Science", "Visualization", "Analytics"],
+    "deadline": "2024-09-25",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Data Science",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "User Interface Design Challenge",
+    "image": "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Join a challenge focused on creating innovative user interfaces. Design intuitive and user-friendly interfaces for various applications.",
+    "prizeMoney": 7200,
+    "taskSubmissionInstructions": "Submit your UI design with emphasis on usability and creativity.",
+    "tags": ["Design", "UI/UX", "User Interface"],
+    "deadline": "2024-11-30",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Design",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Product Design Competition",
+    "image": "https://images.pexels.com/photos/3832763/pexels-photo-3832763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in a product design competition. Create innovative and functional product designs with an emphasis on user experience.",
+    "prizeMoney": 6800,
+    "taskSubmissionInstructions": "Submit your original product design showcasing creativity and practicality.",
+    "tags": ["Design", "Product Design", "Innovation"],
+    "deadline": "2024-12-15",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Design",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  
+  ,
+  {
+    "contestName": "Data Visualization Challenge",
+    "image": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Participate in a data visualization challenge. Create compelling and insightful visual representations of complex data.",
+    "prizeMoney": 7000,
+    "taskSubmissionInstructions": "Submit your innovative data visualization project showcasing impactful insights.",
+    "tags": ["Data Science", "Visualization", "Analytics"],
+    "deadline": "2024-09-25",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Data Science",
+    "creatorID": "",
+    "participants": []
+  },
+  {
+    "contestName": "Predictive Modeling Competition",
+    "image": "https://images.pexels.com/photos/8636589/pexels-photo-8636589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Join a predictive modeling competition. Develop accurate models for predictive analysis using datasets.",
+    "prizeMoney": 7500,
+    "taskSubmissionInstructions": "Submit your predictive model and analysis demonstrating accuracy in predictions.",
+    "tags": ["Data Science", "Predictive Modeling", "Analysis"],
+    "deadline": "2024-10-20",
+    "status": "pending",
+    "winnerID": [],
+    "type": "Data Science",
+    "creatorID": "",
+    "participants": []
+  }
+  
+  
+  ,
+  {
     "contestName": "Article Writing Challenge",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/4132326/pexels-photo-4132326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Craft compelling articles on diverse topics. Showcase your writing prowess.",
     "prizeMoney": 3000,
     "taskSubmissionInstructions": "Submit your article in a Word or PDF format.",
@@ -97,7 +535,7 @@
   },
   {
     "contestName": "Design Challenge",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Showcase your creativity in design. Solve design problems and present visually appealing solutions.",
     "prizeMoney": 4000,
     "taskSubmissionInstructions": "Upload your design files in a compressed format.",
@@ -111,7 +549,7 @@
   },
   {
     "contestName": "Coding Competition",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/4827576/pexels-photo-4827576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Demonstrate coding skills in various programming challenges.",
     "prizeMoney": 2500,
     "taskSubmissionInstructions": "Submit your code snippets and solutions.",
@@ -125,7 +563,7 @@
   },
   {
     "contestName": "Photography Contest",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/6121164/pexels-photo-6121164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Capture moments and share artistic photography.",
     "prizeMoney": 1500,
     "taskSubmissionInstructions": "Upload your high-resolution photographs.",
@@ -139,7 +577,7 @@
   },
   {
     "contestName": "Music Composition Challenge",
-    "image": "https://as1.ftcdn.net/v2/jpg/03/43/43/72/1000_F_343437244_HrxIVZWbfh29tgxuRlxbPXEpHMSmfkAn.jpg",
+    "image": "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "description": "Compose music and showcase your musical talent.",
     "prizeMoney": 3500,
     "taskSubmissionInstructions": "Submit your audio files in a compatible format.",

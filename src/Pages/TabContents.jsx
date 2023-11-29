@@ -45,14 +45,14 @@ const TabContents = ({ contestItem, idx }) => {
          
             <div className=" bg-white inset-0 opacity-20 mix-blend-multiply rounded-t-lg" />
           </div>
-          <div className="p-6 rounded-lg bg-white text-black pt-11">
+          <div className="p-6 rounded-lg bg-white text-black ">
           <img
-              className="w-11 h-11 absolute -top-4 -left-4 border-2 border-[#8d8888]  rounded-full object-bottom "
+              className="w-11 h-11  border-2 border-[#8d8888]  rounded-full object-bottom "
               src={image || "https://via.placeholder.com/600x400"}
               alt={contestName || "Contest Image"}
             />
             {/* Rest of the content */}
-            <div className="flex items-baseline">{/* ... */}</div>
+            <div className="flex mt-4 items-baseline">{/* ... */}</div>
             <h4 className="font-bold text-[19px] leading-tight truncate">
               {contestName || "Beautiful Home in the countryside"}
             </h4>

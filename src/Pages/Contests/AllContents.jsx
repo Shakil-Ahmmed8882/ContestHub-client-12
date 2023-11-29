@@ -22,9 +22,7 @@ export default function AllContests() {
     "Gaming",
     "Tech",
     "Design",
-    "Coding",
-    "Photography",
-    "Music",
+    
     "Data Science",
   ];
 
