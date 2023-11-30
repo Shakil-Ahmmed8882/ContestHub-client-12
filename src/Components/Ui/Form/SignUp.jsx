@@ -35,8 +35,7 @@ const SignUp = () => {
     .then(response => {
       updateUserProfile(name,photoURL)
       // Letting the user know success response
-      ToasMessage('You have successfully signed up')
-      goTo('/')
+    
       // user information object
       const userInfo = {
         name,
@@ -50,8 +49,10 @@ const SignUp = () => {
         }
       }
 
+      ToasMessage('You have successfully signed up')
+      goTo('/')
       // store user in database 
-      xiosPublic.post(`createUser?email=${user?.email}`,userInfo)
+      xiosPublic.post(`createUser?email=${response.user?.email}`,userInfo)
       .then(res => {
        if(res.data.insertId){
         console.log({success:true})

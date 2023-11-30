@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -48,8 +48,7 @@ const EditContest = () => {
   const { id } = useParams();
   const { data, isLoading } = useGetSecureData(`/singleContest/${id}`);
   
-  // Initial state with default values
-  const [contestData, setContestData] = useState({
+  const [defaultContestData, setDefaultContestData] = useState({
     contestName: data?.contestName || "",
     image: null,
     description: data?.description || "",
@@ -63,17 +62,37 @@ const EditContest = () => {
     participants: data?.participants || [],
   });
 
+  const [editedContestData, setEditedContestData] = useState({ ...defaultContestData });
+
   const { user, loading } = useAuth();
   const goTo = useNavigate();
   const xiosPublic = usePublicApi();
   const xiosSecure = useSecureApi();
+  
+  useEffect(() => {
+    if (data) {
+      setEditedContestData({
+        contestName: data.contestName || "",
+        image: data.image || null,
+        description: data.description || "",
+        prizeMoney: data.prizeMoney || "",
+        taskSubmissionInstructions: data.taskSubmissionInstructions || "",
+        tags: data.tags || [],
+        deadline: data.deadline || "",
+        status: data.status || "pending",
+        winnerID: [],
+        type: data.type || "Medical",
+        participants: data.participants || [],
+      });
+    }
+  }, [data]);
 
-  if (loading || isLoading) return <Spinner></Spinner>;
+  if (loading || isLoading) return <Spinner />;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setContestData({
-      ...contestData,
+    setEditedContestData({
+      ...editedContestData,
       [name]: value,
     });
   };
@@ -83,15 +102,15 @@ const EditContest = () => {
   };
 
   const handleTagsChange = (event) => {
-    setContestData({
-      ...contestData,
+    setEditedContestData({
+      ...editedContestData,
       tags: event.target.value,
     });
   };
 
   const handleDeadlineChange = (event) => {
-    setContestData({
-      ...contestData,
+    setEditedContestData({
+      ...editedContestData,
       deadline: event.target.value,
     });
   };
@@ -100,29 +119,10 @@ const EditContest = () => {
     event.preventDefault();
 
     // Compiling all updated values into an object
-    const updatedData = { ...contestData };
-    console.log("Updated Contest Data:", updatedData);
-
-    // Rest of your code for submitting data to the database
-    // ...
+    const updatedData = { ...editedContestData };
+    const res = await xiosPublic.put(`/editContest/${id}`,updatedData)
+    console.log(res.data)
   };
-
-  
-  const {
-    _id,
-    contestName,
-    image,
-    description,
-    prizeMoney,
-    taskSubmissionInstructions,
-    tags,
-    deadline,
-    status,
-    winnerID,
-    type,
-    participants,
-    creatorID,
-  } = data;
 
   return (
     <div>
@@ -130,14 +130,13 @@ const EditContest = () => {
         <div className="mt-7 text-center text-4xl font-bold">Edit Contest</div>
         <div className="p-8">
           <form onSubmit={handleSubmit}>
-               <form onSubmit={handleSubmit}>
             <div className="flex gap-4">
               <input
                 type="Name"
                 name="contestName"
                 className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
-                defaultValue={contestName}
-                value={contestName}
+                defaultValue={editedContestData.contestName}
+                value={editedContestData.contestName}
                 required
                 onChange={handleChange}
               />
@@ -150,8 +149,8 @@ const EditContest = () => {
               />
             </div>
             <input
-              defaultValue={prizeMoney}
-              value={prizeMoney}
+              defaultValue={editedContestData.prizeMoney}
+              value={editedContestData.prizeMoney}
               type="number"
               name="prizeMoney"
               className="mt-7 block w-full rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
@@ -166,16 +165,16 @@ const EditContest = () => {
                   labelId="demo-multiple-checkbox-label"
                   id="demo-multiple-checkbox"
                   multiple
-                  defaultChecked={tags}
-                  value={tags}
+                  defaultChecked={editedContestData.tags}
+                  value={editedContestData.tags}
                   required
                   onChange={handleTagsChange}
                   input={<OutlinedInput label="Tag" />}
                   renderValue={(selected) => selected.join(", ")}
                   MenuProps={MenuProps}>
-                  {tags.map((name) => (
+                  {tags?.map((name) => (
                     <MenuItem key={name} value={name}>
-                      <Checkbox checked={contestData.tags.indexOf(name) > -1} />
+                      <Checkbox checked={editedContestData.tags.indexOf(name) > -1} />
                       <ListItemText primary={name} />
                     </MenuItem>
                   ))}
@@ -183,17 +182,19 @@ const EditContest = () => {
               </FormControl>
               <div className="w-1/2">
                 <label htmlFor="contestDeadline">Contest Deadline:</label>
-                <input
-                  defaultValue={deadline}
-                  value={deadline}
+               
+
+ <input
+                  defaultValue={editedContestData.deadline}
+                  value={editedContestData.deadline}
                   type="date"
                   id="contestDeadline"
                   name="deadline"
                   required
                   onChange={handleDeadlineChange}
                 />
-                {contestData.deadline && (
-                  <p>Selected Deadline: {contestData.deadline}</p>
+                {editedContestData.deadline && (
+                  <p>Selected Deadline: {editedContestData.deadline}</p>
                 )}
               </div>
             </div>
@@ -205,9 +206,8 @@ const EditContest = () => {
                 rows={10}
                 className="mb-10 h-28 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-black"
                 placeholder="Instructions"
-
-                defaultValue={taskSubmissionInstructions}
-                value={contestName}
+                defaultValue={editedContestData.taskSubmissionInstructions}
+                value={editedContestData.taskSubmissionInstructions}
                 onChange={handleChange}
                 required
               />
@@ -221,8 +221,8 @@ const EditContest = () => {
                 rows={10}
                 className="mb-10 h-28 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-black"
                 placeholder="Contest description"
-                defaultValue={description}
-                value={description}
+                defaultValue={editedContestData.description}
+                value={editedContestData.description}
                 onChange={handleChange}
               />
             </div>
@@ -233,7 +233,6 @@ const EditContest = () => {
                 Book Appointment
               </button>
             </div>
-          </form>
           </form>
         </div>
       </div>

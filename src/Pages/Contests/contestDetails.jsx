@@ -8,8 +8,6 @@ import { BsClockFill } from "react-icons/bs";
 import { AiFillNotification } from "react-icons/ai";
 import { AiFillCheckCircle } from "react-icons/ai";
 
-
-
 const ContestDetails = () => {
   const { id } = useParams();
 
@@ -83,60 +81,60 @@ const ContestDetails = () => {
                   <div className="flex ">
                     <div className="md:flex gap-3 items-center ">
                       <div>
-                      <div className=" flex  gap-1">
-                        <span className="font-bold flex items-center gap-2 dark:text-gray-300">
-                          Contest winner
-                        </span>
-
-                        {timeRemaining?.expired ? (
-                          <span className="text-[20px] dark:text-gray-300  text-accent font-bold">
-                            {winners.length ? winners?.length : 0}
+                        <div className=" flex  gap-1">
+                          <span className="font-bold flex items-center gap-2 dark:text-gray-300">
+                            Contest winner
                           </span>
-                        ) : (
-                          <div className="w-6 ">
-                            <Spinner></Spinner>
-                          </div>
-                        )}
-                      </div>
-                      <p className="flex flex-col gap-3">
-                      Attempted: {participants?.length}
-                      <p className="flex w-[200px] items-center gap-2">
-                        <BsClockFill className="text-2xl text-blueAccent "></BsClockFill>
-                        {timeRemaining && !timeRemaining.expired ? (
-                          <div>
-                            <span className="text-orange-500">
-                            {timeRemaining.days} d
-                            </span>
-                            <span className="">
-                            {timeRemaining.hours}h
-                            <span className="text-green-500">
-                            {timeRemaining.minutes}m
-                            </span>
-                            </span>
-                            <span className="text-xl font-bold text-redAccent">
-                              <span className="countdown">
-                                <span
-                                  style={{
-                                    "--value": timeRemaining.seconds,
-                                  }}></span>
-                              </span>
-                              <span className="text-gray-400">s</span>
-                            </span>
-                          </div>
-                        ) : (
-                          ""
-                        )}
-                      </p>
-                    </p>
 
+                          {timeRemaining?.expired ? (
+                            <span className="text-[20px] dark:text-gray-300  text-accent font-bold">
+                              {Array.isArray(winners) ? winners.length : 0}
+                            </span>
+                          ) : (
+                            <div className="w-6 ">
+                              <Spinner></Spinner>
+                            </div>
+                          )}
+                        </div>
+                        <p className="flex flex-col gap-3">
+                          Attempted: {participants?.length}
+                          <p className="flex w-[200px] items-center gap-2">
+                            <BsClockFill className="text-2xl text-blueAccent "></BsClockFill>
+                            {timeRemaining && !timeRemaining.expired ? (
+                              <div>
+                                <span className="text-orange-500">
+                                  {timeRemaining.days} d
+                                </span>
+                                <span className="">
+                                  {timeRemaining.hours}h
+                                  <span className="text-green-500">
+                                    {timeRemaining.minutes}m
+                                  </span>
+                                </span>
+                                <span className="text-xl font-bold text-redAccent">
+                                  <span className="countdown">
+                                    <span
+                                      style={{
+                                        "--value": timeRemaining.seconds,
+                                      }}></span>
+                                  </span>
+                                  <span className="text-gray-400">s</span>
+                                </span>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </p>
+                        </p>
                       </div>
                       {/* ----------------- */}
                       <div className=" md:ml-11  bg-green-50 relative shadow-sm mb-8">
-                            < AiFillNotification className="absolute -top-2 -right-1 text-4xl rotate-180 text-redAccent"></AiFillNotification>
+                        <AiFillNotification className="absolute -top-2 -right-1 text-4xl rotate-180 text-redAccent"></AiFillNotification>
                         <div className="flex items-center gap-2 py-8 px-3">
-                        <AiFillCheckCircle className="text-[20px] text-green-400"></AiFillCheckCircle>
+                          <AiFillCheckCircle className="text-[20px] text-green-400"></AiFillCheckCircle>
                           <p>
-                             hurry up. Don&apos;t miss the scope before time is up
+                            hurry up. Don&apos;t miss the scope before time is
+                            up
                           </p>
                         </div>
                       </div>
@@ -161,7 +159,6 @@ const ContestDetails = () => {
                   </div>
 
                   <div>
-                    
                     <div className="px-2 flex md:justify-end">
                       <Link to={`/payment/${_id}`}>
                         <button className="btn btn-outline flex-1 btn-primary">

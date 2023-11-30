@@ -64,6 +64,8 @@ const Payment = () => {
   const { user } = useAuth();
   const goTo = useNavigate();
   const handlePayment = async () => {
+
+    console.log('llllllllllllllllll')
     const res = await xios.post("registeredContest", {
       id: id,
       userEmail: user?.email,
