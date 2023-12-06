@@ -3,8 +3,10 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: "http://localhost:5000",
-  // baseURL: "https://contest-craft-server.vercel.app",
+  // baseURL: import.meta.env.Client_site_baseURL,
+  // baseURL: "http://localhost:5000",
+  baseURL: "https://contest-craft-server.vercel.app",
+  withCredentials:true
 });
 const useSecureApi = () => {
   const navigate = useNavigate();

@@ -10,7 +10,7 @@ const MainLaout = () => {
                   <Navbar></Navbar>  
                   <div >
                   <Outlet></Outlet>
-                  <div className="max-w-[1050px] mx-auto">
+                  <div className="max-w-[1050px] mx-auto ">
                   <Footer></Footer>
                   </div>
 

@@ -34,10 +34,10 @@ export default function HorizontalCard({ contest }) {
       <Box className='flex' sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h5">
-            {contest.contestName}
+            {contest?.contestName}
           </Typography>
           <Typography variant="subtitle1" color="text.secondary" component="div">
-            Description: {contest.description}
+            Description: {contest.description?contest.description.slice(0,90):contest?.description}
           </Typography>
           {/* Display other properties as needed */}
         </CardContent>
@@ -56,7 +56,7 @@ export default function HorizontalCard({ contest }) {
       <CardMedia
         component="img"
         sx={{ width: 151 }}
-        image={contest.image} // Use contest image from props
+        image={contest.image || "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} // Use contest image from props
         alt={`Cover for ${contest.contestName}`}
       />
     </Card>

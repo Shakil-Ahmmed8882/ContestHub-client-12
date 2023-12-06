@@ -3,7 +3,7 @@ import useGetOpenData from "../../Hooks/useGetOpenData";
 import calculateRemainingDeadline from "../../Utils/calculateRemainingDeadline";
 import { useEffect, useState } from "react";
 import Spinner from "../../Shared/Spinner";
-import { BsFillPeopleFill } from "react-icons/bs";
+import { BiDollarCircle } from "react-icons/bi";
 import { BsClockFill } from "react-icons/bs";
 import { AiFillNotification } from "react-icons/ai";
 import { AiFillCheckCircle } from "react-icons/ai";
@@ -27,7 +27,7 @@ const ContestDetails = () => {
   }, [contest]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Spinner></Spinner>
   }
 
   if (!contest) {
@@ -54,35 +54,44 @@ const ContestDetails = () => {
     <div className="bg-gray-100 dark:bg-gray-800 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className=" -mx-4">
-          <div className="md:grid grid-cols-6 gap-3 md:flex-1 px-4">
+          <div className="md:grid grid-cols-6 md:flex-1 px-4">
             <div className=" col-span-2 rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
               <img
-                className="w-full h-[65vh] object-cover object-top"
+                className="w-full h-full object-cover object-top"
                 src={image}
                 alt="Product Image"
               />
             </div>
 
-            <div className="  flex-1 bg-white  col-span-4 p-3">
+            <div className=" pl-4 flex-1 bg-white  col-span-4 p-3">
               <div>
-                <h2 className="font-bold  md:text-3xl dark:text-white mb-2">
+                <h2 className="font-bold  md:text-3xl lg:text-4xl  dark:text-white mb-2">
                   <h2>{contestName}</h2>
                 </h2>
                 <p className=" text-gray-500  text-[15px]">
-                  {description} Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Ipsum omnis laudantium molestias ab iure
-                  recusandae quo ducimus repellendus, itaque eius quasi
-                  consectetur repudiandae voluptates deleniti maxime? Veniam
-                  adipisci hic fuga!
+                  {description} Ensure your honesty, respect and right manners to the other participants. Remember we all together can create better world by the efforteless and respectfull collaboration.
                 </p>
+                
+
+                <div>
+                  <h2 className="font-bold pt-3 text-[18px] text-gray-500 mt-4">Instruction</h2>
+                  <p className="text-gray-500">{taskSubmissionInstructions}</p>
+                </div>
+                <div className="flex items-center gap-2 mt-2">
+                  <h2 className="font-bold text-[18px] text-gray-500">Prize money</h2>
+                  <div className="flex gap-1 items-center">
+                  <BiDollarCircle className="text-[22px] text-blueAccent "></BiDollarCircle>
+                  <p className="text-gray-500">{prizeMoney}</p>
+                  </div>
+                </div>
               </div>
               <div className="flex items-center  -mx-2">
-                <div className="md:flex-1 px-4 bg-white  textWhite py-4">
+                <div className="md:flex-1 px-2 bg-white  textWhite ">
                   <div className="flex ">
                     <div className="md:flex gap-3 items-center ">
                       <div>
-                        <div className=" flex  gap-1">
-                          <span className="font-bold flex items-center gap-2 dark:text-gray-300">
+                        <div className=" flex space-y-6 gap-1">
+                          <span className="text-gray-500 font-bold text-[18px] flex items-center gap-2 dark:text-gray-300">
                             Contest winner
                           </span>
 
@@ -91,12 +100,10 @@ const ContestDetails = () => {
                               {Array.isArray(winners) ? winners.length : 0}
                             </span>
                           ) : (
-                            <div className="w-6 ">
-                              <Spinner></Spinner>
-                            </div>
+                          "coming soon"
                           )}
                         </div>
-                        <p className="flex flex-col gap-3">
+                        <p className="flex flex-col  text-gray-500 text-[20px] font18old mt-1 gap-3">
                           Attempted: {participants?.length}
                           <p className="flex w-[200px] items-center gap-2">
                             <BsClockFill className="text-2xl text-blueAccent "></BsClockFill>
@@ -157,9 +164,9 @@ const ContestDetails = () => {
                       </div>
                     </div>
                   </div>
-
+                  {/* =============== */}
                   <div>
-                    <div className="px-2 flex md:justify-end">
+                    <div className="px-2 flex md:justify-end mt-20">
                       <Link to={`/payment/${_id}`}>
                         <button className="btn btn-outline flex-1 btn-primary">
                           Register a contest

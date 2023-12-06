@@ -65,7 +65,6 @@ const Payment = () => {
   const goTo = useNavigate();
   const handlePayment = async () => {
 
-    console.log('llllllllllllllllll')
     const res = await xios.post("registeredContest", {
       id: id,
       userEmail: user?.email,
@@ -99,14 +98,14 @@ const Payment = () => {
   } = contestData;
 
   return (
-    <div>
-      <div className="bg-gray-50 mb-8 ">
+    <div className="">
+      <div className=" ">
         <main className="flex ">
-          <div className="relative w-full bg-indigo-50 ">
+          <div className="  w-full bg-[#f6f5fb] pt-11 relative  h-screen  top-0  ">
             {/* Overlapping background */}
             <div
               aria-hidden="true"
-              className="absolute hidden h-6 w-full bg-gray-50 lg:block"
+              className="absolute hidden h-6 w-full  lg:block"
             />
 
             <h2 className="sr-only">Plans</h2>
@@ -117,9 +116,9 @@ const Payment = () => {
               {/* Decorative background */}
               <div
                 aria-hidden="true"
-                className="absolute inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg lg:block"
+                className="  inset-0 top-4 bottom-6 left-8 right-8 hidden rounded-tl-lg rounded-tr-lg bg lg:block"
               />
-              <div className="relative space-y-6 lg:grid lg:grid-cols-3 lg:space-y-0">
+              <div className="relative w-1/3 mx-auto lg:space-y-0">
                 <div className="bg-white ring-2 ring-indigo-700 pb-7 relative shadow-md pt-6 px-6  rounded-lg lg:px-8 lg:pt-12">
                   <img
                     className=" h-32 w-32 mx-auto mb-5 rounded-full object-cover object-top"
@@ -178,7 +177,6 @@ const Payment = () => {
                 </div>
               </div>
             </div>
-            <h1 className="text-9xl">img</h1>
           </div>
         </main>
       </div>

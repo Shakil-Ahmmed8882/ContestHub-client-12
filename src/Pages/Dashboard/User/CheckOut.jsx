@@ -82,11 +82,8 @@ const CheckOutForm = () => {
           status:'pending'
         }  
       
-        axios.post('http://localhost:5000/payments',payment)
+        axios.post('https://contest-craft-server.vercel.app/payments',payment)
         .then(res => console.log(res))
-
-
-
       }
     }
     

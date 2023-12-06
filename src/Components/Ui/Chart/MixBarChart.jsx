@@ -1,39 +1,28 @@
-import React, { PureComponent } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { Chart } from "react-google-charts";
 
-export default class Example extends PureComponent {
-  render() {
-    const { attempted, won } = this.props;
+export default function UserStatics({attempeted,wonContests}) {
+  
 
-    const lost = attempted - won;
+  const data = [
+    ["Paritcipation", "Number per contest"],
+    ["Attempted", attempeted?attempeted:1],
+    ["Completed",wonContests?wonContests:2]
+  ];
 
-    const data = [
-      { name: 'Won contests', value: won },
-      { name: 'Total participation', value: lost },
-    ];
+  const options = {
+    title: "Wining and participation statistics",
+    is3D: true,
+  };
 
-    const COLORS = ['#4338CA', '#FD274E'];
-
-    return (
-      <ResponsiveContainer width="100%" height={400}>
-        <PieChart>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            innerRadius={60}
-            outerRadius={80}
-            fill="#8884d8"
-            paddingAngle={5}
-            dataKey="value"
-            label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-          >
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index]} />
-            ))}
-          </Pie>
-        </PieChart>
-      </ResponsiveContainer>
-    );
-  }
+  return (
+    <div>
+      <Chart
+        chartType="PieChart"
+        data={data}
+        options={options}
+        width={"100%"}
+        height={"400px"}
+      />
+    </div>
+  );
 }

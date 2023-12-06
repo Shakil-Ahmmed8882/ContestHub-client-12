@@ -18,10 +18,10 @@ const UserProfileDashboard = () => {
                 {user?.displayName}
               </h1>
               <p className="text-gray-400">Junior Developer</p>
-              <a className="text-xs text-gray-500 dark:text-gray-200 ">
+              <div className="text-xs text-gray-500 dark:text-gray-200 ">
                 {user?.email}
           <UserSocial></UserSocial>
-              </a>
+              </div>
             </div>
             
           </div>

@@ -1,6 +1,6 @@
 const Spinner = () => {
   return (
-    <div>
+    <div className="flex w-full h-screen items-center justify-center">
       <div
         aria-label="Loading..."
         role="status"

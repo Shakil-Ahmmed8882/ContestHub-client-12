@@ -11,15 +11,17 @@ import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 const BestCreators = () => {
   const crowns = [crown, crown1, crown2];
   const descriptions = [
-    "Lorem ipsum dolor sit amet, consecte adipiscing elit sed do",
-    "Lorem ipsum dolor sit amet, consecte adipiscing elit sed do",
-    "Lorem ipsum dolor sit amet, consecte adipiscing elit sed do",
+    "Contest virtuoso, weaving excitement through creations.",
+    "Maestro of competitions, crafting engaging contests.",
+    "Artisan of contests, sculpting thrill in every creation."
   ];
   const {
     data = [],
     isLoading,
     refetch,
   } = useGetOpenData("/allContestCreators");
+
+
 
   if(isLoading) return <Spinner></Spinner>
   // Assuming data is an array of objects with a 'rate' property
@@ -41,8 +43,6 @@ const BestCreators = () => {
 
 
   }
-
-  console.log(sortedRatedCreator)
 
   const bestThreeContestCreator = sortedRatedCreator?.slice(0, 3);
 

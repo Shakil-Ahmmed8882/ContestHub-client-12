@@ -1,6 +1,7 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAdmin from "../../../Hooks/useAdmin";
 import useAuth from "../../../Hooks/useAuth";
+import Spinner from "../../../Shared/Spinner";
 
 
 
@@ -13,7 +14,7 @@ const AdminGuard = ({children}) => {
   console.log(isAdmin)
 
   if (loading || isAdminLoading) {
-    return <progress className="progress w-56"></progress>;
+    return <Spinner></Spinner>
   }
 
   if (user && isAdmin) {

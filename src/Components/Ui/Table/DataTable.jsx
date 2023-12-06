@@ -6,7 +6,7 @@ const DataTable = ({setRefetch,data,Refetch}) => {
   
   return (
     <div>
-      <table className=" min-w-full mx-auto divide-y divide-gray-200 overflow-x-auto">
+      <table className="  mx-auto divide-y divide-gray-200 w-full">
          <Thead></Thead>
         <tbody className="bg-white divide-y divide-gray-200">
             {

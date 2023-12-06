@@ -1,27 +1,23 @@
 import { useState } from "react";
-import BarChat from "../../../Components/Ui/Chart/BarChat";
-import ChartComponent from "../../../Components/Ui/Chart/MixBarChart";
 import useAuth from "../../../Hooks/useAuth";
-import AvaterGroup from "./AvaterGroup";
 import SupportChatBox from "../../Demo/SupportChatBox";
 
 // icons
 import { BsGearFill } from "react-icons/bs";
 import { BsFillAirplaneFill } from "react-icons/bs";
 import { AiOutlineWechat } from "react-icons/ai";
-import Example from "../../../Components/Ui/Chart/MixBarChart";
 import useGetSecureData from "../../../Hooks/useGetSecureData";
 import Spinner from "../../../Shared/Spinner";
 import { useEffect } from "react";
 import UserProfileDashboard from "./UserProfileDashboard";
-
+import UserStatics from "../../../Components/Ui/Chart/MixBarChart";
 
 const Profile = () => {
   const { user, loading } = useAuth() || {};
-  const {data,isLoading} = useGetSecureData(`/user/${user?.email}`)
+  const { data, isLoading } = useGetSecureData(`/user/${user?.email}`);
   const [openChat, setOpenChat] = useState(false);
   const [attempted, setAttempted] = useState(0);
-  const [wonContests, setWonContests] = useState(0)
+  const [wonContests, setWonContests] = useState(0);
   const handleChat = () => {
     setOpenChat(!openChat);
   };
@@ -30,8 +26,6 @@ const Profile = () => {
     setOpenChat(!openChat);
   };
 
-
-  
   useEffect(() => {
     // Check if 'data' is available and has the required properties
     if (data?.attemptedContests?.length > 0) {
@@ -44,22 +38,11 @@ const Profile = () => {
     }
   }, [data]); // Update when 'data' changes
 
-
   if (loading) return "loading";
   const img =
     "https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
-
-
-    
-  if(isLoading) return <Spinner></Spinner>
-  
-
-  
-  
-  // Replace this with the actual attempted count
-
-   // Replace this with the actual total contest count
+  if (isLoading) return <Spinner></Spinner>;
 
   return (
     <div>
@@ -76,28 +59,29 @@ const Profile = () => {
       </div>
 
       <div className=" grid grid-cols-4 gap-8 px-4 mt-4 mb-8 justify-center">
-      <div className="col-span-2">
-        <div className="shadow-lg bg-white mb-5 rounded-lg col-span-2">
-          <UserProfileDashboard></UserProfileDashboard>
-        </div>
-          <div className="shadow-lg p-2 bg-white rounded-lg">
-        <Example attempted={attempted} won={wonContests} />
+        <div className="col-span-2">
+          <div className="shadow-lg bg-white mb-5 rounded-lg col-span-2">
+            <UserProfileDashboard></UserProfileDashboard>
           </div>
+          <UserStatics attempeted={attempted} wonContests={wonContests}/>
         </div>
         <div className="space-y-8">
           <div className="card w-[450px] bg-base-100 shadow-xl">
             <div className="card-body">
               <div className="flex items-center gap-3">
                 <div className=" p-3 bg-indigo-500 shadow-lg rounded-full">
-                <BsGearFill className="text-3xl text-white font-bold"></BsGearFill>
+                  <BsGearFill className="text-3xl text-white font-bold"></BsGearFill>
                 </div>
 
                 <h2 className="card-title">Creativity</h2>
               </div>
-                <progress className="progress w-56 my-3" value="10" max="100"></progress>
+              <progress
+                className="progress w-56 my-3"
+                value="10"
+                max="100"></progress>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div className="card-actions justify-end">
-                <p className="text-3xl">4%</p>
+                <p className="text-3xl">94%</p>
               </div>
             </div>
           </div>
@@ -106,14 +90,12 @@ const Profile = () => {
             <div className="card-body">
               <div className="flex items-center gap-3">
                 <div className=" p-3 bg-[#FF9113] shadow-lg rounded-full">
-                <BsFillAirplaneFill className="text-3xl text-white font-bold"></BsFillAirplaneFill>
-
+                  <BsFillAirplaneFill className="text-3xl text-white font-bold"></BsFillAirplaneFill>
                 </div>
 
                 <h2 className="card-title">Productivity</h2>
               </div>
-              <div className="card-actions justify-end">
-              </div>
+              <div className="card-actions justify-end"></div>
               <p className="text-3xl">80%</p>
             </div>
           </div>
@@ -122,15 +104,13 @@ const Profile = () => {
             <div className="card-body">
               <div className="flex items-center gap-3">
                 <div className=" p-3 bg-[#1AB8EF] shadow-lg rounded-full">
-                <AiOutlineWechat className="text-3xl text-[#fff] font-bold"></AiOutlineWechat>
-
+                  <AiOutlineWechat className="text-3xl text-[#fff] font-bold"></AiOutlineWechat>
                 </div>
 
                 <h2 className="card-title">Social Net</h2>
               </div>
-              <div className="card-actions justify-end">
-              </div>
-              <p className="text-3xl">20%</p>
+              <div className="card-actions justify-end"></div>
+              <p className="text-3xl">50%</p>
             </div>
           </div>
         </div>

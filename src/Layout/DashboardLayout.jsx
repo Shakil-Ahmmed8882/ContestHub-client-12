@@ -9,6 +9,7 @@ import useCreator from "../Hooks/useCreator";
 import useAuth from "../Hooks/useAuth";
 const DashboardLayout = () => {
   const [isAdmin, isAdminLoading] = useAdmin();
+
   const [isCreator, isCreatorLoading] = useCreator();
   const {user} = useAuth()
   if (isAdminLoading || isCreatorLoading) return <Spinner></Spinner>;

@@ -24,6 +24,9 @@ import MyProfile from "../Pages/Dashboard/Profle/MyProfile";
 import EditProfile from "../Pages/Demo/EditProfile";
 import AdminGuard from "../Components/Ui/Private/AdminGuard";
 import CreatorGuard from "../Components/Ui/Private/CreatorGuard";
+import FAQ from "../Pages/Demo/FAQ";
+import Community from "../Pages/Demo/Community";
+import Testimonials from "../Pages/Demo/Testimonials";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +53,18 @@ export const router = createBrowserRouter([
         path: "/payment/:id",
         element: <Payment></Payment>,
       },
+      {
+        path: "/faq",
+        element: <FAQ></FAQ>,
+      },
+      {
+        path: "community",
+        element: <Community></Community>,
+      },
+      {
+        path: "community/testimonials",
+        element: <Testimonials></Testimonials>,
+      },
     ],
   },
 
@@ -59,7 +74,7 @@ export const router = createBrowserRouter([
     element: <DashboardLayout></DashboardLayout>,
     children: [
       {
-        index: true,
+        path:'home',
         element: <Profile>;</Profile>,
       },
       {

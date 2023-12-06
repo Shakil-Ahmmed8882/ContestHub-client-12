@@ -13,6 +13,11 @@ const UserRoutes = () => {
    
       <NavLink
         className="p-2 hover:text-gray-200 text-[19px]"
+        active={allContestsMatch} to={`/dashboard/home`}>
+      Dashboard
+      </NavLink>
+      <NavLink
+        className="p-2 hover:text-gray-200 text-[19px]"
         active={allContestsMatch} to={`/dashboard/profile`}>
         My Profile
       </NavLink>

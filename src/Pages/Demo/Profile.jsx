@@ -71,7 +71,7 @@ const Profile = () => {
           <li className="mx-2">
             <a href="" target="_blank" aria-label="GitHub">
               <svg
-                className="h-6 text-indigo-700 hover:text-indigo-300"
+                className="h-4 text-indigo-700 hover:text-indigo-300"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ const Profile = () => {
           <li className="mx-2">
             <a href="" target="_blank" aria-label="LinkedIn">
               <svg
-                className="h-6 text-indigo-700 hover:text-indigo-300"
+                className="h-4 text-indigo-700 hover:text-indigo-300"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -97,7 +97,7 @@ const Profile = () => {
           <li className="mx-2">
             <a href="" target="_blank" aria-label="Twitter">
               <svg
-                className="h-6 text-indigo-700 hover:text-indigo-300"
+                className="h-4 text-indigo-700 hover:text-indigo-300"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -110,7 +110,7 @@ const Profile = () => {
           <li className="mx-2">
             <a href="" target="_blank" aria-label="Unsplash">
               <svg
-                className="h-6 text-indigo-700 hover:text-indigo-300"
+                className="h-4 text-indigo-700 hover:text-indigo-300"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -123,7 +123,7 @@ const Profile = () => {
           <li className="mx-2">
             <a href="" target="_blank" aria-label="Email">
               <svg
-                className="h-6 text-indigo-700 hover:text-indigo-300"
+                className="h-4 text-indigo-700 hover:text-indigo-300"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -136,7 +136,7 @@ const Profile = () => {
         </ul>
 
     <div className="p-4 border-t mx-8 mt-2">
-      <Link to='/' className="w-1/2 text-center py-3 block mx-auto rounded-full bg-primary  border-none outline-none hover:shadow-lg font-semibold text-white ">
+      <Link to='/' className="w-1/2 text-center py-3 block mx-auto rounded-full   border-none outline-none hover:shadow-lg font-semibold text-primary ">
         Go home
       </Link>
     

@@ -4,10 +4,10 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import useGetOpenData from "../../Hooks/useGetOpenData";
 import TabContents from "../TabContents";
-import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
-import Spinner from "../Demo/Spinner";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import Spinner from "../Demo/Spinner";
 
 export default function AllContests() {
   const [value, setValue] = React.useState(0);
@@ -32,7 +32,7 @@ export default function AllContests() {
     contestType
   );
 
-  if (isLoading) return <Spinner></Spinner>;
+  if (isLoading) return <Spinner></Spinner>
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -91,7 +91,7 @@ export default function AllContests() {
 
       <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
         <Pagination
-          count={Math.ceil(data.length / pageSize)}
+          count={Math.ceil( Array.isArray(data)?data.length / pageSize:'')}
           color="primary"
           onChange={handlePageChange}
           page={page}

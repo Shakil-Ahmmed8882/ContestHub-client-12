@@ -1,6 +1,7 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import useCreator from "../../../Hooks/useCreator";
+import Spinner from "../../../Shared/Spinner";
 
 
 
@@ -12,7 +13,7 @@ const CreatorGuard = ({children}) => {
 
   
   if (loading || isCreatorLoading) {
-        return <progress className="progress w-56"></progress>;
+        return <Spinner></Spinner>
       }
       
       

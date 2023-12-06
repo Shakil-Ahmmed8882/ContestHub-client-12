@@ -42,7 +42,7 @@ const TRow = ({setRefetch, tItem, Refetch }) => {
 
   return (
     <tr>
-    <td className="px-6 py-4 whitespace-nowrap">
+    <td className="px-6 py-4 ">
       <div className="flex items-center">
         <div className="flex-shrink-0 h-10 w-10">
           <img

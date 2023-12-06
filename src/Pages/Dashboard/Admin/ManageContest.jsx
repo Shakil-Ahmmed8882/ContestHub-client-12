@@ -14,7 +14,7 @@ const ManageContest = () => {
   if (isLoading) return <Spinner></Spinner>;
 
   return (
-    <table className=" min-w-full mx-auto divide-y divide-gray-200 overflow-x-auto">
+    <table className=" bg-indigo-50 grid  divide-y divide-gray-200 ">
       <Thead></Thead>
       <tbody className="bg-white divide-y divide-gray-200">
         {data?.map((item) => (

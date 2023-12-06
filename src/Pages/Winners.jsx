@@ -9,7 +9,6 @@ import VerticalLinearStepper from './Demo/VerticalSteppers';
 
 const Winners = () => {
       return (
-
             <div className='py-16 relative bg-white'>
             <div className='max-w-6xl mx-3 md:mx-auto'>
                   <TitleDescription

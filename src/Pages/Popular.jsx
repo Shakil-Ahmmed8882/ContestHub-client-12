@@ -17,7 +17,7 @@ const Popular = () => {
   return (
     <>
       {/* This example requires Tailwind CSS v2.0+ */}
-      <div className="py-12  bg-white overflow-hidde relative z-10">
+      <div className="py-20  bg-white overflow-hidde relative z-10">
         <div className="max-w-[1050px]  mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <TitleDescription
