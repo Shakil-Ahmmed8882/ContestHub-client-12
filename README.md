@@ -45,7 +45,7 @@ ContestHub is a dynamic web application that facilitates the creation, managemen
 
 ## Live Website
 
-You can access the live version of this website by clicking https://contestcraft-350e1.web.app/.
+You can access the live version of this website by clicking https://contestcraft-350e1.web.app/. <br/>
 Server github link https://github.com/Shakil-Ahmmed8882/ContestHub-server-12
 
 
