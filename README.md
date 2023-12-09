@@ -34,7 +34,7 @@ ContestHub is a dynamic web application that facilitates the creation, managemen
 - **Role Management**: Efficient management of user roles and information.
 - **Authentication**: Utilization of email/password or Google OAuth for secure authentication.
 
-## Bonus Features
+## More Features
 
 - **Query Fetching with TanStack**: Utilize TanStack for efficient query fetching.
 - **React Hook Form**: Implement forms using React Hook Form for enhanced performance.
@@ -43,6 +43,16 @@ ContestHub is a dynamic web application that facilitates the creation, managemen
 - **Pagination**: Add pagination for smoother navigation through extensive content.
 - **Additional Routes**: Implement creative additional routes to enhance user interaction and engagement.
 
-For any inquiries or feedback, feel free to reach us. 
+## Live Website
+
+You can access the live version of this website by clicking [https://contestcraft-350e1.web.app/).
+
+Feel free to customize the link and text as per your actual live link.
+
+
+## Thank you
+Thanks for visiting. If you have any feedback feel free to share. your feecback will be highly appreciated.
+
+For any inquiries or feedback, feel free to reach me. 
 
 Happy contesting!
